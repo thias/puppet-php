@@ -63,7 +63,7 @@ define php::fpm::conf (
 
         file { "/etc/php-fpm.d/${pool}.conf":
             notify  => Service['php-fpm'],
-            content => template('php-fpm/pool.conf.erb'),
+            content => template('php/fpm/pool.conf.erb'),
             owner   => 'root',
             group   => 'root',
             mode    => '0644',
