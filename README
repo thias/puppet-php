@@ -3,7 +3,7 @@
 Summary::  PHP module
 Author::   Matthias Saou <matthias@saou.eu>
 License::  Apache License 2.0
-Updated::  August 2011
+Updated::  December 2011
 
 = Sample Usage
 
@@ -23,7 +23,8 @@ Install the PHP command line interface :
 
     include php::cli
 
-Install the PHP Apache httpd module, using its own php configuration file :
+Install the PHP Apache httpd module, using its own php configuration file
+(you will need mod_env in apache for this to work) :
 
     class { 'php::mod_php5': inifile => '/etc/httpd/conf/php.ini' }
 
