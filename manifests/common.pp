@@ -1,3 +1,5 @@
+# Class: php::common
+#
 # Class to avoid duplicate definitions for the php-common package, not meant to
 # be used from outside the php module's own classes and definitions.
 #

@@ -1,3 +1,10 @@
+# Class: php::fpm::daemon
+#
+# Install the PHP FPM daemon. See php::fpm::conf for configuring its pools.
+#
+# Sample Usage:
+#  include php::fpm::daemon
+#
 class php::fpm::daemon (
     $ensure = 'present',
     $log_level = 'notice',

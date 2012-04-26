@@ -1,9 +1,11 @@
-# Apache httpd PHP module. Requires the 'httpd' service to be declared
-# somewhere, usually from the apache-httpd module.
+# Class: php::mod_php5
+#
+# Apache httpd PHP module. Requires the 'httpd' service and package to be
+# declared somewhere, usually from the apache_httpd module.
 #
 # Sample Usage :
-#     php::ini { '/etc/php-httpd.ini': }
-#     class { 'php::mod_php5': inifile => '/etc/php-httpd.ini' }
+#  php::ini { '/etc/php-httpd.ini': }
+#  class { 'php::mod_php5': inifile => '/etc/php-httpd.ini' }
 #
 class php::mod_php5 ( $inifile = '/etc/php.ini' ) {
     package { 'php':

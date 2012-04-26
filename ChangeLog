@@ -1,0 +1,5 @@
+2012-04-26 - 0.2.0
+* Clean up the module to match current puppetlabs guidelines.
+* Fix all broken smoke tests.
+* Major documentation update, adding more useful examples.
+

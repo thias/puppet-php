@@ -1,16 +1,18 @@
+# Define: php::module::ini
+#
 # Configuration for optional PHP modules which are separately packaged.
 # See also php::module for package installation.
 #
 # Sample Usage :
-#     php::module::ini { 'xmlreader': pkgname => 'xml' }
-#     php::module::ini { 'pecl-apc':
-#         settings => {
-#             'apc.enabled'      => '1',
-#             'apc.shm_segments' => '1',
-#             'apc.shm_size'     => '64',
-#         }
-#     }
-#     php::module::ini { 'xmlwriter': ensure => absent }
+#  php::module::ini { 'xmlreader': pkgname => 'xml' }
+#  php::module::ini { 'pecl-apc':
+#      settings => {
+#          'apc.enabled'      => '1',
+#          'apc.shm_segments' => '1',
+#          'apc.shm_size'     => '64',
+#      }
+#  }
+#  php::module::ini { 'xmlwriter': ensure => absent }
 #
 define php::module::ini (
     $pkgname  = false,
