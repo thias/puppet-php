@@ -4,7 +4,7 @@ extension=<%= modname %>.so
 <% if !settings.empty? -%>
 
 ; Custom settings
-<% settings.each do |key,value| -%>
+<% settings.sort_by {|key, value| key}.each do |key,value| -%>
 <%= key %>=<%= value %>
 <% end -%>
 
