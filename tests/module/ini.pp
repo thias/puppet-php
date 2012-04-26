@@ -1,4 +1,4 @@
-php::module::ini { 'xmlreader': pkgname => 'xml' }
+php::module { [ 'pecl-apc', 'xml' ]: }
 php::module::ini { 'pecl-apc':
     settings => {
         'apc.enabled'      => '1',
@@ -6,3 +6,4 @@ php::module::ini { 'pecl-apc':
         'apc.shm_size'     => '64',
     }
 }
+php::module::ini { 'xmlreader': pkgname => 'xml' }
