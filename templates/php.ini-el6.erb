@@ -228,7 +228,7 @@ engine = <%= engine %>
 ; http://www.php.net/manual/en/ini.core.php#ini.short-open-tag
 short_open_tag = <%= short_open_tag %>
 
-; Allow ASP-style <% %> tags.
+; Allow ASP-style <%% %> tags.
 ; http://www.php.net/manual/en/ini.core.php#ini.asp-tags
 asp_tags = <%= asp_tags %>
 
@@ -1304,7 +1304,7 @@ session.name = <%= session_name %>
 
 ; Initialize session on request startup.
 ; http://www.php.net/manual/en/session.configuration.php#ini.session.auto-start
-session.auto_start = <% session_auto_start %>
+session.auto_start = <%= session_auto_start %>
 
 ; Lifetime in seconds of cookie or, if 0, until browser is restarted.
 ; http://www.php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime
