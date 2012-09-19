@@ -1,5 +1,8 @@
+2012-09-19 - 0.2.2
 * Fix session_auto_start in the php.ini template.
 * Fix ASP-style tags being processed as ERB in the php.ini template.
+* Allow passing a file path for each fpm pool error_log.
+* Add php_value/php_flag and php_admin_value/php_admin_flag in fpm pools.
 
 2012-04-26 - 0.2.1
 * Force sorting of module ini option hash to fix template with puppet 2.7+.

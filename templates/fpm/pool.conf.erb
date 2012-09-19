@@ -219,8 +219,8 @@ catch_workers_output = <%= catch_workers_output %>
 <% env.each do |var| -%>
 env[<%= var %>] = $<%= var %>
 <% end -%>
-<% rawenv.each do |line| -%>
-<%= line %>
+<% env_value.sort_by {|key,value| key}.each do |key,value| -%>
+env[<%= key %>] = <%= value %>
 <% end -%>
 
 ; Additional php.ini defines, specific to this pool of workers. These settings
@@ -244,9 +244,24 @@ env[<%= var %>] = $<%= var %>
 ;php_admin_value[error_log] = /var/log/php-fpm/www-error.log
 ;php_admin_flag[log_errors] = on
 ;php_admin_value[memory_limit] = 32M
-<% if error_log -%>
+<% if error_log == true -%>
 php_admin_value[error_log] = /var/log/php-fpm/<%= pool %>-error.log
 php_admin_flag[log_errors] = on
+<% elsif !error_log.empty? -%>
+php_admin_value[error_log] = <%= error_log %>
+php_admin_flag[log_errors] = on
+<% end -%>
+<% php_value.sort_by {|key,value| key}.each do |key,value| -%>
+php_value[<%= key %>] = <%= value %>
+<% end -%>
+<% php_flag.sort_by {|key,flag| key}.each do |key,flag| -%>
+php_flag[<%= key %>] = <%= flag %>
+<% end -%>
+<% php_admin_value.sort_by {|key,value| key}.each do |key,value| -%>
+php_admin_value[<%= key %>] = <%= value %>
+<% end -%>
+<% php_admin_flag.sort_by {|key,flag| key}.each do |key,flag| -%>
+php_admin_flag[<%= key %>] = <%= flag %>
 <% end -%>
 <% php_directives.each do |line| -%>
 <%= line %>

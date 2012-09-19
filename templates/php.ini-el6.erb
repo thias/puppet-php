@@ -638,7 +638,7 @@ html_errors = <%= html_errors %>
 ; Log errors to syslog (Event Log on NT, not valid in Windows 95).
 ;error_log = syslog
 <% if error_log -%>
-error_log <%= error_log %>
+error_log = <%= error_log %>
 <% end -%>
 
 ;;;;;;;;;;;;;;;;;

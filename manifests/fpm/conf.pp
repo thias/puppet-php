@@ -44,7 +44,11 @@ define php::fpm::conf (
     $chdir = false,
     $catch_workers_output = 'no',
     $env = [],
-    $rawenv = [],
+    $env_value = {},
+    $php_value = {},
+    $php_flag = {},
+    $php_admin_value = {},
+    $php_admin_flag = {},
     $php_directives = [],
     $error_log = true
 ) {
