@@ -1,5 +1,5 @@
 name 'thias-php'
-version '0.2.2'
+version '0.2.3'
 source 'git://github.com/thias/puppet-modules/modules/php'
 author 'Matthias Saou'
 license 'Apache 2.0'

@@ -17,6 +17,7 @@
 define php::module::ini (
     $pkgname  = false,
     $settings = {},
+    $zend     = false,
     $ensure   = undef
 ) {
 
