@@ -1,4 +1,6 @@
-php
+# puppet-php
+
+## Overview
 
 Install PHP packages and configure PHP INI files, for using PHP from the CLI,
 the Apache httpd module or FastCGI.
@@ -15,9 +17,9 @@ other distributions and might be possible to port if needed.
 * `php::module` : Definition to manage separately packaged PHP modules
 * `php::module::ini` : Definition to manage the ini files of separate modules
 
-# Sample Usage
+## Examples
 
-Create php.ini files for different uses, but based on the same template :
+Create `php.ini` files for different uses, but based on the same template :
 
     php::ini { '/etc/php.ini':
         display_errors => 'On',
