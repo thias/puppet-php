@@ -7,9 +7,9 @@
 #  include php::cli
 #
 class php::cli ( $inifile = '/etc/php.ini' ) {
-    package { 'php-cli':
-        ensure  => installed,
-        require => File[$inifile],
-    }
+  package { 'php-cli':
+    ensure  => installed,
+    require => File[$inifile],
+  }
 }
 

@@ -15,27 +15,27 @@
 #  php::module::ini { 'xmlwriter': ensure => absent }
 #
 define php::module::ini (
-    $pkgname  = false,
-    $settings = {},
-    $zend     = false,
-    $ensure   = undef
+  $pkgname  = false,
+  $settings = {},
+  $zend     = false,
+  $ensure   = undef
 ) {
 
-    # Strip 'pecl-*' prefix is present, since .ini files don't have it
-    $modname = regsubst($title , '^pecl-', '', G)
+  # Strip 'pecl-*' prefix is present, since .ini files don't have it
+  $modname = regsubst($title , '^pecl-', '', G)
 
-    # Package name
-    $rpmpkgname = $pkgname ? {
-        false   => "php-${title}",
-        default => "php-${pkgname}",
-    }
+  # Package name
+  $rpmpkgname = $pkgname ? {
+    false   => "php-${title}",
+    default => "php-${pkgname}",
+  }
 
-    # INI configuration file
-    file { "/etc/php.d/${modname}.ini":
-        ensure  => $ensure,
-        require => Package[$rpmpkgname],
-        content => template('php/module.ini.erb'),
-    }
+  # INI configuration file
+  file { "/etc/php.d/${modname}.ini":
+    ensure  => $ensure,
+    require => Package[$rpmpkgname],
+    content => template('php/module.ini.erb'),
+  }
 
 }
 
