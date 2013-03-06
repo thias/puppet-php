@@ -19,17 +19,17 @@ listen.allowed_clients = <%= listen_allowed_clients %>
 ; BSD-derived systems allow connections regardless of permissions. 
 ; Default Values: user and group are set as the running user
 ;                 mode is set to 0666
-<% if listen_owner -%>
+<% if @listen_owner -%>
 listen.owner = <%= listen_owner %>
 <% else -%>
 ;listen.owner = nobody
 <% end -%>
-<% if listen_group -%>
+<% if @listen_group -%>
 listen.group = <%= listen_group %>
 <% else -%>
 ;listen.group = nobody
 <% end -%>
-<% if listen_mode -%>
+<% if @listen_mode -%>
 listen.mode = <%= listen_mode %>
 <% else -%>
 ;listen.mode = 0666
@@ -121,7 +121,7 @@ pm.max_requests = <%= pm_max_requests %>
 ;       anything, but it may not be a good idea to use the .php extension or it
 ;       may conflict with a real PHP file.
 ; Default Value: not set 
-<% if pm_status_path -%>
+<% if @pm_status_path -%>
 pm.status_path = <%= pm_status_path %>
 <% else -%>
 ;pm.status_path = /status
@@ -137,7 +137,7 @@ pm.status_path = <%= pm_status_path %>
 ;       anything, but it may not be a good idea to use the .php extension or it
 ;       may conflict with a real PHP file.
 ; Default Value: not set
-<% if ping_path -%>
+<% if @ping_path -%>
 ping.path = <%= ping_path %>
 <% else -%>
 ;ping.path = /ping
@@ -168,7 +168,7 @@ slowlog = <%= slowlog %>
  
 ; Set open file descriptor rlimit.
 ; Default Value: system defined value
-<% if rlimit_files -%>
+<% if @rlimit_files -%>
 rlimit_files = <%= rlimit_files %>
 <% else -%>
 ;rlimit_files = 1024
@@ -177,7 +177,7 @@ rlimit_files = <%= rlimit_files %>
 ; Set max core size rlimit.
 ; Possible Values: 'unlimited' or an integer greater or equal to 0
 ; Default Value: system defined value
-<% if rlimit_core -%>
+<% if @rlimit_core -%>
 rlimit_core = <%= rlimit_core %>
 <% else -%>
 ;rlimit_core = 0
@@ -189,7 +189,7 @@ rlimit_core = <%= rlimit_core %>
 ;       possible. However, all PHP paths will be relative to the chroot
 ;       (error_log, sessions.save_path, ...).
 ; Default Value: not set
-<% if chroot -%>
+<% if @chroot -%>
 chroot = <%= chroot %>
 <% else -%>
 ;chroot = 
@@ -197,7 +197,7 @@ chroot = <%= chroot %>
  
 ; Chdir to this directory at the start. This value must be an absolute path.
 ; Default Value: current directory or / when chroot
-<% if chdir -%>
+<% if @chdir -%>
 chdir = <%= chdir %>
 <% else -%>
 ;chdir = /var/www
