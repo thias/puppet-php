@@ -56,7 +56,7 @@ define php::fpm::conf (
   $pool = $title
 
   # Hack-ish to default to user for group too
-  $group_final = $group ? { false => $user, default => $group }
+  $group_final = $group ? { undef => $user, default => $group }
 
   if ( $ensure == 'absent' ) {
 

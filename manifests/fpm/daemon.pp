@@ -20,9 +20,11 @@ class php::fpm::daemon (
     false   => $log_owner,
     default => $log_group,
   }
+  # Original default is 770, if we get an explicit group, we assume it'll be
+  # for that group to read logs, so restrict in that case.
   $log_dir_mode = $log_group ? {
-    false   => '0755',
-    default => '0775',
+    false   => '0770',
+    default => '0750',
   }
 
   if ( $ensure == 'absent' ) {
