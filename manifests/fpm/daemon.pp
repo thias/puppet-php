@@ -20,6 +20,10 @@ class php::fpm::daemon (
     false   => $log_owner,
     default => $log_group,
   }
+  $log_dir_mode = $log_group ? {
+    false   => '0755',
+    default => '0775',
+  }
 
   if ( $ensure == 'absent' ) {
 
@@ -39,9 +43,10 @@ class php::fpm::daemon (
 
     # When running FastCGI, we don't always use the same user
     file { '/var/log/php-fpm':
-        owner   => $log_owner,
-        group   => $log_group_final,
-        require => Package['php-fpm'],
+      owner   => $log_owner,
+      group   => $log_group_final,
+      mode    => $log_dir_mode,
+      require => Package['php-fpm'],
     }
 
     file { '/etc/php-fpm.conf':

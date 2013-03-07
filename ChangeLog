@@ -1,5 +1,6 @@
 2013-03-06 - 0.2.4
 * Minor clean ups.
+* Make /var/log/php-fpm group writeable when group is different from owner.
 
 2012-12-18 - 0.2.3
 * Add support for zend extensions.
