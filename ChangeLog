@@ -1,3 +1,5 @@
+* Stop ugly group/mode thing for php-fpm log, use $log_dir_mode instead.
+
 2013-03-06 - 0.2.4
 * Minor clean ups.
 * Make /var/log/php-fpm group read-only when group is different from owner.

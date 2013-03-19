@@ -12,19 +12,14 @@ class php::fpm::daemon (
   $emergency_restart_interval = '0',
   $process_control_timeout = '0',
   $log_owner = 'root',
-  $log_group = false
+  $log_group = false,
+  $log_dir_mode = '0770'
 ) {
 
   # Hack-ish to default to user for group too
   $log_group_final = $log_group ? {
     false   => $log_owner,
     default => $log_group,
-  }
-  # Original default is 770, if we get an explicit group, we assume it'll be
-  # for that group to read logs, so restrict in that case.
-  $log_dir_mode = $log_group ? {
-    false   => '0770',
-    default => '0750',
   }
 
   if ( $ensure == 'absent' ) {
