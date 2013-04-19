@@ -30,12 +30,12 @@ DirectoryIndex index.php
 # files as PHP source code:
 #
 #AddType application/x-httpd-php-source .phps
-<% if File.dirname(inifile) != '/etc' -%>
+<% if File.dirname(@inifile) != '/etc' -%>
 
 #
 # Use a non-default php.ini file location.
 #
 <IfModule mod_env.c>
-PHPINIDir <%= File.dirname(inifile) %>
+PHPINIDir <%= File.dirname(@inifile) %>
 </IfModule>
 <% end -%>

@@ -1,4 +1,6 @@
+2013-04-19 - 0.2.5
 * Stop ugly group/mode thing for php-fpm log, use $log_dir_mode instead.
+* Use @varname syntax in templates to silence puppet 3.2 warnings.
 
 2013-03-06 - 0.2.4
 * Minor clean ups.
