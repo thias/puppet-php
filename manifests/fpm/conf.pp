@@ -53,6 +53,8 @@ define php::fpm::conf (
   $error_log = true
 ) {
 
+  require php::params
+
   $pool = $title
 
   # Hack-ish to default to user for group too
@@ -60,15 +62,15 @@ define php::fpm::conf (
 
   if ( $ensure == 'absent' ) {
 
-    file { "/etc/php-fpm.d/${pool}.conf":
-      notify => Service['php-fpm'],
+    file { "${php::params::fpm_pool_dir}/${pool}.conf":
+      notify => Service[$php::params::fpm_service_name],
       ensure => absent,
     }
 
   } else {
 
-    file { "/etc/php-fpm.d/${pool}.conf":
-      notify  => Service['php-fpm'],
+    file { "${php::params::fpm_pool_dir}/${pool}.conf":
+      notify  => Service[$php::params::fpm_service_name],
       content => template('php/fpm/pool.conf.erb'),
       owner   => 'root',
       group   => 'root',
