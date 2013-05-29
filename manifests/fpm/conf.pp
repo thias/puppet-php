@@ -62,8 +62,8 @@ define php::fpm::conf (
 
   if ( $ensure == 'absent' ) {
 
-    file { "/etc/php-fpm.d/${pool}.conf":
-      notify => Service[$fpm_service_name],
+    file { "${php::params::fpm_pool_dir}/${pool}.conf":
+      notify => Service[$php::params::fpm_service_name],
       ensure => absent,
     }
 

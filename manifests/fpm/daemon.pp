@@ -34,7 +34,6 @@ class php::fpm::daemon (
       ensure    => running,
       enable    => true,
       restart   => "service ${fpm_service_name} reload",
-      # restart   => "/sbin/service php-fpm reload",
       hasstatus => true,
       require   => Package[$fpm_package_name],
     }
@@ -47,7 +46,7 @@ class php::fpm::daemon (
       require => Package[$fpm_package_name],
     }
 
-    file { '/etc/php-fpm.conf':
+    file { "${fpm_conf_dir}/php-fpm.conf":
       notify  => Service[$fpm_service_name],
       content => template('php/fpm/php-fpm.conf.erb'),
       owner   => 'root',
