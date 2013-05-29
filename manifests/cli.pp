@@ -6,8 +6,10 @@
 # Sample Usage:
 #  include php::cli
 #
-class php::cli ( $inifile = '/etc/php.ini' ) {
-  package { 'php-cli':
+class php::cli(
+  $inifile = '/etc/php.ini'
+) inherits php::params {
+  package { $cli_package_name:
     ensure  => installed,
     require => File[$inifile],
   }
