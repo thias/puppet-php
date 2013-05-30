@@ -8,7 +8,7 @@
 ; Include one or more files. If glob(3) exists, it is used to include a bunch of
 ; files from a glob(3) pattern. This directive can be used everywhere in the
 ; file.
-include=/etc/php-fpm.d/*.conf
+include=<%= fpm_pool_dir %>/*.conf
 
 ;;;;;;;;;;;;;;;;;;
 ; Global Options ;
@@ -17,11 +17,11 @@ include=/etc/php-fpm.d/*.conf
 [global]
 ; Pid file
 ; Default Value: none
-pid = /var/run/php-fpm/php-fpm.pid
+pid = <%= fpm_pid %>
 
 ; Error log file
 ; Default Value: /var/log/php-fpm.log
-error_log = /var/log/php-fpm/error.log
+error_log = <%= fpm_error_log %>
 
 ; Log level
 ; Possible Values: alert, error, warning, notice, debug
@@ -34,7 +34,7 @@ log_level = <%= @log_level %>
 ; Default Value: 0
 emergency_restart_threshold = <%= @emergency_restart_threshold %>
 
-; Interval of time used by emergency_restart_interval to determine when 
+; Interval of time used by emergency_restart_interval to determine when
 ; a graceful restart will be initiated.  This can be useful to work around
 ; accidental corruptions in an accelerator's shared memory.
 ; Available Units: s(econds), m(inutes), h(ours), or d(ays)
@@ -53,8 +53,8 @@ process_control_timeout = <%= @process_control_timeout %>
 ;daemonize = yes
 
 ;;;;;;;;;;;;;;;;;;;;
-; Pool Definitions ; 
+; Pool Definitions ;
 ;;;;;;;;;;;;;;;;;;;;
 
-; See /etc/php-fpm.d/*.conf
+; See <%= fpm_pool_dir %>/*.conf
 

@@ -14,7 +14,7 @@ class php::fpm::daemon (
   $log_owner = 'root',
   $log_group = false,
   $log_dir_mode = '0770'
-) {
+) inherits php::params {
 
   # Hack-ish to default to user for group too
   $log_group_final = $log_group ? {
@@ -24,18 +24,18 @@ class php::fpm::daemon (
 
   if ( $ensure == 'absent' ) {
 
-    package { 'php-fpm': ensure => absent }
+    package { $fpm_package_name: ensure => absent }
 
   } else {
 
-    package { 'php-fpm': ensure => installed }
+    package { $fpm_package_name: ensure => installed }
 
-    service { 'php-fpm':
+    service { $fpm_service_name:
       ensure    => running,
       enable    => true,
-      restart   => '/sbin/service php-fpm reload',
+      restart   => "service ${fpm_service_name} reload",
       hasstatus => true,
-      require   => Package['php-fpm'],
+      require   => Package[$fpm_package_name],
     }
 
     # When running FastCGI, we don't always use the same user
@@ -43,11 +43,11 @@ class php::fpm::daemon (
       owner   => $log_owner,
       group   => $log_group_final,
       mode    => $log_dir_mode,
-      require => Package['php-fpm'],
+      require => Package[$fpm_package_name],
     }
 
-    file { '/etc/php-fpm.conf':
-      notify  => Service['php-fpm'],
+    file { "${fpm_conf_dir}/php-fpm.conf":
+      notify  => Service[$fpm_service_name],
       content => template('php/fpm/php-fpm.conf.erb'),
       owner   => 'root',
       group   => 'root',
