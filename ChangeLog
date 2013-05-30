@@ -1,3 +1,6 @@
+2013-05-30 - 0.3.0
+* Add support for Debian OS family (Scott Lewis).
+
 2013-04-19 - 0.2.5
 * Stop ugly group/mode thing for php-fpm log, use $log_dir_mode instead.
 * Use @varname syntax in templates to silence puppet 3.2 warnings.
