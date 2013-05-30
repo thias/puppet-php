@@ -6,8 +6,9 @@ Install PHP packages and configure PHP INI files, for using PHP from the CLI,
 the Apache httpd module or FastCGI.
 
 The module is very Red Hat Enterprise Linux focused, as the defaults try to
-change everything in ways which are typical for RHEL, but should also work on
-other distributions and might be possible to port if needed.
+change everything in ways which are typical for RHEL, but it also works on
+Debian based distributions (such as Ubuntu), and support for others should
+be easy to add.
 
 * `php::cli` : Simple class to install PHP's Command Line Interface
 * `php::fpm::daemon` : Simple class to install PHP's FastCGI Process Manager
@@ -22,13 +23,13 @@ other distributions and might be possible to port if needed.
 Create `php.ini` files for different uses, but based on the same template :
 
     php::ini { '/etc/php.ini':
-        display_errors => 'On',
-        memory_limit   => '256M',
+      display_errors => 'On',
+      memory_limit   => '256M',
     }
     php::ini { '/etc/httpd/conf/php.ini':
-        mail_add_x_header => 'Off',
-        # For the parent directory
-        require => Package['httpd'],
+      mail_add_x_header => 'Off',
+      # For the parent directory
+      require => Package['httpd'],
     }
 
 Install the PHP command line interface :
@@ -48,11 +49,11 @@ Configure PHP modules, which must be installed with php::module first :
 
     php::module { [ 'pecl-apc', 'xml' ]: }
     php::module::ini { 'pecl-apc':
-        settings => {
-            'apc.enabled'      => '1',
-            'apc.shm_segments' => '1',
-            'apc.shm_size'     => '64',
-        }
+      settings => {
+        'apc.enabled'      => '1',
+        'apc.shm_segments' => '1',
+        'apc.shm_size'     => '64',
+      }
     }
     php::module::ini { 'xmlreader': pkgname => 'xml' }
     php::module::ini { 'xmlwriter': ensure => absent }
@@ -62,24 +63,24 @@ Note that we reuse the 'www' name to overwrite the example configuration :
 
     include php::fpm::daemon
     php::fpm::conf { 'www':
-        listen  => '127.0.0.1:9001',
-        user    => 'nginx',
-        # For the user to exist
-        require => Package['nginx'],
+      listen  => '127.0.0.1:9001',
+      user    => 'nginx',
+      # For the user to exist
+      require => Package['nginx'],
     }
 
 Then from the nginx configuration :
 
     # PHP FastCGI backend
     upstream wwwbackend {
-        server 127.0.0.1:9001;
+      server 127.0.0.1:9001;
     }
     # Proxy PHP requests to the FastCGI backend
     location ~ \.php$ {
-        # Don't bother PHP if the file doesn't exist, return the built in
-        # 404 page (this also avoids "No input file specified" error pages)
-        if (!-f $request_filename) { return 404; }
-        include /etc/nginx/fastcgi.conf;
-        fastcgi_pass wwwbackend;
+      # Don't bother PHP if the file doesn't exist, return the built in
+      # 404 page (this also avoids "No input file specified" error pages)
+      if (!-f $request_filename) { return 404; }
+      include /etc/nginx/fastcgi.conf;
+      fastcgi_pass wwwbackend;
     }
 
