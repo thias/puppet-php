@@ -1,3 +1,5 @@
+* Add phar.readonly php.ini option support.
+
 2013-05-30 - 0.3.1
 * Update mod_php support to also work with Debian OS family.
 

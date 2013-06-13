@@ -72,6 +72,7 @@ define php::ini (
   $allow_url_include          = 'Off',
   $default_socket_timeout     = '60',
   $date_timezone              = false,
+  $phar_readonly              = undef,
   $sendmail_path              = '/usr/sbin/sendmail -t -i',
   $mail_add_x_header          = 'On',
   $sql_safe_mode              = 'Off',
