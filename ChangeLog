@@ -1,4 +1,7 @@
+2013-06-13 - 0.3.2
 * Add phar.readonly php.ini option support.
+* Use undef for parameter defaults when not being used in php.ini.
+* Remove the commented out defaults in php.ini for parameters being set.
 
 2013-05-30 - 0.3.1
 * Update mod_php support to also work with Debian OS family.

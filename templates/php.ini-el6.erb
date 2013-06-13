@@ -406,9 +406,10 @@ disable_classes = <%= @disable_classes %>
 ; being interrupted by the user or a browser timing out. PHP's default behavior
 ; is to disable this feature.
 ; http://www.php.net/manual/en/misc.configuration.php#ini.ignore-user-abort
-;ignore_user_abort = On
 <% if @ignore_user_abort -%>
 ignore_user_abort = <%= @ignore_user_abort %>
+<% else -%>
+;ignore_user_abort = On
 <% end -%>
 
 ; Determines the size of the realpath cache to be used by PHP. This value should
@@ -633,12 +634,13 @@ html_errors = <%= @html_errors %>
 ; Log errors to specified file. PHP's default behavior is to leave this value
 ; empty.
 ; http://www.php.net/manual/en/errorfunc.configuration.php#ini.error-log
+<% if @error_log -%>
+error_log = <%= @error_log %>
+<% else -%>
 ; Example:
 ;error_log = php_errors.log
 ; Log errors to syslog (Event Log on NT, not valid in Windows 95).
 ;error_log = syslog
-<% if @error_log -%>
-error_log = <%= @error_log %>
 <% end -%>
 
 ;;;;;;;;;;;;;;;;;
@@ -776,9 +778,10 @@ default_mimetype = "<%= @default_mimetype %>"
 
 ; PHP's default character set is set to empty.
 ; http://www.php.net/manual/en/ini.core.php#ini.default-charset
-;default_charset = "iso-8859-1"
 <% if @default_charset -%>
 default_charset = <%= @default_charset %>
+<% else -%>
+;default_charset = "iso-8859-1"
 <% end -%>
 
 ; Always populate the $HTTP_RAW_POST_DATA variable. PHP's default behavior is
@@ -955,9 +958,10 @@ default_socket_timeout = <%= @default_socket_timeout %>
 [Date]
 ; Defines the default timezone used by the date functions
 ; http://www.php.net/manual/en/datetime.configuration.php#ini.date.timezone
-;date.timezone =
 <% if @date_timezone -%>
 date.timezone = <%= @date_timezone %>
+<% else -%>
+;date.timezone =
 <% end -%>
 
 ; http://www.php.net/manual/en/datetime.configuration.php#ini.date.default-latitude
@@ -1013,9 +1017,10 @@ date.timezone = <%= @date_timezone %>
 
 [Phar]
 ; http://www.php.net/manual/en/phar.configuration.php#ini.phar.readonly
-;phar.readonly = On
 <% if @phar_readonly -%>
 phar.readonly = <%= @phar_readonly %>
+<% else -%>
+;phar.readonly = On
 <% end -%>
 
 ; http://www.php.net/manual/en/phar.configuration.php#ini.phar.require-hash
@@ -1248,9 +1253,10 @@ bcmath.scale = 0
 
 [browscap]
 ; http://www.php.net/manual/en/misc.configuration.php#ini.browscap
-;browscap = extra/browscap.ini
-<% if @browscap %>
+<% if @browscap -%>
 browscap = <%= @browscap %>
+<% else -%>
+;browscap = extra/browscap.ini
 <% end -%>
 
 [Session]
