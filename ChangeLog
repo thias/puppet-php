@@ -1,3 +1,6 @@
+2013-05-30 - 0.3.1
+* Update mod_php support to also work with Debian OS family.
+
 2013-05-30 - 0.3.0
 * Add support for Debian OS family (Scott Lewis).
 
