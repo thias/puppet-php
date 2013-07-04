@@ -13,7 +13,12 @@
 #      }
 #  }
 #  php::module::ini { 'xmlwriter': ensure => absent }
-#
+#  php::module::ini { 'pecl-xdebug':
+#      zend     => true,
+#      settings => {
+#          'xdebug.remote_enable' => '1',
+#      }
+#  }
 define php::module::ini (
   $pkgname  = false,
   $settings = {},
@@ -30,12 +35,18 @@ define php::module::ini (
     default => "php-${pkgname}",
   }
 
+  # Extension directory where modules are located
+  $zend_path = $zend ? {
+    true    => $php::params::extension_dir,
+    false   => '',
+    default => $zend,
+  }
+
   # INI configuration file
   file { "/etc/php.d/${modname}.ini":
     ensure  => $ensure,
     require => Package[$rpmpkgname],
     content => template('php/module.ini.erb'),
   }
-
 }
 
