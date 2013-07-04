@@ -2,6 +2,6 @@
 # to be installed.
 Facter.add("php_extension_dir") do
   setcode do
-    Facter::Util::Resolution.exec('/usr/bin/php-config --extension-dir')
+    Facter::Util::Resolution.exec('php -r "echo ini_get(\'extension_dir\');"')
   end
 end
