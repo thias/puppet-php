@@ -15,6 +15,21 @@ class php::params {
       $httpd_conf_dir = '/etc/apache2/conf.d'
     }
 
+    'RedHat': {
+      $php_package_name = 'php'
+      $common_package_name = 'php-common'
+      $cli_package_name = 'php-cli'
+      $fpm_package_name = 'php-fpm'
+      $fpm_service_name = 'php-fpm'
+      $fpm_pool_dir = '/etc/php/fpm/pool.d'
+      $fpm_conf_dir = '/etc/php/fpm'
+      $fpm_error_log = '/var/log/php-fpm.log'
+      $fpm_pid = '/var/run/php-fpm.pid'
+      $httpd_package_name = 'apache2'
+      $httpd_service_name = 'apache2'
+      $httpd_conf_dir = '/etc/apache2/conf.d'
+    }
+
     default: {
       $php_package_name = 'php'
       $common_package_name = 'php-common'
