@@ -95,6 +95,8 @@ define php::ini (
   $session_bug_compat_warn    = 'Off',
   $session_referer_check      = '',
   $session_hash_function      = '0',
+  $session_entropy_file       = '/dev/urandom',
+  $session_entropy_length     = '16',
   $session_hash_bits_per_character = '5',
   $url_rewriter_tags          = 'a=href,area=href,frame=src,input=src,form=fakeentry'
 ) {
