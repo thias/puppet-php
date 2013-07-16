@@ -24,7 +24,7 @@ class php::params {
       $fpm_pool_dir = '/etc/php-fpm.d'
       $fpm_conf_dir = '/etc'
       $fpm_error_log = '/var/log/php-fpm/error.log'
-      $fpm_pid = '/var/run/php-fpm.pid'
+      $fpm_pid = '/var/run/php-fpm/php-fpm.pid'
       $httpd_package_name = 'httpd'
       $httpd_service_name = 'httpd'
       $httpd_conf_dir = '/etc/httpd/conf.d'
