@@ -1,3 +1,5 @@
+* Use @varname syntax in fpm templates too.
+
 2013-06-13 - 0.3.2
 * Add phar.readonly php.ini option support.
 * Use undef for parameter defaults when not being used in php.ini.
