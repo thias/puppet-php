@@ -26,8 +26,8 @@ define php::module::ini (
 
   # Package name
   $rpmpkgname = $pkgname ? {
-    false   => "php-${title}",
-    default => "php-${pkgname}",
+    false   => "${php::params::php_package_name}-${title}",
+    default => "${php::params::php_package_name}-${pkgname}",
   }
 
   # INI configuration file
