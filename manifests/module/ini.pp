@@ -31,7 +31,7 @@ define php::module::ini (
   }
 
   # INI configuration file
-  file { "/etc/php.d/${modname}.ini":
+  file { "${php::params::php_conf_dir}/${modname}.ini":
     ensure  => $ensure,
     require => Package[$rpmpkgname],
     content => template('php/module.ini.erb'),
