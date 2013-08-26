@@ -31,10 +31,16 @@ define php::module::ini (
   }
 
   # INI configuration file
-  file { "/etc/php.d/${modname}.ini":
-    ensure  => $ensure,
-    require => Package[$rpmpkgname],
-    content => template('php/module.ini.erb'),
+  if $ensure == 'absent' {
+    file { "/etc/php.d/${modname}.ini":
+      ensure => absent,
+    }
+  } else {
+    file { "/etc/php.d/${modname}.ini":
+      ensure  => $ensure,
+      require => Package[$rpmpkgname],
+      content => template('php/module.ini.erb'),
+    }
   }
 
 }

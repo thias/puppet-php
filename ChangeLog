@@ -1,4 +1,5 @@
 * Use @varname syntax in fpm templates too.
+* Fix php::module::ini when ensure is absent.
 
 2013-06-13 - 0.3.2
 * Add phar.readonly php.ini option support.
