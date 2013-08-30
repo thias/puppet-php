@@ -1,5 +1,8 @@
+2013-08-30 - 0.3.3
 * Use @varname syntax in fpm templates too.
 * Fix php::module::ini when ensure is absent.
+* Fix directory create for FPM (Erik Webb).
+* Fix conf.d directory location for Debian (Erik Webb).
 
 2013-06-13 - 0.3.2
 * Add phar.readonly php.ini option support.
