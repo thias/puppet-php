@@ -96,7 +96,8 @@ define php::ini (
   $session_referer_check      = '',
   $session_hash_function      = '0',
   $session_hash_bits_per_character = '5',
-  $url_rewriter_tags          = 'a=href,area=href,frame=src,input=src,form=fakeentry'
+  $url_rewriter_tags          = 'a=href,area=href,frame=src,input=src,form=fakeentry',
+  $upload_tmp_dir             = undef
 ) {
   include php::common
   file { $title:
