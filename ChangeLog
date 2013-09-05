@@ -1,4 +1,4 @@
-2013-09-05 - 0.3.4
+2013-09-05 - 0.3.5
 * Add upload_tmp_dir php.ini option support (Andy Shinn).
 * Add soap related php.ini options support (Flavien Binet).
 
