@@ -1,3 +1,6 @@
+2013-09-30 - 0.3.6
+* Enable using a custom template for php.ini (Nick Schuch).
+
 2013-09-05 - 0.3.5
 * Add upload_tmp_dir php.ini option support (Andy Shinn).
 * Add soap related php.ini options support (Flavien Binet).
