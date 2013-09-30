@@ -12,6 +12,7 @@
 #  }
 #
 define php::ini (
+  $template                   = 'php/php.ini-el6.erb',
   # php.ini options in the order they appear in the original file
   $user_ini_filename          = '.user.ini',
   $user_ini_cache_ttl         = '300',
@@ -104,7 +105,7 @@ define php::ini (
 ) {
   include php::common
   file { $title:
-    content => template('php/php.ini-el6.erb'),
+    content => template($template),
   }
 }
 
