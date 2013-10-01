@@ -11,7 +11,14 @@
 define php::module ( $ensure = installed ) {
   require php::params
 
-  package { "${php::params::php_package_name}-${title}":
+  # Manage the incorrect named php-apc package under Debians
+  if ($title == 'apc') {
+    $package = $php::params::php_apc_package_name
+  } else { 
+    $package = "${php::params::php_package_name}-${title}"
+  }
+  
+  package { $package:
     ensure => $ensure,
   }
 }
