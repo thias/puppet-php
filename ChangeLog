@@ -1,3 +1,6 @@
+2013-10-01 - 0.3.7
+* Manage the incorrectly named php-apc package under Debian (Jeroen Moors).
+
 2013-09-30 - 0.3.6
 * Enable using a custom template for php.ini (Nick Schuch).
 
