@@ -1,3 +1,5 @@
+* Fix the package name for APC on RHEL (Pan Luo).
+
 2013-10-01 - 0.3.7
 * Manage the incorrectly named php-apc package under Debian (Jeroen Moors).
 
