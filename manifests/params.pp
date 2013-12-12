@@ -19,7 +19,7 @@ class php::params {
 
     default: {
       $php_package_name = 'php'
-      $php_apc_package_name = 'php-apc'
+      $php_apc_package_name = 'php-pecl-apc'
       $common_package_name = 'php-common'
       $cli_package_name = 'php-cli'
       $php_conf_dir = '/etc/php.d'
