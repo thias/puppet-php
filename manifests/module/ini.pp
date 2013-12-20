@@ -22,7 +22,7 @@ define php::module::ini (
 ) {
 
   # Strip 'pecl-*' prefix is present, since .ini files don't have it
-  $modname = regsubst($title , '^pecl-', '', G)
+  $modname = regsubst($title , '^pecl-', '', 'G')
 
   
   # Handle naming issue of php-apc package on Debian
