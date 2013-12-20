@@ -1,4 +1,6 @@
+2013-12-20 - 0.3.8
 * Fix the package name for APC on RHEL (Pan Luo).
+* Fix the regsubst flag for 'pecl-' prefix removal (Pan Luo).
 
 2013-10-01 - 0.3.7
 * Manage the incorrectly named php-apc package under Debian (Jeroen Moors).
