@@ -63,8 +63,9 @@ define php::fpm::conf (
   if ( $ensure == 'absent' ) {
 
     file { "${php::params::fpm_pool_dir}/${pool}.conf":
-      notify => Service[$php::params::fpm_service_name],
-      ensure => absent,
+      notify  => Service[$php::params::fpm_service_name],
+      ensure  => absent,
+      require => Package[$php::params::fpm_package_name],
     }
 
   } else {
@@ -75,6 +76,7 @@ define php::fpm::conf (
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
+      require => Package[$php::params::fpm_package_name],
     }
 
   }

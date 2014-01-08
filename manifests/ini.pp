@@ -12,6 +12,7 @@
 #  }
 #
 define php::ini (
+  $template                   = 'php/php.ini-el6.erb',
   # php.ini options in the order they appear in the original file
   $user_ini_filename          = '.user.ini',
   $user_ini_cache_ttl         = '300',
@@ -36,6 +37,7 @@ define php::ini (
   $expose_php                 = 'On',
   $max_execution_time         = '30',
   $max_input_time             = '60',
+  $max_input_vars             = '1000',
   $memory_limit               = '128M',
   $error_reporting            = 'E_ALL & ~E_DEPRECATED',
   $display_errors             = 'Off',
@@ -67,7 +69,9 @@ define php::ini (
   $user_dir                   = '',
   $enable_dl                  = 'Off',
   $file_uploads               = 'On',
+  $upload_tmp_dir             = undef,
   $upload_max_filesize        = '2M',
+  $max_file_uploads           = '20',
   $allow_url_fopen            = 'On',
   $allow_url_include          = 'Off',
   $default_socket_timeout     = '60',
@@ -98,11 +102,14 @@ define php::ini (
   $session_entropy_file       = '/dev/urandom',
   $session_entropy_length     = '16',
   $session_hash_bits_per_character = '5',
-  $url_rewriter_tags          = 'a=href,area=href,frame=src,input=src,form=fakeentry'
+  $url_rewriter_tags          = 'a=href,area=href,frame=src,input=src,form=fakeentry',
+  $soap_wsdl_cache_enabled    = '1',
+  $soap_wsdl_cache_dir        = '/tmp',
+  $soap_wsdl_cache_ttl        = '86400'
 ) {
   include php::common
   file { $title:
-    content => template('php/php.ini-el6.erb'),
+    content => template($template),
   }
 }
 

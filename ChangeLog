@@ -1,3 +1,25 @@
+* Update the el6 ini to add max_input_vars and max_file_uploads.
+
+2013-12-20 - 0.3.8
+* Fix the package name for APC on RHEL (Pan Luo).
+* Fix the regsubst flag for 'pecl-' prefix removal (Pan Luo).
+
+2013-10-01 - 0.3.7
+* Manage the incorrectly named php-apc package under Debian (Jeroen Moors).
+
+2013-09-30 - 0.3.6
+* Enable using a custom template for php.ini (Nick Schuch).
+
+2013-09-05 - 0.3.5
+* Add upload_tmp_dir php.ini option support (Andy Shinn).
+* Add soap related php.ini options support (Flavien Binet).
+
+2013-08-30 - 0.3.3
+* Use @varname syntax in fpm templates too.
+* Fix php::module::ini when ensure is absent.
+* Fix directory create for FPM (Erik Webb).
+* Fix conf.d directory location for Debian (Erik Webb).
+
 2013-06-13 - 0.3.2
 * Add phar.readonly php.ini option support.
 * Use undef for parameter defaults when not being used in php.ini.
