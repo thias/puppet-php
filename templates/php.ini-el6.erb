@@ -1412,10 +1412,10 @@ session.entropy_length = 0
 ; Specified here to create the session id.
 ; http://www.php.net/manual/en/session.configuration.php#ini.session.entropy-file
 ;session.entropy_file = /dev/urandom
-session.entropy_file =
+session.entropy_file = <%= @session_entropy_file %>
 
 ; http://www.php.net/manual/en/session.configuration.php#ini.session.entropy-length
-;session.entropy_length = 16
+session.entropy_length = <%= @session_entropy_length %>
 
 ; Set to {nocache,private,public,} to determine HTTP caching aspects
 ; or leave this empty to avoid sending anti-caching headers.
