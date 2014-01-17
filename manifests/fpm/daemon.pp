@@ -22,14 +22,9 @@ class php::fpm::daemon (
     default => $log_group,
   }
 
-  if ( $ensure == 'absent' ) {
+  package { $fpm_package_name: ensure => $ensure }
 
-    package { $fpm_package_name: ensure => absent }
-
-  } else {
-
-    package { $fpm_package_name: ensure => installed }
-
+  if ( $ensure != 'absent' ) {
     service { $fpm_service_name:
       ensure    => running,
       enable    => true,
