@@ -7,9 +7,9 @@
 #  include php::cli
 #
 class php::cli(
+  $ensure  = 'installed',
   $inifile = '/etc/php.ini',
-  $ensure = 'installed',
-) inherits php::params {
+) inherits ::php::params {
   package { $cli_package_name:
     ensure  => $ensure,
     require => File[$inifile],

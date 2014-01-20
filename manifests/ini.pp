@@ -12,6 +12,7 @@
 #  }
 #
 define php::ini (
+  $ensure                     = undef,
   $template                   = 'php/php.ini-el6.erb',
   # php.ini options in the order they appear in the original file
   $user_ini_filename          = '.user.ini',
@@ -103,11 +104,15 @@ define php::ini (
   $url_rewriter_tags          = 'a=href,area=href,frame=src,input=src,form=fakeentry',
   $soap_wsdl_cache_enabled    = '1',
   $soap_wsdl_cache_dir        = '/tmp',
-  $soap_wsdl_cache_ttl        = '86400'
+  $soap_wsdl_cache_ttl        = '86400',
 ) {
-  include php::common
+
+  include '::php::common'
+
   file { $title:
+    ensure  => $ensure,
     content => template($template),
   }
+
 }
 

@@ -5,6 +5,6 @@
 #
 # We can't use a virtual resource, since we have no central place to put it.
 #
-class php::common inherits php::params {
-  package { $common_package_name: ensure => installed }
+class php::common inherits ::php::params {
+  package { $common_package_name: ensure => 'installed' }
 }

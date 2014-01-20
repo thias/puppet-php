@@ -16,7 +16,6 @@ class php::params {
       $httpd_service_name = 'apache2'
       $httpd_conf_dir = '/etc/apache2/conf.d'
     }
-
     default: {
       $php_package_name = 'php'
       $php_apc_package_name = 'php-pecl-apc'

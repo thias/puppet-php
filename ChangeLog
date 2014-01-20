@@ -1,4 +1,6 @@
 * Update the el6 ini to add max_input_vars and max_file_uploads.
+* Allow specifying php version as the 'ensure' parameter (#17, MasonM).
+* Cosmetic updates and fixes in the manifests.
 
 2013-12-20 - 0.3.8
 * Fix the package name for APC on RHEL (Pan Luo).

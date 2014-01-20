@@ -8,8 +8,11 @@
 #  php::module { 'odbc': ensure => absent }
 #  php::module { 'pecl-apc': }
 #
-define php::module ( $ensure = installed ) {
-  require php::params
+define php::module (
+  $ensure = installed,
+) {
+
+  include '::php::params'
 
   # Manage the incorrect named php-apc package under Debians
   if ($title == 'apc') {

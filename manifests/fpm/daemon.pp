@@ -6,15 +6,15 @@
 #  include php::fpm::daemon
 #
 class php::fpm::daemon (
-  $ensure = 'present',
-  $log_level = 'notice',
+  $ensure                      = 'present',
+  $log_level                   = 'notice',
   $emergency_restart_threshold = '0',
-  $emergency_restart_interval = '0',
-  $process_control_timeout = '0',
-  $log_owner = 'root',
-  $log_group = false,
-  $log_dir_mode = '0770'
-) inherits php::params {
+  $emergency_restart_interval  = '0',
+  $process_control_timeout     = '0',
+  $log_owner                   = 'root',
+  $log_group                   = false,
+  $log_dir_mode                = '0770',
+) inherits ::php::params {
 
   # Hack-ish to default to user for group too
   $log_group_final = $log_group ? {
