@@ -7,9 +7,12 @@
 #  php::ini { '/etc/php-httpd.ini': }
 #  class { 'php::mod_php5': inifile => '/etc/php-httpd.ini' }
 #
-class php::mod_php5 ( $inifile = '/etc/php.ini' ) inherits php::params {
+class php::mod_php5 (
+  $inifile = '/etc/php.ini',
+  $ensure = 'installed',
+) inherits php::params {
   package { $php_package_name:
-    ensure  => installed,
+    ensure  => $ensure,
     require => File[$inifile],
     notify  => Service[$httpd_service_name],
   }

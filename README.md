@@ -32,9 +32,14 @@ Create `php.ini` files for different uses, but based on the same template :
       require => Package['httpd'],
     }
 
-Install the PHP command line interface :
+Install the latest version of the PHP command line interface in your OS's
+package manager (e.g. Yum for RHEL):
 
     include php::cli
+
+Install version 5.3.3 of the PHP command line interface ::
+
+    class { 'php::cli': ensure => '5.3.3' }
 
 Install the PHP Apache httpd module, using its own php configuration file
 (you will need mod_env in apache for this to work) :
