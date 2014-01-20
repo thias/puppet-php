@@ -1,3 +1,4 @@
+2014-01-20 - 0.3.9
 * Update the el6 ini to add max_input_vars and max_file_uploads.
 * Allow specifying php version as the 'ensure' parameter (#17, MasonM).
 * Cosmetic updates and fixes in the manifests.
