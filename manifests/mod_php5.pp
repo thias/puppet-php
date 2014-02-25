@@ -10,6 +10,7 @@
 class php::mod_php5 (
   $ensure  = $php::params::mod_php_ensure,
   $inifile = $php::params::mod_php_inifile,
+  $php_package_name = $php::params::php_package_name,
   $httpd_conf_dir = $php::params::httpd_conf_dir,
   $httpd_package_name = $php::params:httpd_package_name,
   $httpd_service_name = $php::params:httpd_service_name,
