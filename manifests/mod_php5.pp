@@ -12,10 +12,10 @@ class php::mod_php5 (
   $inifile = $php::params::mod_php_inifile,
   $php_package_name = $php::params::php_package_name,
   $httpd_conf_dir = $php::params::httpd_conf_dir,
-  $httpd_package_name = $php::params:httpd_package_name,
-  $httpd_service_name = $php::params:httpd_service_name,
-  $manage_httpd_php_conf = $php::params:manage_httpd_php_conf,
-  $notify_httpd_service = $php::params:mod_ini_notify_httpd,
+  $httpd_package_name = $php::params::httpd_package_name,
+  $httpd_service_name = $php::params::httpd_service_name,
+  $manage_httpd_php_conf = $php::params::manage_httpd_php_conf,
+  $notify_httpd_service = $php::params::mod_ini_notify_httpd,
 ) inherits ::php::params {
 
   package { $php_package_name:
