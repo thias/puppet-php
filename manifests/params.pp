@@ -3,6 +3,8 @@ class php::params {
     'Debian': {
       $php_package_name = 'php5'
       $php_apc_package_name = 'php-apc'
+      $php_memcache_package_name = 'php5-memcache'
+      $php_memcached_package_name = 'php5-memcached'
       $common_package_name = 'php5-common'
       $cli_package_name = 'php5-cli'
       $php_conf_dir = '/etc/php5/conf.d'
@@ -19,6 +21,8 @@ class php::params {
     default: {
       $php_package_name = 'php'
       $php_apc_package_name = 'php-pecl-apc'
+      $php_memcache_package_name = 'php-pecl-memcache'
+      $php_memcached_package_name = 'php-pecl-memcached'
       $common_package_name = 'php-common'
       $cli_package_name = 'php-cli'
       $php_conf_dir = '/etc/php.d'

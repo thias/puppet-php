@@ -24,10 +24,16 @@ define php::module::ini (
   # Strip 'pecl-*' prefix is present, since .ini files don't have it
   $modname = regsubst($title , '^pecl-', '', 'G')
 
-  # Handle naming issue of php-apc package on Debian
+  # Handle naming issue of php-apc and php-memcache(d) packages on Debian
   if ($modname == 'apc') {
     # Package name
     $rpmpkgname = $php::params::php_apc_package_name
+  } elsif ($modname == 'memcache') {
+    # Package name
+    $rpmpkgname = $php::params::php_memcache_package_name
+  } elsif ($modname == 'memcached') {
+    # Package name
+    $rpmpkgname = $php::params::php_memcached_package_name
   } else {
     # Package name
     $rpmpkgname = $pkgname ? {
