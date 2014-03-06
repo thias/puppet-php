@@ -4,7 +4,7 @@
 # See also php::module for package installation.
 #
 # Sample Usage :
-#  php::module::ini { 'xmlreader': pkgname => 'xml' }
+#  php::module::ini { 'xmlreader': pkgname => 'php-xml' }
 #  php::module::ini { 'pecl-apc':
 #      settings => {
 #          'apc.enabled'      => '1',
@@ -24,17 +24,10 @@ define php::module::ini (
   # Strip 'pecl-*' prefix is present, since .ini files don't have it
   $modname = regsubst($title , '^pecl-', '', 'G')
 
-  # Handle naming issue of php-apc package on Debian
-  if ($modname == 'apc') {
-    # Package name
-    $rpmpkgname = $php::params::php_apc_package_name
-  } else {
-    # Package name
-    $rpmpkgname = $pkgname ? {
-      false   => "${php::params::php_package_name}-${title}",
-      default => "${php::params::php_package_name}-${pkgname}",
-    }
-  
+  # Package name
+  $rpmpkgname = $pkgname ? {
+    false   => "${php::params::php_package_name}-${title}",
+    default => "${pkgname}",
   }
 
   # INI configuration file
