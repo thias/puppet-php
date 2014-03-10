@@ -35,6 +35,7 @@ class php::fpm::daemon (
 
     # When running FastCGI, we don't always use the same user
     file { '/var/log/php-fpm':
+      ensure  => directory,
       owner   => $log_owner,
       group   => $log_group_final,
       mode    => $log_dir_mode,
