@@ -13,7 +13,8 @@ class php::fpm::daemon (
   $process_control_timeout = '0',
   $log_owner = 'root',
   $log_group = false,
-  $log_dir_mode = '0770'
+  $log_dir_mode = '0770',
+  $use_remi_repo = false
 ) inherits php::params {
 
   # Hack-ish to default to user for group too
@@ -27,8 +28,11 @@ class php::fpm::daemon (
     package { $fpm_package_name: ensure => absent }
 
   } else {
-
-    package { $fpm_package_name: ensure => installed }
+    if ( $use_remi_repo == true ) {
+      package { $fpm_package_name: ensure => installed, install_options => ['--enablerepo=remi_php55'] }
+    } else {
+      package { $fpm_package_name: ensure => installed }
+    }
 
     service { $fpm_service_name:
       ensure    => running,
