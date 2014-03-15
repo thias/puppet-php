@@ -14,9 +14,15 @@ define php::module (
 
   include '::php::params'
 
-  # Manage the incorrect named php-apc package under Debians
+  # Manage the incorrect named php-apc and memcache(d) packages under Debians
   if ($title == 'apc') {
     $package = $php::params::php_apc_package_name
+  } elsif ($title == 'memcache') {
+    # Package name
+    $package = $php::params::php_memcache_package_name
+  } elsif ($title == 'memcached') {
+    # Package name
+    $package = $php::params::php_memcached_package_name
   } else { 
     $package = "${php::params::php_package_name}-${title}"
   }
