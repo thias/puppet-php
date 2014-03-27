@@ -34,7 +34,7 @@ define php::module::ini (
       false   => "${php::params::php_package_name}-${title}",
       default => "${php::params::php_package_name}-${pkgname}",
     }
-  
+
   }
 
   # INI configuration file
@@ -51,4 +51,3 @@ define php::module::ini (
   }
 
 }
-

@@ -115,4 +115,3 @@ define php::ini (
   }
 
 }
-

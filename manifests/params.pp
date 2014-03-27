@@ -1,4 +1,6 @@
+# configuration
 class php::params {
+
   case $::osfamily {
     'Debian': {
       $php_package_name = 'php5'
@@ -16,7 +18,7 @@ class php::params {
       $httpd_service_name = 'apache2'
       $httpd_conf_dir = '/etc/apache2/conf.d'
     }
-    default: {
+    'RedHat' : {
       $php_package_name = 'php'
       $php_apc_package_name = 'php-pecl-apc'
       $common_package_name = 'php-common'
@@ -31,6 +33,9 @@ class php::params {
       $httpd_package_name = 'httpd'
       $httpd_service_name = 'httpd'
       $httpd_conf_dir = '/etc/httpd/conf.d'
+    }
+    default : {
+      fail("unsupported ::osfamily '${::osfamily}'")
     }
   }
 }
