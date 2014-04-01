@@ -4,6 +4,7 @@
 * Add priority and process_idle_timeout parameters for fpm pools.
 * Add clear_env and security_limit_extensions parameters for fpm pools.
 * Allow specifying full package name for module::ini (#21, @jeffsheltren).
+* Allow overriding cli_package_name (#20, @jeffsheltren).
 
 2014-03-14 - 0.3.10
 * Ensure /var/log/php-fpm directory exists (#24, @stevenyeung).
