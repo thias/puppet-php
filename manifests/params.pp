@@ -15,6 +15,8 @@ class php::params {
       $httpd_package_name = 'apache2'
       $httpd_service_name = 'apache2'
       $httpd_conf_dir = '/etc/apache2/conf.d'
+      $mod_php_inifile = 'TODO'
+      $cli_inifile = 'TODO'
     }
     default: {
       $php_package_name = 'php'
@@ -31,6 +33,14 @@ class php::params {
       $httpd_package_name = 'httpd'
       $httpd_service_name = 'httpd'
       $httpd_conf_dir = '/etc/httpd/conf.d'
+      $mod_php_inifile = '/etc/php.ini'
+      $cli_inifile = $mod_php_inifile
     }
   }
+
+  # Global (non-OS specific) params.
+  $cli_ensure = 'installed'
+  $mod_php_ensure = 'installed'
+  $manage_httpd_php_conf = 'true'
+  $mod_ini_notify_httpd = 'true'
 }
