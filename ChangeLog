@@ -1,3 +1,4 @@
+2014-04-01 - 0.3.11
 * Add process_priority fpm parameter (#25, @Nyholm).
 * Add process_max fpm parameter.
 * Update the fpm templates with upstream changes.
