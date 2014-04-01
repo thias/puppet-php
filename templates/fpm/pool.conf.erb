@@ -151,6 +151,17 @@ ping.path = <%= @ping_path %>
 ; response is formatted as text/plain with a 200 response code.
 ; Default Value: pong
 ping.response = <%= @ping_response %>
+
+; Specify the nice(2) priority to apply to the master process (only if set)
+; The value can vary from -19 (highest priority) to 20 (lower priority)
+; Note: - It will only work if the FPM master process is launched as root
+;       - The pool process will inherit the master process priority
+;         unless it specified otherwise
+<% if @process_priority -%>
+process.priority = <%= @process_priority %>
+<% else -%>
+; Default Value: no set
+<% end -%>
  
 ; The timeout for serving a single request after which the worker process will
 ; be killed. This option should be used when the 'max_execution_time' ini option
