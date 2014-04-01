@@ -1,3 +1,9 @@
+* Add process_priority fpm parameter (#25, @Nyholm).
+* Add process_max fpm parameter.
+* Update the fpm templates with upstream changes.
+* Add priority and process_idle_timeout parameters for fpm pools.
+* Add clear_env and security_limit_extensions parameters for fpm pools.
+
 2014-03-14 - 0.3.10
 * Ensure /var/log/php-fpm directory exists (#24, @stevenyeung).
 * Add support for listen_allowed_clients == 'any' (#22, @damonconway).
