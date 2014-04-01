@@ -21,31 +21,34 @@ define php::module::ini (
   $zend     = false,
 ) {
 
+  include '::php::params'
+
   # Strip 'pecl-*' prefix is present, since .ini files don't have it
   $modname = regsubst($title , '^pecl-', '', 'G')
 
   # Handle naming issue of php-apc package on Debian
   if ($modname == 'apc') {
     # Package name
-    $rpmpkgname = $php::params::php_apc_package_name
+    $ospkgname = $::php::params::php_apc_package_name
   } else {
     # Package name
-    $rpmpkgname = $pkgname ? {
-      false   => "${php::params::php_package_name}-${title}",
-      default => "${php::params::php_package_name}-${pkgname}",
+    $ospkgname = $pkgname ? {
+      /^php/  => "${pkgname}",
+      false   => "${::php::params::php_package_name}-${title}",
+      default => "${::php::params::php_package_name}-${pkgname}",
     }
   
   }
 
   # INI configuration file
   if $ensure == 'absent' {
-    file { "${php::params::php_conf_dir}/${modname}.ini":
+    file { "${::php::params::php_conf_dir}/${modname}.ini":
       ensure => absent,
     }
   } else {
-    file { "${php::params::php_conf_dir}/${modname}.ini":
+    file { "${::php::params::php_conf_dir}/${modname}.ini":
       ensure  => $ensure,
-      require => Package[$rpmpkgname],
+      require => Package[$ospkgname],
       content => template('php/module.ini.erb'),
     }
   }

@@ -16,9 +16,9 @@ define php::module (
 
   # Manage the incorrect named php-apc package under Debians
   if ($title == 'apc') {
-    $package = $php::params::php_apc_package_name
+    $package = $::php::params::php_apc_package_name
   } else { 
-    $package = "${php::params::php_package_name}-${title}"
+    $package = "${::php::params::php_package_name}-${title}"
   }
   
   package { $package:
