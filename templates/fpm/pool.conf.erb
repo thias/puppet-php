@@ -59,10 +59,10 @@ listen.allowed_clients = <%= @listen_allowed_clients %>
 ; - The pool processes will inherit the master process priority
 ; unless it specified otherwise
 ; Default Value: no set
-<% if @priority -%>
-priority = <%= @priority %>
+<% if @process_priority -%>
+process.priority = <%= @process_priority %>
 <% else -%>
-; priority = -19
+; process.priority = -19
 <% end -%>
 
 ; Choose how the process manager will control the number of child processes.

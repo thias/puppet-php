@@ -26,7 +26,7 @@ define php::fpm::conf (
   $listen_group              = undef,
   $listen_mode               = undef,
   $listen_allowed_clients    = '127.0.0.1',
-  $priority                  = undef,
+  $process_priority          = undef,
   $pm                        = 'dynamic',
   $pm_max_children           = '50',
   $pm_start_servers          = '5',
