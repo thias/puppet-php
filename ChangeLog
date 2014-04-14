@@ -1,3 +1,6 @@
+2014-04-14 - 0.3.12
+* Fix process_priority fpm parameter (#26, @Nyholm).
+
 2014-04-01 - 0.3.11
 * Add process_priority fpm parameter (#25, @Nyholm).
 * Add process_max fpm parameter.
