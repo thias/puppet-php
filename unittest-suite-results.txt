@@ -1,0 +1,36 @@
+
+php::cli
+  supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php5-cli]
+
+php::cli
+  supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php-cli]
+
+php::cli
+  supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php5-fpm] (FAILED - 1)
+
+php::cli
+  supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php-fpm] (FAILED - 2)
+
+Failures:
+
+  1) php::cli supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"} should contain Package[php5-fpm]
+     Failure/Error: it { should contain_package(pkg) }
+       expected that the catalogue would contain Package[php5-fpm]
+     # ./spec/unit-suite/php-fpm-daemon_spec.rb:75:in `block (7 levels) in <top (required)>'
+
+  2) php::cli supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"} should contain Package[php-fpm]
+     Failure/Error: it { should contain_package(pkg) }
+       expected that the catalogue would contain Package[php-fpm]
+     # ./spec/unit-suite/php-fpm-daemon_spec.rb:75:in `block (7 levels) in <top (required)>'
+
+Finished in 0.53472 seconds
+4 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/unit-suite/php-fpm-daemon_spec.rb:75 # php::cli supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"} should contain Package[php5-fpm]
+rspec ./spec/unit-suite/php-fpm-daemon_spec.rb:75 # php::cli supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"} should contain Package[php-fpm]
