@@ -11,6 +11,8 @@ class php::fpm::daemon (
   $emergency_restart_threshold = '0',
   $emergency_restart_interval  = '0',
   $process_control_timeout     = '0',
+  $process_max                 = undef,
+  $process_priority            = undef,
   $log_owner                   = 'root',
   $log_group                   = false,
   $log_dir_mode                = '0770',
@@ -36,6 +38,7 @@ class php::fpm::daemon (
 
     # When running FastCGI, we don't always use the same user
     file { '/var/log/php-fpm':
+      ensure  => directory,
       owner   => $log_owner,
       group   => $log_group_final,
       mode    => $log_dir_mode,
