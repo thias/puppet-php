@@ -4,7 +4,6 @@ notifications:
     - paul4hough@gmail.com
 
 #bundler_args: --without development
-#script: "bundle exec rake spec SPEC_OPTS='--format documentation'"
 #rvm:
 # - 1.8.7
 # - 1.9.3
@@ -27,5 +26,4 @@ notifications:
 #   - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 #   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 #
-#script: "bundle exec rake -t lint unittest_prep unittest_suite"
-script: "env; echo hi travis; exit 2"
+script: "bundle exec rake -t lint unittest_prep unittest_suite"
