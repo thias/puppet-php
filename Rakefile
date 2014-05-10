@@ -14,12 +14,14 @@ PuppetLint.configuration.ignore_paths = FileList['**/fixtures/modules/**/**']
 desc "Test prep with librarian-puppet"
 task :unittest_prep do
  sh "
-if [ -d .librarian ] ; then
-  echo updating...
-  librarian-puppet update;
-else
-  echo installing...
-  librarian-puppet install --path=spec/fixtures/modules/;
+if [ -f Puppetfile ] ; then
+  if [ -d .librarian ] ; then
+    echo updating...
+    librarian-puppet update;
+  else
+    echo installing...
+    librarian-puppet install --path=spec/fixtures/modules/;
+  fi
 fi
 "
 end
