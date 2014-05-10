@@ -3,14 +3,15 @@ notifications:
   email:
     - paul4hough@gmail.com
 
-#bundler_args: --without development
-#rvm:
-# - 1.8.7
-# - 1.9.3
-#  - 2.0.0
-#env:
-# - PUPPET_GEM_VERSION="~> 2.7.0"
-#  - PUPPET_GEM_VERSION="~> 3.2.0"
+rvm:
+ - 1.9.3
+ - 2.0.0
+env:
+  matrix:
+  - PUPPET_GEM_VERSION="~> 3.4.3"
+  - PUPPET_GEM_VERSION="~> 3.5.1"
+script: "bundle exec rake -t lint unittest_prep unittest_suite"
+
 #matrix:
 #  exclude:
 # - rvm: 1.9.3
@@ -26,4 +27,3 @@ notifications:
 #   - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 #   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 #
-script: "bundle exec rake -t lint unittest_prep unittest_suite"
