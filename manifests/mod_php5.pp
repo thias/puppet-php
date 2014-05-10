@@ -10,23 +10,22 @@
 class php::mod_php5 (
   $ensure  = 'installed',
   $inifile = '/etc/php.ini',
-) inherits ::php::params {
-
-  package { $php_package_name:
+  ) {
+  class { '::php::params' : }
+  package { $::php::params::php_package_name:
     ensure  => $ensure,
     require => File[$inifile],
-    notify  => Service[$httpd_service_name],
+    notify  => Service[$::php::params::httpd_service_name],
   }
 
   # Custom httpd conf snippet
-  file { "${httpd_conf_dir}/php.conf":
+  file { "${::php::params::httpd_conf_dir}/php.conf":
     content => template('php/httpd/php.conf.erb'),
-    require => Package[$httpd_package_name],
-    notify  => Service[$httpd_service_name],
+    require => Package[$::php::params::httpd_package_name],
+    notify  => Service[$::php::params::httpd_service_name],
   }
 
   # Notify the httpd service for any php.ini changes too
-  File[$inifile] ~> Service[$httpd_service_name]
+  File[$inifile] ~> Service[$::php::params::httpd_service_name]
 
 }
-

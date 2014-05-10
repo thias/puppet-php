@@ -1,4 +1,4 @@
-# puppet-php
+# puppet-php [![Build Status](https://travis-ci.org/pahoughton/puppet-php.png)](https://travis-ci.org/pahoughton/puppet-php)
 
 ## Overview
 
@@ -88,4 +88,3 @@ Then from the nginx configuration :
       include /etc/nginx/fastcgi.conf;
       fastcgi_pass wwwbackend;
     }
-

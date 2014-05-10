@@ -10,6 +10,8 @@
 #
 define php::module (
   $ensure = installed,
+  $notify = undef,
+  $php_fpm_svc = $::php::params::fpm_service_name
 ) {
 
   include '::php::params'
@@ -17,12 +19,17 @@ define php::module (
   # Manage the incorrect named php-apc package under Debians
   if ($title == 'apc') {
     $package = $::php::params::php_apc_package_name
-  } else { 
+  } else {
     $package = "${::php::params::php_package_name}-${title}"
   }
-  
+  if defined( Class['php::fpm::daemon'] ) and $notfiy == undef {
+    $donotify = Service[$php_fpm_svc]
+  } else {
+    $donotify = undef
+  }
+
   package { $package:
     ensure => $ensure,
+    notify => $donotify,
   }
 }
-

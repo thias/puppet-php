@@ -11,9 +11,7 @@ class php::cli (
   $inifile          = '/etc/php.ini',
   $cli_package_name = $::php::params::cli_package_name,
 ) inherits ::php::params {
-  package { $cli_package_name:
+  package { $cli_package_name :
     ensure  => $ensure,
-    require => File[$inifile],
   }
 }
-

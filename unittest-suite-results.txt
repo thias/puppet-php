@@ -1,0 +1,43 @@
+
+php::cli
+  supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php5-cli]
+
+php::cli
+  supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php-cli]
+
+php::fpm::conf
+  supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain File[/etc/php5/fpm/pool.d/test.conf]
+
+php::fpm::conf
+  supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain File[/etc/php-fpm.d/test.conf]
+
+php::fpm::daemon
+  supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php5-fpm]
+
+php::fpm::daemon
+  supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php-fpm]
+
+php::ini
+  supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain File[/etc/php.ini]
+
+php::ini
+  supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain File[/etc/php.ini]
+
+php::module
+  supports facts {:osfamily=>"Debian", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php5-test]
+
+php::module
+  supports facts {:osfamily=>"RedHat", :operatingsystem=>"undef", :operatingsystemrelease=>"undef", :os_maj_version=>"undef"}
+    should contain Package[php-test]
+
+Finished in 1.12 seconds
+10 examples, 0 failures

@@ -105,6 +105,7 @@ define php::ini (
   $soap_wsdl_cache_enabled    = '1',
   $soap_wsdl_cache_dir        = '/tmp',
   $soap_wsdl_cache_ttl        = '86400',
+  $cli_package_name = $::php::params::cli_package_name,
 ) {
 
   include '::php::common'
@@ -112,7 +113,7 @@ define php::ini (
   file { $title:
     ensure  => $ensure,
     content => template($template),
+    require => Package[$cli_package_name],
   }
 
 }
-

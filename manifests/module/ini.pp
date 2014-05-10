@@ -33,11 +33,11 @@ define php::module::ini (
   } else {
     # Package name
     $ospkgname = $pkgname ? {
-      /^php/  => "${pkgname}",
+      /^php/  => $pkgname,
       false   => "${::php::params::php_package_name}-${title}",
       default => "${::php::params::php_package_name}-${pkgname}",
     }
-  
+
   }
 
   # INI configuration file
@@ -54,4 +54,3 @@ define php::module::ini (
   }
 
 }
-

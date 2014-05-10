@@ -57,7 +57,7 @@ define php::fpm::conf (
   $error_log                 = true,
 ) {
 
-  include '::php::params'
+  class { '::php::params' : }
 
   $pool = $title
 
@@ -67,8 +67,8 @@ define php::fpm::conf (
   if ( $ensure == 'absent' ) {
 
     file { "${php::params::fpm_pool_dir}/${pool}.conf":
-      notify  => Service[$php::params::fpm_service_name],
       ensure  => absent,
+      notify  => Service[$php::params::fpm_service_name],
       require => Package[$php::params::fpm_package_name],
     }
 
@@ -86,4 +86,3 @@ define php::fpm::conf (
   }
 
 }
-
