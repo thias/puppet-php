@@ -5,6 +5,7 @@ group :development, :test do
   gem 'builder','~>3.2.2'
   gem 'puppetlabs_spec_helper', :require => false
   gem 'rspec-puppet'
+  gem 'librarian-puppet'
   gem 'puppet-lint', '~> 0.3.2'
 end
 
