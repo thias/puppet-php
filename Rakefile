@@ -5,7 +5,6 @@
 
 require 'rake'
 require 'rspec/core/rake_task'
-
 require 'puppet-lint/tasks/puppet-lint'
 
 PuppetLint.configuration.disable_80chars
