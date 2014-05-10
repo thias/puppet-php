@@ -4,7 +4,7 @@ group :development, :test do
   gem 'bundler'
   gem 'builder','~>3.2.2'
   gem 'puppetlabs_spec_helper', :require => false
-  gem 'rspec-puppet', '~>2.0'
+  gem 'rspec-puppet'
   gem 'puppet-lint', '~> 0.3.2'
 end
 
