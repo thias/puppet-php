@@ -68,7 +68,7 @@ define php::fpm::conf (
   # Determine PHP FPM package name.
   $fpm_package_name = $pkgname ? {
     false => "${::php::params::fpm_package_name}",
-    default => "$pkgname}",
+    default => "$pkgname",
   }
 
   if ( $ensure == 'absent' ) {
