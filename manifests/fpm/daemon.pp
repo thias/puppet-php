@@ -16,6 +16,7 @@ class php::fpm::daemon (
   $log_owner                   = 'root',
   $log_group                   = false,
   $log_dir_mode                = '0770',
+  $fpm_package_name            = "$::php::params::fpm_package_name",
 ) inherits ::php::params {
 
   # Hack-ish to default to user for group too
