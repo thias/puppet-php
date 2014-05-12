@@ -55,6 +55,7 @@ define php::fpm::conf (
   $php_admin_flag            = {},
   $php_directives            = [],
   $error_log                 = true,
+  $fpm_package_name          = false,
 ) {
 
   include '::php::params'
@@ -64,12 +65,18 @@ define php::fpm::conf (
   # Hack-ish to default to user for group too
   $group_final = $group ? { undef => $user, default => $group }
 
+  # Determine PHP FPM package name.
+  $ospkgname = $fpm_package_name ? {
+    false => "${::php::params::fpm_package_name}",
+    default => "$fpm_package_name",
+  }
+
   if ( $ensure == 'absent' ) {
 
     file { "${php::params::fpm_pool_dir}/${pool}.conf":
       notify  => Service[$php::params::fpm_service_name],
       ensure  => absent,
-      require => Package[$php::params::fpm_package_name],
+      require => Package[$ospkgname],
     }
 
   } else {
@@ -80,7 +87,7 @@ define php::fpm::conf (
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
-      require => Package[$php::params::fpm_package_name],
+      require => Package[$ospkgname],
     }
 
   }
