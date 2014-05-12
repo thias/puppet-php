@@ -18,8 +18,9 @@ define php::module (
   if ($title == 'apc') {
     $package = $::php::params::php_apc_package_name
   } else {
+    # Hack to get pkg prefixes to work, i.e. php56-mcrypt title
     $package = $title ? {
-      /^php/ => "${title}",
+      /^php/  => $title,
       default => "${::php::params::php_package_name}-${title}"
     }
   }
