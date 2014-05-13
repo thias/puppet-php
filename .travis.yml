@@ -1,3 +1,7 @@
+# .travis.yml - 2014-05-10 03:03
+#
+# Copyright (c) 2014 Paul Houghton <paul4hough@gmail.com>
+
 language: ruby
 notifications:
   email:
@@ -11,19 +15,3 @@ env:
   - PUPPET_GEM_VERSION="~> 3.4.3"
   - PUPPET_GEM_VERSION="~> 3.5.1"
 script: "bundle exec rake -t lint unittest_prep unittest_suite"
-
-#matrix:
-#  exclude:
-# - rvm: 1.9.3
-# env: PUPPET_GEM_VERSION="~> 2.7.0"
-#    - rvm: 2.0.0
-#      env: PUPPET_GEM_VERSION="~> 2.7.0"
-#branches:
-#  only:
-#    - devel-pah
-#    - master
-#
-# before_script:
-#   - echo -e "Host heroku.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-#   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-#
