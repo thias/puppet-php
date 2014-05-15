@@ -65,7 +65,7 @@ define php::fpm::conf (
   # Hack-ish to default to user for group too
   $group_final = $group ? { undef => $user, default => $group }
 
-  $fpm_package_name_final = $fpm_package_name {
+  $fpm_package_name_final = $fpm_package_name ? {
     undef   => $::php::params::fpm_package_name,
     default => $fpm_package_name,
   }
