@@ -10,7 +10,8 @@ class php::cli(
   $ensure  = 'installed',
   $inifile = '/etc/php.ini',
   ) {
-  class{ '::php::params' : }
+  include '::php::params'
+
   package { $::php::params::cli_package_name:
     ensure  => $ensure,
     require => File[$inifile],
