@@ -53,7 +53,7 @@ define php::fpm::conf (
   $error_log                 = true,
 ) {
 
-  class { '::php::params' : }
+  include '::php::params'
 
   $pool = $title
 
@@ -69,7 +69,6 @@ define php::fpm::conf (
     }
 
   } else {
-
     file { "${php::params::fpm_pool_dir}/${pool}.conf":
       notify  => Service[$php::params::fpm_service_name],
       content => template('php/fpm/pool.conf.erb'),

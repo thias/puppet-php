@@ -6,6 +6,8 @@
 # We can't use a virtual resource, since we have no central place to put it.
 #
 class php::common {
-  class { '::php::params' : }
+
+  include '::php::params'
+
   package { $::php::params::common_package_name: ensure => 'installed' }
 }
