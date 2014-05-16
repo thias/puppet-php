@@ -8,7 +8,7 @@
 ; Include one or more files. If glob(3) exists, it is used to include a bunch of
 ; files from a glob(3) pattern. This directive can be used everywhere in the
 ; file.
-include=<%= @fpm_pool_dir %>/*.conf
+include=<%= scope.lookupvar('::php::params::fpm_pool_dir') %>/*.conf
 
 ;;;;;;;;;;;;;;;;;;
 ; Global Options ;
@@ -17,11 +17,11 @@ include=<%= @fpm_pool_dir %>/*.conf
 [global]
 ; Pid file
 ; Default Value: none
-pid = <%= @fpm_pid %>
+pid = <%= scope.lookupvar('::php::params::fpm_pid') %>
 
 ; Error log file
 ; Default Value: /var/log/php-fpm.log
-error_log = <%= @fpm_error_log %>
+error_log = <%= scope.lookupvar('::php::params::fpm_error_log') %>
 
 ; Log level
 ; Possible Values: alert, error, warning, notice, debug
@@ -79,5 +79,4 @@ process.priority = <%= @process_priority %>
 ; Pool Definitions ;
 ;;;;;;;;;;;;;;;;;;;;
 
-; See <%= @fpm_pool_dir %>/*.conf
-
+; See <%= scope.lookupvar('::php::params::fpm_pool_dir') %>/*.conf
