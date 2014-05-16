@@ -26,8 +26,8 @@ define php::module (
     default => undef,
   }
 
-  package { $package:
+  ensure_resource('package',$package,{
     ensure => $ensure,
     notify => $modnotify,
-  }
+  })
 }
