@@ -21,7 +21,13 @@ define php::module (
     $package = "${php::params::php_package_name}-${title}"
   }
 
+  $modnotify = defined(Class['php::fpm::daemon']) ? {
+    true    => Service[$php::params::fpm_service_name],
+    default => undef,
+  }
+
   package { $package:
     ensure => $ensure,
+    notify => $modnotify,
   }
 }

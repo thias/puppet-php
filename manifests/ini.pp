@@ -109,9 +109,14 @@ define php::ini (
 
   include '::php::common'
 
+  $ininotify = defined(Class['php::fpm::daemon']) ? {
+    true    => Service[$php::params::fpm_service_name],
+    default => undef,
+  }
   file { $title:
     ensure  => $ensure,
     content => template($template),
+    notify  => $ininotify,
   }
 
 }
