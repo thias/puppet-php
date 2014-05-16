@@ -1,0 +1,2735 @@
+Info: Caching certificate for f20test
+Info: Caching certificate_revocation_list for ca
+Info: Caching certificate for f20test
+Info: Retrieving plugin
+Notice: /File[/var/lib/puppet/lib/augeasproviders.rb]/ensure: defined content as '{md5}4730498403c2d9ced6d586669ae7bbbc'
+Notice: /File[/var/lib/puppet/lib/puppet]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/database_user]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/database_user/mysql.rb]/ensure: defined content as '{md5}26d55375b308ffa8cf9db68d0e039c5f'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/postgresql_psql]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/file_line]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/util]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/util/ipcidr.rb]/ensure: defined content as '{md5}e1160dfd6e73fc5ef2bb8abc291f6fd5'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_user]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/firewall.rb]/ensure: defined content as '{md5}32d2f5e5dcc082986b82ef26a119038b'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/sysctl]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/firewallchain]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_database]/ensure: created
+Notice: /File[/var/lib/puppet/lib/augeas]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_user/mysql.rb]/ensure: defined content as '{md5}7eda6cfab27de90e3ee8f6517d2ae3a0'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/vcsrepo]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/package]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/firewall]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/firewall/iptables.rb]/ensure: defined content as '{md5}470fdc741c7d60843573b23a2c9fc321'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql.rb]/ensure: defined content as '{md5}881f4f76b084054f7299fe2de596e4c9'
+Notice: /File[/var/lib/puppet/lib/puppet/parser]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/ensure_packages.rb]/ensure: defined content as '{md5}ca852b2441ca44b91a984094de4e3afc'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_hash.rb]/ensure: defined content as '{md5}e9cfaca68751524efe16ecf2f958a9a0'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/count.rb]/ensure: defined content as '{md5}9eb74eccd93e2b3c87fd5ea14e329eba'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_bool.rb]/ensure: defined content as '{md5}4ddffdf5954b15863d18f392950b88f4'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/url_parse.rb]/ensure: defined content as '{md5}71d6f11070d1dc00f3dcad71a23f570a'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/get_module_path.rb]/ensure: defined content as '{md5}d4bf50da25c0b98d26b75354fa1bcc45'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_ip_address.rb]/ensure: defined content as '{md5}a714a736c1560e8739aaacd9030cca00'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_numeric.rb]/ensure: defined content as '{md5}0a9bcc49e8f57af81bdfbb7e7c3a575c'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/delete.rb]/ensure: defined content as '{md5}9b17b9f7f820adf02360147c1a2f4279'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_domain_name.rb]/ensure: defined content as '{md5}fba9f855df3bbf90d72dfd5201f65d2b'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/has_ip_address.rb]/ensure: defined content as '{md5}ee207f47906455a5aa49c4fb219dd325'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_absolute_path.rb]/ensure: defined content as '{md5}385137ac24a2dec6cecc4e6ea75be442'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/has_key.rb]/ensure: defined content as '{md5}7cd9728c38f0b0065f832dabd62b0e7e'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/flatten.rb]/ensure: defined content as '{md5}25777b76f9719162a8bab640e5595b7a'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/max.rb]/ensure: defined content as '{md5}f652fd0b46ef7d2fbdb42b141f8fdd1d'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_augeas.rb]/ensure: defined content as '{md5}d4acca7b8a9fdada9ae39e5101902cc1'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/has_ip_network.rb]/ensure: defined content as '{md5}b4d726c8b2a0afac81ced8a3a28aa731'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/ipaddresses.rb]/ensure: defined content as '{md5}adc01307a215594da64f74a5eeacc0ee'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_mac_address.rb]/ensure: defined content as '{md5}288bd4b38d4df42a83681f13e7eaaee0'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/getparam.rb]/ensure: defined content as '{md5}4dd7a0e35f4a3780dcfc9b19b4e0006e'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_array.rb]/ensure: defined content as '{md5}72b29289b8af1cfc3662ef9be78911b8'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/loadyaml.rb]/ensure: defined content as '{md5}2b912f257aa078e376d3b3f6a86c2a00'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/postgresql_password.rb]/ensure: defined content as '{md5}820da02a888ab42357fe9bc2352b1c37'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/empty.rb]/ensure: defined content as '{md5}ae92905c9d94ddca30bf56b7b1dabedf'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/defined_with_params.rb]/ensure: defined content as '{md5}ffab4433d03f32b551f2ea024a2948fc'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/bool2num.rb]/ensure: defined content as '{md5}8e627eee990e811e35e7e838c586bd77'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/hash.rb]/ensure: defined content as '{md5}9d072527dfc7354b69292e9302906530'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/suffix.rb]/ensure: defined content as '{md5}109279db4180441e75545dbd5f273298'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/mysql_deepmerge.rb]/ensure: defined content as '{md5}2b5040ee8cd75a81cf881851e922833a'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/options_lookup.rb]/ensure: defined content as '{md5}5b5f8291e4b20c2aa31488b0ffe680b2'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/postgresql_escape.rb]/ensure: defined content as '{md5}2e136fcd653ab38d831c5b40806d47d1'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/floor.rb]/ensure: defined content as '{md5}c5a960e9714810ebb99198ff81a11a3b'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/prefix.rb]/ensure: defined content as '{md5}21fd6a2c1ee8370964346b3bfe829d2b'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_integer.rb]/ensure: defined content as '{md5}a50ebc15c30bffd759e4a6f8ec6a0cf3'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/postgresql_acls_to_resources_hash.rb]/ensure: defined content as '{md5}d518a7959b950874820a3b0a7a324488'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/swapcase.rb]/ensure: defined content as '{md5}4902f38f0b9292afec66d40fee4b02ec'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/to_bytes.rb]/ensure: defined content as '{md5}83f23c33adbfa42b2a9d9fc2db3daeb4'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/has_interface_with.rb]/ensure: defined content as '{md5}8d3ebca805dc6edb88b6b7a13d404787'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/lstrip.rb]/ensure: defined content as '{md5}210b103f78622e099f91cc2956b6f741'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_array.rb]/ensure: defined content as '{md5}875ca4356cb0d7a10606fb146b4a3d11'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/min.rb]/ensure: defined content as '{md5}0d2a1b7e735ab251c5469e735fa3f4c6'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/sort.rb]/ensure: defined content as '{md5}504b033b438461ca4f9764feeb017833'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/physical_volume]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/merge.rb]/ensure: defined content as '{md5}52281fe881b762e2adfef20f58dc4180'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/vcsrepo.rb]/ensure: defined content as '{md5}dbd72590771291f1db23a41ac048ed9d'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/mysql_password.rb]/ensure: defined content as '{md5}a4c8ec72dede069508dbc266131b06a3'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/vcsrepo/bzr.rb]/ensure: defined content as '{md5}52f4d40153e0a3bc54be1b7dfa18b5f1'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/volume_group]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/member.rb]/ensure: defined content as '{md5}541e67d06bc4155e79b00843a125e9bc'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/database]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/database/mysql.rb]/ensure: defined content as '{md5}10c0c508f88145d0cda948f26f97d86f'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/capitalize.rb]/ensure: defined content as '{md5}14481fc8c7c83fe002066ebcf6722f17'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/syslog]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/syslog/rsyslog.rb]/ensure: defined content as '{md5}2c077f0a8a2110343d0e2818bb3b0326'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/syslog/augeas.rb]/ensure: defined content as '{md5}3192ffa10d2fcf1a599779edc06083be'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/values.rb]/ensure: defined content as '{md5}066a6e4170e5034edb9a80463dff2bb5'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/sysctl/augeas.rb]/ensure: defined content as '{md5}408f8304890166d874aa6b60f84158ed'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/chomp.rb]/ensure: defined content as '{md5}719d46923d75251f7b6b68b6e015cccc'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/unique.rb]/ensure: defined content as '{md5}217ccce6d23235af92923f50f8556963'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/shuffle.rb]/ensure: defined content as '{md5}6445e6b4dc62c37b184a60eeaf34414b'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/num2bool.rb]/ensure: defined content as '{md5}605c12fa518c87ed2c66ae153e0686ce'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/join_keys_to_values.rb]/ensure: defined content as '{md5}f29da49531228f6ca5b3aa0df00a14c2'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/concat.rb]/ensure: defined content as '{md5}f28a09811ff4d19bb5e7a540e767d65c'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/bool2ensure.rb]/ensure: defined content as '{md5}7ed40cbdcb65556f5c9295a4088422a8'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/any2array.rb]/ensure: defined content as '{md5}a81e71d6b67a551d38770ba9a1948a75'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/get_class_args.rb]/ensure: defined content as '{md5}3a830d0d3af0f7c30002fa0213ccf555'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/mysql_strip_hash.rb]/ensure: defined content as '{md5}3efe69f1eb189b2913e178b8472aaede'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/vcsrepo/svn.rb]/ensure: defined content as '{md5}03b14667e002db9452c597e1b21718dd'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/pick.rb]/ensure: defined content as '{md5}2bede116a0651405c47e650bbf942abe'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/vcsrepo/hg.rb]/ensure: defined content as '{md5}01887f986db627ffc1a8ff7a52328ddb'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/rstrip.rb]/ensure: defined content as '{md5}8a0d69876bdbc88a2054ba41c9c38961'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/filesystem]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/filesystem/aix.rb]/ensure: defined content as '{md5}522f95e24a10299934d589e432e01a3f'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/str2bool.rb]/ensure: defined content as '{md5}c822a8944747f5624b13f2da0df8db21'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/abs.rb]/ensure: defined content as '{md5}32161bd0435fdfc2aec2fc559d2b454b'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/dirname.rb]/ensure: defined content as '{md5}bef7214eb89db3eb8f7ee5fc9dca0233'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/package/pipmp.rb]/ensure: defined content as '{md5}8f87514881bf61a1cf74eb9abca6787f'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/parseyaml.rb]/ensure: defined content as '{md5}00f10ec1e2b050e23d80c256061ebdd7'
+Notice: /File[/var/lib/puppet/lib/augeas/lenses]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_database/mysql.rb]/ensure: defined content as '{md5}938b0602ea341e7062b011478e9fafb1'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/grep.rb]/ensure: defined content as '{md5}5682995af458b05f3b53dd794c4bf896'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mailalias]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mailalias/augeas.rb]/ensure: defined content as '{md5}a86f77d15928a17e32a7cdfeb4090546'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/logical_volume]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/logical_volume/aix.rb]/ensure: defined content as '{md5}86ca794d7fbb5c9932d19de5e95569b9'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_grant]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mysql_grant/mysql.rb]/ensure: defined content as '{md5}100421e10f27f7adee4f53ec7778501c'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/apache_setenv]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/apache_setenv/augeas.rb]/ensure: defined content as '{md5}3a5f17147d57750348ef9b39ef5e3058'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/package/pip27.rb]/ensure: defined content as '{md5}693d592dcbf1bf7f45e363d96d097643'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/params_lookup.rb]/ensure: defined content as '{md5}926e9ce38835bb63a9307b48d03d1495'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/augeas.rb]/ensure: defined content as '{md5}f1fb3fe6ed9a59527a84d21d525ee0a7'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/any2bool.rb]/ensure: defined content as '{md5}9a33c68686b26701e2289f553bed78e5'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/squeeze.rb]/ensure: defined content as '{md5}541f85b4203b55c9931d3d6ecd5c75f8'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/downcase.rb]/ensure: defined content as '{md5}9204a04c2a168375a38d502db8811bbe'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_string.rb]/ensure: defined content as '{md5}2bd9a652bbb2668323eee6c57729ff64'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/delete_at.rb]/ensure: defined content as '{md5}6bc24b79390d463d8be95396c963381a'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/size.rb]/ensure: defined content as '{md5}8972d48c0f9e487d659bd7326b40b642'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_hash.rb]/ensure: defined content as '{md5}8c7d9a05084dab0389d1b779c8a05b1a'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/keys.rb]/ensure: defined content as '{md5}eb6ac815ea14fbf423580ed903ef7bad'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/logical_volume/lvm.rb]/ensure: defined content as '{md5}5881f08076dd0365f7f62f4d822217ca'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/database_grant]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/uriescape.rb]/ensure: defined content as '{md5}9ebc34f1b2f319626512b8cd7cde604c'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/vcsrepo/dummy.rb]/ensure: defined content as '{md5}2f8159468d6ecc8087debde858a80dd6'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/volume_group/lvm.rb]/ensure: defined content as '{md5}3cb15a5ffffad434911f3d4ff7cfab4c'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/file_line/ruby.rb]/ensure: defined content as '{md5}a445a57f9b884037320ea37307dbc92b'
+Notice: /File[/var/lib/puppet/lib/puppet/type]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/type/shellvar.rb]/ensure: defined content as '{md5}ba5133cd31b6799a2e91c1b60eeebccb'
+Notice: /File[/var/lib/puppet/lib/puppet/type/logical_volume.rb]/ensure: defined content as '{md5}160d31b3e87af0ff9182398e2d9dbb09'
+Notice: /File[/var/lib/puppet/lib/puppet/type/database.rb]/ensure: defined content as '{md5}7b4b49b841d41541ce719d1a051ee94b'
+Notice: /File[/var/lib/puppet/lib/puppet/type/nrpe_command.rb]/ensure: defined content as '{md5}b639c9ee2cd6b5be91c3518be9ce8cad'
+Notice: /File[/var/lib/puppet/lib/puppet/type/database_user.rb]/ensure: defined content as '{md5}b2a87e3854324fb0ae407a1fbad5802a'
+Notice: /File[/var/lib/puppet/lib/puppet/type/apache_setenv.rb]/ensure: defined content as '{md5}dddc11b0c1c3ca92434f3820b70bbdf7'
+Notice: /File[/var/lib/puppet/lib/puppet/type/kernel_parameter.rb]/ensure: defined content as '{md5}aa05738676e60fb432edd61fb72f95ea'
+Notice: /File[/var/lib/puppet/lib/puppet/type/postgresql_conf.rb]/ensure: defined content as '{md5}4f333138a3689f9768e7fe4bc3cde9fd'
+Notice: /File[/var/lib/puppet/lib/puppet/type/vcsrepo.rb]/ensure: defined content as '{md5}bf01ae48b0d2ae542bc8c0f65da93c64'
+Notice: /File[/var/lib/puppet/lib/puppet/type/sshd_config.rb]/ensure: defined content as '{md5}281b25e8ddd43aaecd0373358dfa2a13'
+Notice: /File[/var/lib/puppet/lib/puppet/type/anchor.rb]/ensure: defined content as '{md5}bbd36bb49c3b554f8602d8d3df366c0c'
+Notice: /File[/var/lib/puppet/lib/puppet/type/puppet_auth.rb]/ensure: defined content as '{md5}4879beaae171df46cc70ca6cd9057f1d'
+Notice: /File[/var/lib/puppet/lib/puppet/type/postgresql_psql.rb]/ensure: defined content as '{md5}9bdcc5809a2afd9c0d67d7f66f406504'
+Notice: /File[/var/lib/puppet/lib/puppet/type/mysql_database.rb]/ensure: defined content as '{md5}e21a38611edc6cba5454889170bc0ebc'
+Notice: /File[/var/lib/puppet/lib/puppet/type/pg_hba.rb]/ensure: defined content as '{md5}22750898802ef2d02d4f0825d6ca3c95'
+Notice: /File[/var/lib/puppet/lib/puppet/type/firewallchain.rb]/ensure: defined content as '{md5}548676cc7da53598eb24268ebac38a0d'
+Notice: /File[/var/lib/puppet/lib/puppet/type/volume_group.rb]/ensure: defined content as '{md5}7c835a3f82a71ae435eaa2019dc7c3ca'
+Notice: /File[/var/lib/puppet/lib/puppet/type/database_grant.rb]/ensure: defined content as '{md5}66fce5df0f3f4111fe37f094965f6f93'
+Notice: /File[/var/lib/puppet/lib/puppet/type/mysql_grant.rb]/ensure: defined content as '{md5}082aa9131d7e5871935da409ee16a9fa'
+Notice: /File[/var/lib/puppet/lib/puppet/type/filesystem.rb]/ensure: defined content as '{md5}e3353b02e2c9ea66be1bec36348e92b2'
+Notice: /File[/var/lib/puppet/lib/puppet/type/firewall.rb]/ensure: defined content as '{md5}ee461fc0b0cab09964869697db714f72'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/filesystem/lvm.rb]/ensure: defined content as '{md5}856c5eddd4c03affddca9eb6bdcc3678'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/firewallchain/iptables_chain.rb]/ensure: defined content as '{md5}194bde3d3992a37aa7d76e431d251178'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/physical_volume/lvm.rb]/ensure: defined content as '{md5}75fbed66a99d708ab9ff6cc60754bd0e'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/postgresql_psql/ruby.rb]/ensure: defined content as '{md5}7c84a41473c41edba2c2526843c00fbf'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mounttab]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/mounttab/augeas.rb]/ensure: defined content as '{md5}e2cedcedd7d312844e184572c61eceef'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/sshd_config_subsystem]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/sshd_config_subsystem/augeas.rb]/ensure: defined content as '{md5}ad2e9060dfa9d84512f96c807563328f'
+Notice: /File[/var/lib/puppet/lib/facter]/ensure: created
+Notice: /File[/var/lib/puppet/lib/facter/windows_common_appdata.rb]/ensure: defined content as '{md5}ce068ea5a6d68a6f3cad50a919caa75f'
+Notice: /File[/var/lib/puppet/lib/facter/ip6tables_version.rb]/ensure: defined content as '{md5}091123ad703f1706686bca4398c5b06f'
+Notice: /File[/var/lib/puppet/lib/facter/os_maj_version.rb]/ensure: defined content as '{md5}806fb856251b605df379e973c716a41c'
+Notice: /File[/var/lib/puppet/lib/facter/util]/ensure: created
+Notice: /File[/var/lib/puppet/lib/facter/util/puppet_settings.rb]/ensure: defined content as '{md5}9f1d2593d0ae56bfca89d4b9266aeee1'
+Notice: /File[/var/lib/puppet/lib/facter/puppi_projects.rb]/ensure: defined content as '{md5}52c607131dc7a65db70d52f60e19bd09'
+Notice: /File[/var/lib/puppet/lib/facter/last_run.rb]/ensure: defined content as '{md5}75c871bd5262d1830c6a64d0ba3d8153'
+Notice: /File[/var/lib/puppet/lib/facter/facter_dot_d.rb]/ensure: defined content as '{md5}b35b8b59ec579901444f984127f0b833'
+Notice: /File[/var/lib/puppet/lib/facter/root_home.rb]/ensure: defined content as '{md5}f559294cceafcf70799339627d94871d'
+Notice: /File[/var/lib/puppet/lib/facter/lvm_support.rb]/ensure: defined content as '{md5}d8f6e5fe34b713aaefe69b66aec89aa3'
+Notice: /File[/var/lib/puppet/lib/facter/puppet_vardir.rb]/ensure: defined content as '{md5}c7ddc97e8a84ded3dd93baa5b9b3283d'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/reject.rb]/ensure: defined content as '{md5}689f6a7c961a55fe9dcd240921f4c7f9'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/range.rb]/ensure: defined content as '{md5}033048bba333fe429e77e0f2e91db25f'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_slength.rb]/ensure: defined content as '{md5}0ca530d1d3b45c3fe2d604c69acfc22f'
+Notice: /File[/var/lib/puppet/lib/facter/pe_version.rb]/ensure: defined content as '{md5}4a9353952963b011759f3e6652a10da5'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/pg_hba]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/pg_hba/augeas.rb]/ensure: defined content as '{md5}0c936a460f99aef1089b6488aa1df9e2'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/join.rb]/ensure: defined content as '{md5}b28087823456ca5cf943de4a233ac77f'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/kernel_parameter]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/kernel_parameter/grub2.rb]/ensure: defined content as '{md5}456fce5ec37df1f454c46f84aa8cc484'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/host]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/host/augeas.rb]/ensure: defined content as '{md5}f1c9c58ae1ca4d450f9946e5e431f3b5'
+Notice: /File[/var/lib/puppet/lib/facter/iptables_persistent_version.rb]/ensure: defined content as '{md5}b7a47827cd3d3bb1acbd526a31da3acb'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/strip.rb]/ensure: defined content as '{md5}273d547c7b05c0598556464dfd12f5fd'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/postgresql_conf]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/postgresql_conf/parsed.rb]/ensure: defined content as '{md5}53cacac5630209bd4a4ea62433fba764'
+Notice: /File[/var/lib/puppet/lib/puppet/type/mysql_user.rb]/ensure: defined content as '{md5}ddb054a5fd03689ae4325fbe003a41d3'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/upcase.rb]/ensure: defined content as '{md5}a5744a74577cfa136fca2835e75888d3'
+Notice: /File[/var/lib/puppet/lib/puppet/type/file_line.rb]/ensure: defined content as '{md5}3e8222cb58f3503b3ea7de3647c602a0'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/vcsrepo/git.rb]/ensure: defined content as '{md5}7c453bfe9abe5367902f090b554c51e2'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/time.rb]/ensure: defined content as '{md5}08d88d52abd1e230e3a2f82107545d48'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_string.rb]/ensure: defined content as '{md5}6afcbc51f83f0714348b8d61e06ea7eb'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/reverse.rb]/ensure: defined content as '{md5}1386371c0f5301055fdf99079e862b3e'
+Notice: /File[/var/lib/puppet/lib/puppet/type/syslog.rb]/ensure: defined content as '{md5}38d8db1bf661078a68f2aaa03aa4a752'
+Notice: /File[/var/lib/puppet/lib/facter/iptables_version.rb]/ensure: defined content as '{md5}facbd760223f236538b731c1d1f6cf8f'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/nrpe_command]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/get_magicvar.rb]/ensure: defined content as '{md5}24c1abf9c43e7cf7290efeda7d5dd403'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/shellvar]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/shellvar/augeas.rb]/ensure: defined content as '{md5}cec8e65c29da5970722f4b910f9748fd'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/type.rb]/ensure: defined content as '{md5}62f914d6c90662aaae40c5539701be60'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/zip.rb]/ensure: defined content as '{md5}a80782461ed9465f0cd0c010936f1855'
+Notice: /File[/var/lib/puppet/lib/augeasproviders]/ensure: created
+Notice: /File[/var/lib/puppet/lib/augeasproviders/mounttab.rb]/ensure: defined content as '{md5}d0dd1845a9408148eed0d8dbb93790c2'
+Notice: /File[/var/lib/puppet/lib/augeasproviders/type.rb]/ensure: defined content as '{md5}1a91d2fec25301a1ba09042462f4372c'
+Notice: /File[/var/lib/puppet/lib/augeasproviders/provider.rb]/ensure: defined content as '{md5}b634bcacc9ad40fbad17d6fb8b4b1b14'
+Notice: /File[/var/lib/puppet/lib/augeasproviders/mounttab]/ensure: created
+Notice: /File[/var/lib/puppet/lib/augeasproviders/mounttab/fstab.rb]/ensure: defined content as '{md5}7ceea9a30b033b231dde1f4f1ee21079'
+Notice: /File[/var/lib/puppet/lib/augeasproviders/mounttab/vfstab.rb]/ensure: defined content as '{md5}3be8bf59a4539cdaaa0bdda8e8c33174'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/kernel_parameter/grub.rb]/ensure: defined content as '{md5}4a8b4ea3be974976c9dc05fd557b009c'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/firewall/ip6tables.rb]/ensure: defined content as '{md5}06198524b5237bcf9222bce72535d817'
+Notice: /File[/var/lib/puppet/lib/facter/concat_basedir.rb]/ensure: defined content as '{md5}f2e991697602ffb3e80e0cc9efa37f3a'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/ensure_resource.rb]/ensure: defined content as '{md5}3f68b8e17a16bfd01455cd73f8e324ba'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_re.rb]/ensure: defined content as '{md5}c6664b3943bc820415a43f16372dc2a9'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/puppet_auth]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/puppet_auth/augeas.rb]/ensure: defined content as '{md5}962054aaf99c0de34c2dd265c4026f71'
+Notice: /File[/var/lib/puppet/lib/puppet/type/physical_volume.rb]/ensure: defined content as '{md5}d90f0d518d242cde40d59837af024875'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_function_available.rb]/ensure: defined content as '{md5}88c63869cb5df3402bc9756a8d40c16d'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/str2saltedsha512.rb]/ensure: defined content as '{md5}49afad7b386be38ce53deaefef326e85'
+Notice: /File[/var/lib/puppet/lib/augeas/lenses/fixedsudoers.aug]/ensure: defined content as '{md5}1492fda700091a906d27195bcdc40c90'
+Notice: /File[/var/lib/puppet/lib/puppet/type/sshd_config_subsystem.rb]/ensure: defined content as '{md5}f8d2d0e7ae12eb222c97825f275c3cd9'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/fqdn_rotate.rb]/ensure: defined content as '{md5}20743a138c56fc806a35cb7b60137dbc'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/nrpe_command/augeas.rb]/ensure: defined content as '{md5}6362f4dec54e726fe58f2281f68c97e1'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/package/pip3.rb]/ensure: defined content as '{md5}30d9ead657c959567226a22d43c1b8db'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/database_grant/mysql.rb]/ensure: defined content as '{md5}bfe3202efcecfe8f5fa98282594f7bed'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/values_at.rb]/ensure: defined content as '{md5}094ac110ce9f7a5b16d0c80a0cf2243c'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/sshd_config]/ensure: created
+Notice: /File[/var/lib/puppet/lib/puppet/provider/sshd_config/augeas.rb]/ensure: defined content as '{md5}9ac4871bfd06d96e41ad295631ea9cfc'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/getvar.rb]/ensure: defined content as '{md5}10bf744212947bc6a7bfd2c9836dbd23'
+Notice: /File[/var/lib/puppet/lib/puppet/provider/vcsrepo/cvs.rb]/ensure: defined content as '{md5}1ce8d98a2ffad4bf0c575af014270c8b'
+Notice: /File[/var/lib/puppet/lib/puppet/type/sysctl.rb]/ensure: defined content as '{md5}ab61fd2889a36f80993cb3e8d2fa5711'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/strftime.rb]/ensure: defined content as '{md5}e02e01a598ca5d7d6eee0ba22440304a'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/chop.rb]/ensure: defined content as '{md5}4691a56e6064b792ed4575e4ad3f3d20'
+Notice: /File[/var/lib/puppet/lib/puppet/util/firewall.rb]/ensure: defined content as '{md5}6f7667742d9f6d192cd202be0014dd85'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/is_float.rb]/ensure: defined content as '{md5}f1b0d333061d31bf0c25bd4c33dc134b'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/parsejson.rb]/ensure: defined content as '{md5}e7f968c34928107b84cd0860daf50ab1'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/validate_cmd.rb]/ensure: defined content as '{md5}0319a15d24fd077ebabc2f79969f6ab5'
+Notice: /File[/var/lib/puppet/lib/puppet/parser/functions/nslookup.rb]/ensure: defined content as '{md5}976cfe36eec535d97a17139c7408f0bd'
+Info: Loading facts in /var/lib/puppet/lib/facter/facter_dot_d.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/iptables_version.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/concat_basedir.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/last_run.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/iptables_persistent_version.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/puppet_vardir.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/pe_version.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/root_home.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/os_maj_version.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/windows_common_appdata.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/puppi_projects.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/lvm_support.rb
+Info: Loading facts in /var/lib/puppet/lib/facter/ip6tables_version.rb
+Info: Caching catalog for f20test
+Info: Applying configuration version '1400249601'
+Notice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat]/ensure: created
+Info: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat/bin]/ensure: created
+Info: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat/bin]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat/bin/concatfragments.sh]/ensure: defined content as '{md5}256169ee61115a6b717b2844d2ea3128'
+Info: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat/bin/concatfragments.sh]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Php::Fpm/Selboolean[nis_enabled]/value: value changed 'off' to 'on'
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf]: Scheduling refresh of Exec[concat_/etc/nginx/sites-available/localhost.conf]
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments.concat.out]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments.concat.out]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Php::Common/Package[php-common]/ensure: created
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments.concat]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments.concat]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments]: Scheduling refresh of Exec[concat_/etc/nginx/sites-available/localhost.conf]
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Nginx::Resource::Location[localhost-default]/Concat::Fragment[localhost-500-_]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/500_localhost-500-_]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Nginx::Resource::Location[localhost-default]/Concat::Fragment[localhost-500-_]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/500_localhost-500-_]: Scheduling refresh of Exec[concat_/etc/nginx/sites-available/localhost.conf]
+Info: Nginx::Resource::Location[localhost-default]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Location[php]/Concat::Fragment[localhost-500-~ _.php$]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/500_localhost-500-~ _.php$]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Location[php]/Concat::Fragment[localhost-500-~ _.php$]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/500_localhost-500-~ _.php$]: Scheduling refresh of Exec[concat_/etc/nginx/sites-available/localhost.conf]
+Notice: /Stage[main]/Php::Fpm::Daemon/Package[php-fpm]/ensure: created
+Notice: /Stage[main]/Php::Fpm::Daemon/File[/var/log/php-fpm]/owner: owner changed 'apache' to 'root'
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat::Fragment[localhost-footer]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/699_localhost-footer]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat::Fragment[localhost-footer]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/699_localhost-footer]: Scheduling refresh of Exec[concat_/etc/nginx/sites-available/localhost.conf]
+Notice: /Stage[main]/Php::Fpm/Selboolean[httpd_can_network_connect]/value: value changed 'off' to 'on'
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat::Fragment[localhost-header]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/001_localhost-header]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat::Fragment[localhost-header]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/001_localhost-header]: Scheduling refresh of Exec[concat_/etc/nginx/sites-available/localhost.conf]
+Notice: /Stage[main]/Nginx/User[nginx]/ensure: created
+Notice: /Stage[main]/Php::Fpm::Daemon/File[/etc/php-fpm.conf]/content: 
+--- /etc/php-fpm.conf	2014-02-18 08:13:49.000000000 -0700
++++ /tmp/puppet-file20140516-999-1dkeak	2014-05-16 08:43:10.545000000 -0600
+@@ -17,98 +17,43 @@
+ [global]
+ ; Pid file
+ ; Default Value: none
+-pid = /run/php-fpm/php-fpm.pid
++pid = /var/run/php-fpm/php-fpm.pid
+ 
+ ; Error log file
+-; If it's set to "syslog", log is sent to syslogd instead of being written
+-; in a local file.
+ ; Default Value: /var/log/php-fpm.log
+ error_log = /var/log/php-fpm/error.log
+ 
+-; syslog_facility is used to specify what type of program is logging the
+-; message. This lets syslogd specify that messages from different facilities
+-; will be handled differently.
+-; See syslog(3) for possible values (ex daemon equiv LOG_DAEMON)
+-; Default Value: daemon
+-;syslog.facility = daemon
+-
+-; syslog_ident is prepended to every message. If you have multiple FPM
+-; instances running on the same server, you can change the default value
+-; which must suit common needs.
+-; Default Value: php-fpm
+-;syslog.ident = php-fpm
+-
+ ; Log level
+ ; Possible Values: alert, error, warning, notice, debug
+ ; Default Value: notice
+-;log_level = notice
++log_level = notice
+ 
+ ; If this number of child processes exit with SIGSEGV or SIGBUS within the time
+ ; interval set by emergency_restart_interval then FPM will restart. A value
+ ; of '0' means 'Off'.
+ ; Default Value: 0
+-;emergency_restart_threshold = 0
++emergency_restart_threshold = 0
+ 
+-; Interval of time used by emergency_restart_interval to determine when 
++; Interval of time used by emergency_restart_interval to determine when
+ ; a graceful restart will be initiated.  This can be useful to work around
+ ; accidental corruptions in an accelerator's shared memory.
+ ; Available Units: s(econds), m(inutes), h(ours), or d(ays)
+ ; Default Unit: seconds
+ ; Default Value: 0
+-;emergency_restart_interval = 0
++emergency_restart_interval = 0
+ 
+ ; Time limit for child processes to wait for a reaction on signals from master.
+ ; Available units: s(econds), m(inutes), h(ours), or d(ays)
+ ; Default Unit: seconds
+ ; Default Value: 0
+-;process_control_timeout = 0
+-
+-; The maximum number of processes FPM will fork. This has been design to control
+-; the global number of processes when using dynamic PM within a lot of pools.
+-; Use it with caution.
+-; Note: A value of 0 indicates no limit
+-; Default Value: 0
+-;process.max = 128
+-
+-; Specify the nice(2) priority to apply to the master process (only if set)
+-; The value can vary from -19 (highest priority) to 20 (lower priority)
+-; Note: - It will only work if the FPM master process is launched as root
+-;       - The pool process will inherit the master process priority
+-;         unless it specified otherwise
+-; Default Value: no set
+-;process.priority = -19
++process_control_timeout = 0
+ 
+ ; Send FPM to background. Set to 'no' to keep FPM in foreground for debugging.
+ ; Default Value: yes
+-daemonize = no
+-
+-; Set open file descriptor rlimit for the master process.
+-; Default Value: system defined value
+-;rlimit_files = 1024
+-
+-; Set max core size rlimit for the master process.
+-; Possible Values: 'unlimited' or an integer greater or equal to 0
+-; Default Value: system defined value
+-;rlimit_core = 0
+-
+-; Specify the event mechanism FPM will use. The following is available:
+-; - select     (any POSIX os)
+-; - poll       (any POSIX os)
+-; - epoll      (linux >= 2.5.44)
+-; Default Value: not set (auto detection)
+-;events.mechanism = epoll
+-
+-; When FPM is build with systemd integration, specify the interval,
+-; in second, between health report notification to systemd.
+-; Set to 0 to disable.
+-; Available Units: s(econds), m(inutes), h(ours)
+-; Default Unit: seconds
+-; Default value: 10
+-;systemd_interval = 10
++;daemonize = yes
+ 
+ ;;;;;;;;;;;;;;;;;;;;
+-; Pool Definitions ; 
++; Pool Definitions ;
+ ;;;;;;;;;;;;;;;;;;;;
+ 
+ ; See /etc/php-fpm.d/*.conf
+-
+Info: /Stage[main]/Php::Fpm::Daemon/File[/etc/php-fpm.conf]: Filebucketed /etc/php-fpm.conf to puppet with sum f9a2ae899a5044b930825fb2a3e5ae12
+Notice: /Stage[main]/Php::Fpm::Daemon/File[/etc/php-fpm.conf]/content: content changed '{md5}f9a2ae899a5044b930825fb2a3e5ae12' to '{md5}dbd1a5e4d805d001507c43376d864642'
+Notice: /Stage[main]/Php::Fpm::Daemon/File[/etc/php-fpm.conf]/owner: owner changed 'root' to 'nginx'
+Notice: /Stage[main]/Php::Fpm::Daemon/File[/etc/php-fpm.conf]/group: group changed 'root' to 'nginx'
+Info: /Stage[main]/Php::Fpm::Daemon/File[/etc/php-fpm.conf]: Scheduling refresh of Service[php-fpm]
+Info: /Stage[main]/Php::Fpm::Daemon/File[/etc/php-fpm.conf]: Scheduling refresh of Service[php-fpm]
+Info: /Stage[main]/Php::Fpm::Daemon/File[/etc/php-fpm.conf]: Scheduling refresh of Service[php-fpm]
+Notice: /Stage[main]/Php::Fpm/File[/var/lib/php]/owner: owner changed 'root' to 'nginx'
+Notice: /Stage[main]/Php::Fpm/File[/var/lib/php]/group: group changed 'root' to 'nginx'
+Notice: /Stage[main]/Php::Fpm/File[/var/lib/php]/mode: mode changed '0755' to '0775'
+Notice: /Stage[main]/Php::Fpm/Php::Ini[/etc/php.ini]/File[/etc/php.ini]/content: 
+--- /etc/php.ini	2014-02-18 08:13:49.000000000 -0700
++++ /tmp/puppet-file20140516-999-u30g06	2014-05-16 08:43:11.132000000 -0600
+@@ -17,12 +17,12 @@
+ ; 6. The directory from the --with-config-file-path compile time option, or the
+ ; Windows directory (C:\windows or C:\winnt)
+ ; See the PHP docs for more specific information.
+-; http://php.net/configuration.file
++; http://www.php.net/manual/en/configuration.file.php
+ 
+-; The syntax of the file is extremely simple.  Whitespace and lines
++; The syntax of the file is extremely simple.  Whitespace and Lines
+ ; beginning with a semicolon are silently ignored (as you probably guessed).
+ ; Section headers (e.g. [Foo]) are also silently ignored, even though
+-; they might mean something in the future.
++; they might mean something in the future. 
+ 
+ ; Directives following the section heading [PATH=/www/mysite] only
+ ; apply to PHP files in the /www/mysite directory.  Directives
+@@ -31,7 +31,7 @@
+ ; special sections cannot be overridden by user-defined INI files or
+ ; at runtime. Currently, [PATH=] and [HOST=] sections only work under
+ ; CGI/FastCGI.
+-; http://php.net/ini.sections
++; http://www.php.net/manual/en/ini.sections.php
+ 
+ ; Directives are specified using the following syntax:
+ ; directive = value
+@@ -83,7 +83,8 @@
+ ; development version only in development environments as errors shown to
+ ; application users can inadvertently leak otherwise secure information.
+ 
+-; This is php.ini-production INI file.
++; This 2 files are provided, by RPM, in /usr/share/doc/php-common-*/
++; File used by RPM (the /etc/php.ini) is mainly the php.ini-production
+ 
+ ;;;;;;;;;;;;;;;;;;;
+ ; Quick Reference ;
+@@ -93,6 +94,11 @@
+ ; Please see the actual settings later in the document for more details as to why
+ ; we recommend these changes in PHP's behavior.
+ 
++; allow_call_time_pass_reference
++;   Default Value: On
++;   Development Value: Off
++;   Production Value: Off
++
+ ; display_errors
+ ;   Default Value: On
+ ;   Development Value: On
+@@ -104,20 +110,25 @@
+ ;   Production Value: Off
+ 
+ ; error_reporting
+-;   Default Value: E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED
+-;   Development Value: E_ALL
+-;   Production Value: E_ALL & ~E_DEPRECATED & ~E_STRICT
++;   Default Value: E_ALL & ~E_NOTICE
++;   Development Value: E_ALL | E_STRICT
++;   Production Value: E_ALL & ~E_DEPRECATED
+ 
+ ; html_errors
+ ;   Default Value: On
+ ;   Development Value: On
+-;   Production value: On
++;   Production value: Off
+ 
+ ; log_errors
+ ;   Default Value: Off
+ ;   Development Value: On
+ ;   Production Value: On
+ 
++; magic_quotes_gpc
++;   Default Value: On
++;   Development Value: Off
++;   Production Value: Off
++
+ ; max_input_time
+ ;   Default Value: -1 (Unlimited)
+ ;   Development Value: 60 (60 seconds)
+@@ -133,6 +144,11 @@
+ ;   Development Value: Off
+ ;   Production Value: Off
+ 
++; register_long_arrays
++;   Default Value: On
++;   Development Value: Off
++;   Production Value: Off
++
+ ; request_order
+ ;   Default Value: None
+ ;   Development Value: "GP"
+@@ -182,7 +198,7 @@
+ ; php.ini Options  ;
+ ;;;;;;;;;;;;;;;;;;;;
+ ; Name for user-defined php.ini (.htaccess) files. Default is ".user.ini"
+-;user_ini.filename = ".user.ini"
++user_ini.filename = ".user.ini"
+ 
+ ; To disable this feature set this option to empty value
+ ;user_ini.filename =
+@@ -195,30 +211,35 @@
+ ;;;;;;;;;;;;;;;;;;;;
+ 
+ ; Enable the PHP scripting language engine under Apache.
+-; http://php.net/engine
++; http://www.php.net/manual/en/apache.configuration.php#ini.engine
+ engine = On
+ 
+ ; This directive determines whether or not PHP will recognize code between
+-; <? and ?> tags as PHP source which should be processed as such. It is
+-; generally recommended that <?php and ?> should be used and that this feature
+-; should be disabled, as enabling it may result in issues when generating XML
+-; documents, however this remains supported for backward compatibility reasons.
+-; Note that this directive does not control the <?= shorthand tag, which can be
+-; used regardless of this directive.
++; <? and ?> tags as PHP source which should be processed as such. It's been
++; recommended for several years that you not use the short tag "short cut" and
++; instead to use the full <?php and ?> tag combination. With the wide spread use
++; of XML and use of these tags by other languages, the server can become easily
++; confused and end up parsing the wrong code in the wrong context. But because
++; this short cut has been a feature for such a long time, it's currently still
++; supported for backwards compatibility, but we recommend you don't use them.
+ ; Default Value: On
+ ; Development Value: Off
+ ; Production Value: Off
+-; http://php.net/short-open-tag
++; http://www.php.net/manual/en/ini.core.php#ini.short-open-tag
+ short_open_tag = Off
+ 
+ ; Allow ASP-style <% %> tags.
+-; http://php.net/asp-tags
++; http://www.php.net/manual/en/ini.core.php#ini.asp-tags
+ asp_tags = Off
+ 
+ ; The number of significant digits displayed in floating point numbers.
+-; http://php.net/precision
++; http://www.php.net/manual/en/ini.core.php#ini.precision
+ precision = 14
+ 
++; Enforce year 2000 compliance (will cause problems with non-compliant browsers)
++; http://www.php.net/manual/en/ini.core.php#ini.y2k-compliance
++y2k_compliance = On
++
+ ; Output buffering is a mechanism for controlling how much output data
+ ; (excluding headers and cookies) PHP should keep internally before pushing that
+ ; data to the client. If your application's output exceeds this setting, PHP
+@@ -236,11 +257,10 @@
+ ;   On = Enabled and buffer is unlimited. (Use with caution)
+ ;   Off = Disabled
+ ;   Integer = Enables the buffer and sets its maximum size in bytes.
+-; Note: This directive is hardcoded to Off for the CLI SAPI
+ ; Default Value: Off
+ ; Development Value: 4096
+ ; Production Value: 4096
+-; http://php.net/output-buffering
++; http://www.php.net/manual/en/outcontrol.configuration.php#ini.output-buffering
+ output_buffering = 4096
+ 
+ ; You can redirect all of the output of your scripts to a function.  For
+@@ -255,7 +275,7 @@
+ ;   and you cannot use both "ob_gzhandler" and "zlib.output_compression".
+ ; Note: output_handler must be empty if this is set 'On' !!!!
+ ;   Instead you must use zlib.output_handler.
+-; http://php.net/output-handler
++; http://www.php.net/manual/en/outcontrol.configuration.php#ini.output-handler
+ ;output_handler =
+ 
+ ; Transparent output compression using the zlib library
+@@ -267,16 +287,16 @@
+ ;   performance, enable output_buffering in addition.
+ ; Note: You need to use zlib.output_handler instead of the standard
+ ;   output_handler, or otherwise the output will be corrupted.
+-; http://php.net/zlib.output-compression
++; http://www.php.net/manual/en/zlib.configuration.php#ini.zlib.output-compression
+ zlib.output_compression = Off
+ 
+-; http://php.net/zlib.output-compression-level
++; http://www.php.net/manual/en/zlib.configuration.php#ini.zlib.output-compression-level
+ ;zlib.output_compression_level = -1
+ 
+ ; You cannot specify additional output handlers if zlib.output_compression
+ ; is activated here. This setting does the same as output_handler but in
+ ; a different order.
+-; http://php.net/zlib.output-handler
++; http://www.php.net/manual/en/zlib.configuration.php#ini.zlib.output-handler
+ ;zlib.output_handler =
+ 
+ ; Implicit flush tells PHP to tell the output layer to flush itself
+@@ -284,8 +304,7 @@
+ ; PHP function flush() after each and every call to print() or echo() and each
+ ; and every HTML block.  Turning this option on has serious performance
+ ; implications and is generally recommended for debugging purposes only.
+-; http://php.net/implicit-flush
+-; Note: This directive is hardcoded to On for the CLI SAPI
++; http://www.php.net/manual/en/outcontrol.configuration.php#ini.implicit-flush
+ implicit_flush = Off
+ 
+ ; The unserialize callback function will be called (with the undefined class'
+@@ -299,33 +318,86 @@
+ ; When floats & doubles are serialized store serialize_precision significant
+ ; digits after the floating point. The default value ensures that when floats
+ ; are decoded with unserialize, the data will remain the same.
+-serialize_precision = 17
++serialize_precision = 100
++
++; This directive allows you to enable and disable warnings which PHP will issue
++; if you pass a value by reference at function call time. Passing values by
++; reference at function call time is a deprecated feature which will be removed
++; from PHP at some point in the near future. The acceptable method for passing a
++; value by reference to a function is by declaring the reference in the functions
++; definition, not at call time. This directive does not disable this feature, it
++; only determines whether PHP will warn you about it or not. These warnings
++; should enabled in development environments only.
++; Default Value: On (Suppress warnings)
++; Development Value: Off (Issue warnings)
++; Production Value: Off (Issue warnings)
++; http://www.php.net/manual/en/ini.core.php#ini.allow-call-time-pass-reference
++allow_call_time_pass_reference = Off
++
++; Safe Mode
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.safe-mode
++safe_mode = Off
++
++; By default, Safe Mode does a UID compare check when
++; opening files. If you want to relax this to a GID compare,
++; then turn on safe_mode_gid.
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.safe-mode-gid
++safe_mode_gid = Off
++
++; When safe_mode is on, UID/GID checks are bypassed when
++; including files from this directory and its subdirectories.
++; (directory must also be in include_path or full path must
++; be used when including)
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.safe-mode-include-dir
++safe_mode_include_dir = 
++
++; When safe_mode is on, only executables located in the safe_mode_exec_dir
++; will be allowed to be executed via the exec family of functions.
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.safe-mode-exec-dir
++safe_mode_exec_dir = 
++
++; Setting certain environment variables may be a potential security breach.
++; This directive contains a comma-delimited list of prefixes.  In Safe Mode,
++; the user may only alter environment variables whose names begin with the
++; prefixes supplied here.  By default, users will only be able to set
++; environment variables that begin with PHP_ (e.g. PHP_FOO=BAR).
++; Note:  If this directive is empty, PHP will let the user modify ANY
++;   environment variable!
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.safe-mode-allowed-env-vars
++safe_mode_allowed_env_vars = PHP_
++
++; This directive contains a comma-delimited list of environment variables that
++; the end user won't be able to change using putenv().  These variables will be
++; protected even if safe_mode_allowed_env_vars is set to allow to change them.
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.safe-mode-protected-env-vars
++safe_mode_protected_env_vars = LD_LIBRARY_PATH
+ 
+ ; open_basedir, if set, limits all file operations to the defined directory
+ ; and below.  This directive makes most sense if used in a per-directory
+ ; or per-virtualhost web server configuration file. This directive is
+ ; *NOT* affected by whether Safe Mode is turned On or Off.
+-; http://php.net/open-basedir
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.open-basedir
+ ;open_basedir =
+ 
+ ; This directive allows you to disable certain functions for security reasons.
+ ; It receives a comma-delimited list of function names. This directive is
+ ; *NOT* affected by whether Safe Mode is turned On or Off.
+-; http://php.net/disable-functions
+-disable_functions =
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.disable-functions
++disable_functions = 
+ 
+ ; This directive allows you to disable certain classes for security reasons.
+ ; It receives a comma-delimited list of class names. This directive is
+ ; *NOT* affected by whether Safe Mode is turned On or Off.
+-; http://php.net/disable-classes
+-disable_classes =
++; http://www.php.net/manual/en/ini.sect.safe-mode.php#ini.disable-classes
++disable_classes = 
+ 
+ ; Colors for Syntax Highlighting mode.  Anything that's acceptable in
+ ; <span style="color: ???????"> would work.
+-; http://php.net/syntax-highlighting
++; http://www.php.net/manual/en/misc.configuration.php#ini.syntax-highlighting
+ ;highlight.string  = #DD0000
+ ;highlight.comment = #FF9900
+ ;highlight.keyword = #007700
++;highlight.bg      = #FFFFFF
+ ;highlight.default = #0000BB
+ ;highlight.html    = #000000
+ 
+@@ -333,37 +405,25 @@
+ ; the request. Consider enabling it if executing long requests, which may end up
+ ; being interrupted by the user or a browser timing out. PHP's default behavior
+ ; is to disable this feature.
+-; http://php.net/ignore-user-abort
++; http://www.php.net/manual/en/misc.configuration.php#ini.ignore-user-abort
+ ;ignore_user_abort = On
+ 
+ ; Determines the size of the realpath cache to be used by PHP. This value should
+ ; be increased on systems where PHP opens many files to reflect the quantity of
+ ; the file operations performed.
+-; http://php.net/realpath-cache-size
++; http://www.php.net/manual/en/ini.core.php#ini.realpath-cache-size
+ ;realpath_cache_size = 16k
+ 
+ ; Duration of time, in seconds for which to cache realpath information for a given
+ ; file or directory. For systems with rarely changing files, consider increasing this
+ ; value.
+-; http://php.net/realpath-cache-ttl
++; http://www.php.net/manual/en/ini.core.php#ini.realpath-cache-ttl
+ ;realpath_cache_ttl = 120
+ 
+ ; Enables or disables the circular reference collector.
+ ; http://php.net/zend.enable-gc
+ zend.enable_gc = On
+ 
+-; If enabled, scripts may be written in encodings that are incompatible with
+-; the scanner.  CP936, Big5, CP949 and Shift_JIS are the examples of such
+-; encodings.  To use this feature, mbstring extension must be enabled.
+-; Default: Off
+-;zend.multibyte = Off
+-
+-; Allows to set the default encoding for the scripts.  This value will be used
+-; unless "declare(encoding=...)" directive appears at the top of the script.
+-; Only affects if zend.multibyte is set.
+-; Default: ""
+-;zend.script_encoding =
+-
+ ;;;;;;;;;;;;;;;;;
+ ; Miscellaneous ;
+ ;;;;;;;;;;;;;;;;;
+@@ -372,7 +432,7 @@
+ ; (e.g. by adding its signature to the Web server header).  It is no security
+ ; threat in any way, but it makes it possible to determine whether you use PHP
+ ; on your server or not.
+-; http://php.net/expose-php
++; http://www.php.net/manual/en/ini.core.php#ini.expose-php
+ expose_php = On
+ 
+ ;;;;;;;;;;;;;;;;;;;
+@@ -380,29 +440,27 @@
+ ;;;;;;;;;;;;;;;;;;;
+ 
+ ; Maximum execution time of each script, in seconds
+-; http://php.net/max-execution-time
+-; Note: This directive is hardcoded to 0 for the CLI SAPI
++; http://www.php.net/manual/en/info.configuration.php#ini.max-execution-time
+ max_execution_time = 30
+ 
+ ; Maximum amount of time each script may spend parsing request data. It's a good
+ ; idea to limit this time on productions servers in order to eliminate unexpectedly
+-; long running scripts.
+-; Note: This directive is hardcoded to -1 for the CLI SAPI
++; long running scripts. 
+ ; Default Value: -1 (Unlimited)
+ ; Development Value: 60 (60 seconds)
+ ; Production Value: 60 (60 seconds)
+-; http://php.net/max-input-time
++; http://www.php.net/manual/en/info.configuration.php#ini.max-input-time
+ max_input_time = 60
+ 
+ ; Maximum input variable nesting level
+-; http://php.net/max-input-nesting-level
++; http://www.php.net/manual/en/info.configuration.php#ini.max-input-nesting-level
+ ;max_input_nesting_level = 64
+ 
+ ; How many GET/POST/COOKIE input variables may be accepted
+-; max_input_vars = 1000
++max_input_vars = 1000
+ 
+ ; Maximum amount of memory a script may consume (128MB)
+-; http://php.net/memory-limit
++; http://www.php.net/manual/en/ini.core.php#ini.memory-limit
+ memory_limit = 128M
+ 
+ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+@@ -420,12 +478,12 @@
+ ; recommend error reporting setting. Your production server shouldn't be wasting
+ ; resources complaining about best practices and coding standards. That's what
+ ; development servers and development settings are for.
+-; Note: The php.ini-development file has this setting as E_ALL. This
++; Note: The php.ini-development file has this setting as E_ALL | E_STRICT. This
+ ; means it pretty much reports everything which is exactly what you want during
+ ; development and early testing.
+ ;
+ ; Error Level Constants:
+-; E_ALL             - All errors and warnings (includes E_STRICT as of PHP 5.4.0)
++; E_ALL             - All errors and warnings (includes E_STRICT as of PHP 6.0.0)
+ ; E_ERROR           - fatal run-time errors
+ ; E_RECOVERABLE_ERROR  - almost fatal run-time errors
+ ; E_WARNING         - run-time warnings (non-fatal errors)
+@@ -451,15 +509,15 @@
+ ; E_USER_DEPRECATED - user-generated deprecation warnings
+ ;
+ ; Common Values:
+-;   E_ALL (Show all errors, warnings and notices including coding standards.)
+-;   E_ALL & ~E_NOTICE  (Show all errors, except for notices)
+-;   E_ALL & ~E_NOTICE & ~E_STRICT  (Show all errors, except for notices and coding standards warnings.)
++;   E_ALL & ~E_NOTICE  (Show all errors, except for notices and coding standards warnings.)
++;   E_ALL & ~E_NOTICE | E_STRICT  (Show all errors, except for notices)
+ ;   E_COMPILE_ERROR|E_RECOVERABLE_ERROR|E_ERROR|E_CORE_ERROR  (Show only errors)
+-; Default Value: E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED
+-; Development Value: E_ALL
+-; Production Value: E_ALL & ~E_DEPRECATED & ~E_STRICT
+-; http://php.net/error-reporting
+-error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
++;   E_ALL | E_STRICT  (Show all errors, warnings and notices including coding standards.)
++; Default Value: E_ALL & ~E_NOTICE
++; Development Value: E_ALL | E_STRICT
++; Production Value: E_ALL & ~E_DEPRECATED
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.error-reporting
++error_reporting = E_ALL & ~E_DEPRECATED
+ 
+ ; This directive controls whether or not and where PHP will output errors,
+ ; notices and warnings too. Error output is very useful during development, but
+@@ -469,14 +527,14 @@
+ ; It's recommended that errors be logged on production servers rather than
+ ; having the errors sent to STDOUT.
+ ; Possible Values:
+-;   Off = Do not display any errors
+-;   stderr = Display errors to STDERR (affects only CGI/CLI binaries!)
++;   Off = Do not display any errors 
++;   stderr = Display errors to STDERR (affects only CGI/CLI binaries!)   
+ ;   On or stdout = Display errors to STDOUT
+ ; Default Value: On
+ ; Development Value: On
+ ; Production Value: Off
+-; http://php.net/display-errors
+-display_errors = Off
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.display-errors
++display_errors = On
+ 
+ ; The display of errors which occur during PHP's startup sequence are handled
+ ; separately from display_errors. PHP's default behavior is to suppress those
+@@ -486,7 +544,7 @@
+ ; Default Value: Off
+ ; Development Value: On
+ ; Production Value: Off
+-; http://php.net/display-startup-errors
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.display-startup-errors
+ display_startup_errors = Off
+ 
+ ; Besides displaying errors, PHP can also log errors to locations such as a
+@@ -496,29 +554,29 @@
+ ; Default Value: Off
+ ; Development Value: On
+ ; Production Value: On
+-; http://php.net/log-errors
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.log-errors
+ log_errors = On
+ 
+ ; Set maximum length of log_errors. In error_log information about the source is
+ ; added. The default is 1024 and 0 allows to not apply any maximum length at all.
+-; http://php.net/log-errors-max-len
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.log-errors-max-len
+ log_errors_max_len = 1024
+ 
+ ; Do not log repeated messages. Repeated errors must occur in same file on same
+ ; line unless ignore_repeated_source is set true.
+-; http://php.net/ignore-repeated-errors
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.ignore-repeated-errors
+ ignore_repeated_errors = Off
+ 
+ ; Ignore source of message when ignoring repeated messages. When this setting
+ ; is On you will not log errors with repeated messages from different files or
+ ; source lines.
+-; http://php.net/ignore-repeated-source
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.ignore-repeated-source
+ ignore_repeated_source = Off
+ 
+ ; If this parameter is set to Off, then memory leaks will not be shown (on
+ ; stdout or in the log). This has only effect in a debug compile, and if
+ ; error reporting includes E_WARNING in the allowed list
+-; http://php.net/report-memleaks
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.report-memleaks
+ report_memleaks = On
+ 
+ ; This setting is on by default.
+@@ -530,110 +588,127 @@
+ ; Default Value: Off
+ ; Development Value: On
+ ; Production Value: Off
+-; http://php.net/track-errors
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.track-errors
+ track_errors = Off
+ 
+ ; Turn off normal error reporting and emit XML-RPC error XML
+-; http://php.net/xmlrpc-errors
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.xmlrpc-errors
+ ;xmlrpc_errors = 0
+ 
+ ; An XML-RPC faultCode
+ ;xmlrpc_error_number = 0
+ 
+-; When PHP displays or logs an error, it has the capability of formatting the
+-; error message as HTML for easier reading. This directive controls whether
+-; the error message is formatted as HTML or not.
+-; Note: This directive is hardcoded to Off for the CLI SAPI
++; When PHP displays or logs an error, it has the capability of inserting html
++; links to documentation related to that error. This directive controls whether
++; those HTML links appear in error messages or not. For performance and security
++; reasons, it's recommended you disable this on production servers.
+ ; Default Value: On
+ ; Development Value: On
+-; Production value: On
+-; http://php.net/html-errors
+-html_errors = On
+-
+-; If html_errors is set to On *and* docref_root is not empty, then PHP
+-; produces clickable error messages that direct to a page describing the error
+-; or function causing the error in detail.
+-; You can download a copy of the PHP manual from http://php.net/docs
++; Production value: Off
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.html-errors
++html_errors = Off
++
++; If html_errors is set On PHP produces clickable error messages that direct
++; to a page describing the error or function causing the error in detail.
++; You can download a copy of the PHP manual from http://www.php.net/docs.php
+ ; and change docref_root to the base URL of your local copy including the
+ ; leading '/'. You must also specify the file extension being used including
+-; the dot. PHP's default behavior is to leave these settings empty, in which
+-; case no links to documentation are generated.
++; the dot. PHP's default behavior is to leave these settings empty.
+ ; Note: Never use this feature for production boxes.
+-; http://php.net/docref-root
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.docref-root
+ ; Examples
+ ;docref_root = "/phpmanual/"
+ 
+-; http://php.net/docref-ext
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.docref-ext
+ ;docref_ext = .html
+ 
+ ; String to output before an error message. PHP's default behavior is to leave
+ ; this setting blank.
+-; http://php.net/error-prepend-string
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.error-prepend-string
+ ; Example:
+-;error_prepend_string = "<span style='color: #ff0000'>"
++;error_prepend_string = "<font color=#ff0000>"
+ 
+ ; String to output after an error message. PHP's default behavior is to leave
+ ; this setting blank.
+-; http://php.net/error-append-string
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.error-append-string
+ ; Example:
+-;error_append_string = "</span>"
++;error_append_string = "</font>"
+ 
+ ; Log errors to specified file. PHP's default behavior is to leave this value
+ ; empty.
+-; http://php.net/error-log
++; http://www.php.net/manual/en/errorfunc.configuration.php#ini.error-log
+ ; Example:
+ ;error_log = php_errors.log
+ ; Log errors to syslog (Event Log on NT, not valid in Windows 95).
+ ;error_log = syslog
+ 
+-;windows.show_crt_warning
+-; Default value: 0
+-; Development value: 0
+-; Production value: 0
+-
+ ;;;;;;;;;;;;;;;;;
+ ; Data Handling ;
+ ;;;;;;;;;;;;;;;;;
+ 
++; Note - track_vars is ALWAYS enabled as of PHP 4.0.3
++
+ ; The separator used in PHP generated URLs to separate arguments.
+ ; PHP's default setting is "&".
+-; http://php.net/arg-separator.output
++; http://www.php.net/manual/en/ini.core.php#ini.arg-separator.output
+ ; Example:
+ ;arg_separator.output = "&amp;"
+ 
+ ; List of separator(s) used by PHP to parse input URLs into variables.
+ ; PHP's default setting is "&".
+ ; NOTE: Every character in this directive is considered as separator!
+-; http://php.net/arg-separator.input
++; http://www.php.net/manual/en/ini.core.php#ini.arg-separator.input
+ ; Example:
+ ;arg_separator.input = ";&"
+ 
+ ; This directive determines which super global arrays are registered when PHP
+-; starts up. G,P,C,E & S are abbreviations for the following respective super
+-; globals: GET, POST, COOKIE, ENV and SERVER. There is a performance penalty
+-; paid for the registration of these arrays and because ENV is not as commonly
+-; used as the others, ENV is not recommended on productions servers. You
+-; can still get access to the environment variables through getenv() should you
+-; need to.
++; starts up. If the register_globals directive is enabled, it also determines
++; what order variables are populated into the global space. G,P,C,E & S are
++; abbreviations for the following respective super globals: GET, POST, COOKIE,
++; ENV and SERVER. There is a performance penalty paid for the registration of
++; these arrays and because ENV is not as commonly used as the others, ENV is
++; is not recommended on productions servers. You can still get access to
++; the environment variables through getenv() should you need to.
+ ; Default Value: "EGPCS"
+ ; Development Value: "GPCS"
+ ; Production Value: "GPCS";
+-; http://php.net/variables-order
++; http://www.php.net/manual/en/ini.core.php#ini.variables-order
+ variables_order = "GPCS"
+ 
+ ; This directive determines which super global data (G,P,C,E & S) should
+ ; be registered into the super global array REQUEST. If so, it also determines
+ ; the order in which that data is registered. The values for this directive are
+ ; specified in the same manner as the variables_order directive, EXCEPT one.
+-; Leaving this value empty will cause PHP to use the value set in the
++; Leaving this value empty will cause PHP to use the value set in the 
+ ; variables_order directive. It does not mean it will leave the super globals
+ ; array REQUEST empty.
+ ; Default Value: None
+ ; Development Value: "GP"
+ ; Production Value: "GP"
+-; http://php.net/request-order
++; http://www.php.net/manual/en/ini.core.php#ini.request-order
+ request_order = "GP"
+ 
++; Whether or not to register the EGPCS variables as global variables.  You may
++; want to turn this off if you don't want to clutter your scripts' global scope
++; with user data.  This makes most sense when coupled with track_vars - in which
++; case you can access all of the GPC variables through the $HTTP_*_VARS[],
++; variables.
++; You should do your best to write your scripts so that they do not require
++; register_globals to be on;  Using form variables as globals can easily lead
++; to possible security problems, if the code is not very well thought of.
++; http://www.php.net/manual/en/ini.core.php#ini.register-globals
++register_globals = Off
++
++; Determines whether the deprecated long $HTTP_*_VARS type predefined variables
++; are registered by PHP or not. As they are deprecated, we obviously don't
++; recommend you use them. They are on by default for compatibility reasons but
++; they are not recommended on production servers.
++; Default Value: On
++; Development Value: Off
++; Production Value: Off
++; http://www.php.net/manual/en/ini.core.php#ini.register-long-arrays
++register_long_arrays = Off
++
+ ; This directive determines whether PHP registers $argv & $argc each time it
+ ; runs. $argv contains an array of all the arguments passed to PHP when a script
+ ; is invoked. $argc contains an integer representing the number of arguments
+@@ -642,60 +717,71 @@
+ ; enabled, registering these variables consumes CPU cycles and memory each time
+ ; a script is executed. For performance reasons, this feature should be disabled
+ ; on production servers.
+-; Note: This directive is hardcoded to On for the CLI SAPI
+ ; Default Value: On
+ ; Development Value: Off
+ ; Production Value: Off
+-; http://php.net/register-argc-argv
++; http://www.php.net/manual/en/ini.core.php#ini.register-argc-argv
+ register_argc_argv = Off
+ 
+-; When enabled, the ENV, REQUEST and SERVER variables are created when they're
+-; first used (Just In Time) instead of when the script starts. If these
+-; variables are not used within a script, having this directive on will result
+-; in a performance gain. The PHP directive register_argc_argv must be disabled
+-; for this directive to have any affect.
+-; http://php.net/auto-globals-jit
++; When enabled, the SERVER and ENV variables are created when they're first
++; used (Just In Time) instead of when the script starts. If these variables
++; are not used within a script, having this directive on will result in a
++; performance gain. The PHP directives register_globals, register_long_arrays,
++; and register_argc_argv must be disabled for this directive to have any affect.
++; http://www.php.net/manual/en/ini.core.php#ini.auto-globals-jit
+ auto_globals_jit = On
+ 
+-; Whether PHP will read the POST data.
+-; This option is enabled by default.
+-; Most likely, you won't want to disable this option globally. It causes $_POST
+-; and $_FILES to always be empty; the only way you will be able to read the
+-; POST data will be through the php://input stream wrapper. This can be useful
+-; to proxy requests or to process the POST data in a memory efficient fashion.
+-; http://php.net/enable-post-data-reading
+-;enable_post_data_reading = Off
+-
+ ; Maximum size of POST data that PHP will accept.
+-; Its value may be 0 to disable the limit. It is ignored if POST data reading
+-; is disabled through enable_post_data_reading.
+-; http://php.net/post-max-size
++; http://www.php.net/manual/en/ini.core.php#ini.post-max-size
+ post_max_size = 8M
+ 
++; Magic quotes are a preprocessing feature of PHP where PHP will attempt to
++; escape any character sequences in GET, POST, COOKIE and ENV data which might
++; otherwise corrupt data being placed in resources such as databases before
++; making that data available to you. Because of character encoding issues and
++; non-standard SQL implementations across many databases, it's not currently
++; possible for this feature to be 100% accurate. PHP's default behavior is to
++; enable the feature. We strongly recommend you use the escaping mechanisms
++; designed specifically for the database your using instead of relying on this
++; feature. Also note, this feature has been deprecated as of PHP 5.3.0 and is
++; scheduled for removal in PHP 6.
++; Default Value: On
++; Development Value: Off
++; Production Value: Off
++; http://www.php.net/manual/en/info.configuration.php#ini.magic-quotes-gpc
++magic_quotes_gpc = Off
++
++; Magic quotes for runtime-generated data, e.g. data from SQL, from exec(), etc.
++; http://www.php.net/manual/en/info.configuration.php#ini.magic-quotes-runtime
++magic_quotes_runtime = Off
++
++; Use Sybase-style magic quotes (escape ' with '' instead of \').
++; http://www.php.net/manual/en/sybase.configuration.php#ini.magic-quotes-sybase
++magic_quotes_sybase = Off
++
+ ; Automatically add files before PHP document.
+-; http://php.net/auto-prepend-file
+-auto_prepend_file =
++; http://www.php.net/manual/en/ini.core.php#ini.auto-prepend-file
++auto_prepend_file = 
+ 
+ ; Automatically add files after PHP document.
+-; http://php.net/auto-append-file
+-auto_append_file =
++; http://www.php.net/manual/en/ini.core.php#ini.auto-append-file
++auto_append_file = 
+ 
+-; By default, PHP will output a character encoding using
++; As of 4.0b4, PHP always outputs a character encoding by default in
+ ; the Content-type: header.  To disable sending of the charset, simply
+ ; set it to be empty.
+ ;
+ ; PHP's built-in default is text/html
+-; http://php.net/default-mimetype
++; http://www.php.net/manual/en/ini.core.php#ini.default-mimetype
+ default_mimetype = "text/html"
+ 
+ ; PHP's default character set is set to empty.
+-; http://php.net/default-charset
+-;default_charset = "UTF-8"
++; http://www.php.net/manual/en/ini.core.php#ini.default-charset
++;default_charset = "iso-8859-1"
+ 
+ ; Always populate the $HTTP_RAW_POST_DATA variable. PHP's default behavior is
+-; to disable this feature. If post reading is disabled through
+-; enable_post_data_reading, $HTTP_RAW_POST_DATA is *NOT* populated.
+-; http://php.net/always-populate-raw-post-data
++; to disable this feature.
++; http://www.php.net/manual/en/ini.core.php#ini.always-populate-raw-post-data
+ ;always_populate_raw_post_data = On
+ 
+ ;;;;;;;;;;;;;;;;;;;;;;;;;
+@@ -709,42 +795,36 @@
+ ;include_path = ".;c:\php\includes"
+ ;
+ ; PHP's default setting for include_path is ".;/path/to/php/pear"
+-; http://php.net/include-path
++; http://www.php.net/manual/en/ini.core.php#ini.include-path
+ 
+ ; The root of the PHP pages, used only if nonempty.
+ ; if PHP was not compiled with FORCE_REDIRECT, you SHOULD set doc_root
+ ; if you are running php as a CGI under any web server (other than IIS)
+ ; see documentation for security issues.  The alternate is to use the
+ ; cgi.force_redirect configuration below
+-; http://php.net/doc-root
+-doc_root =
++; http://www.php.net/manual/en/ini.core.php#ini.doc-root
++doc_root = 
+ 
+ ; The directory under which PHP opens the script using /~username used only
+ ; if nonempty.
+-; http://php.net/user-dir
+-user_dir =
++; http://www.php.net/manual/en/ini.core.php#ini.user-dir
++user_dir = 
+ 
+ ; Directory in which the loadable extensions (modules) reside.
+-; http://php.net/extension-dir
++; http://www.php.net/manual/en/ini.core.php#ini.extension-dir
+ ; extension_dir = "./"
+-; On windows:
+-; extension_dir = "ext"
+-
+-; Directory where the temporary files should be placed.
+-; Defaults to the system default (see sys_get_temp_dir)
+-; sys_temp_dir = "/tmp"
+ 
+ ; Whether or not to enable the dl() function.  The dl() function does NOT work
+ ; properly in multithreaded servers, such as IIS or Zeus, and is automatically
+ ; disabled on them.
+-; http://php.net/enable-dl
++; http://www.php.net/manual/en/info.configuration.php#ini.enable-dl
+ enable_dl = Off
+ 
+ ; cgi.force_redirect is necessary to provide security running PHP as a CGI under
+ ; most web servers.  Left undefined, PHP turns this on by default.  You can
+ ; turn it off here AT YOUR OWN RISK
+ ; **You CAN safely turn this off for IIS, in fact, you MUST.**
+-; http://php.net/cgi.force-redirect
++; http://www.php.net/manual/en/ini.core.php#ini.cgi.force-redirect
+ ;cgi.force_redirect = 1
+ 
+ ; if cgi.nph is enabled it will force cgi to always sent Status: 200 with
+@@ -755,8 +835,8 @@
+ ; (iPlanet) web servers, you MAY need to set an environment variable name that PHP
+ ; will look for to know it is OK to continue execution.  Setting this variable MAY
+ ; cause security issues, KNOW WHAT YOU ARE DOING FIRST.
+-; http://php.net/cgi.redirect-status-env
+-;cgi.redirect_status_env =
++; http://www.php.net/manual/en/ini.core.php#ini.cgi.redirect-status-env
++;cgi.redirect_status_env = ;
+ 
+ ; cgi.fix_pathinfo provides *real* PATH_INFO/PATH_TRANSLATED support for CGI.  PHP's
+ ; previous behaviour was to set PATH_TRANSLATED to SCRIPT_FILENAME, and to not grok
+@@ -764,7 +844,7 @@
+ ; this to 1 will cause PHP CGI to fix its paths to conform to the spec.  A setting
+ ; of zero causes PHP to behave as before.  Default is 1.  You should fix your scripts
+ ; to use SCRIPT_FILENAME rather than PATH_TRANSLATED.
+-; http://php.net/cgi.fix-pathinfo
++; http://www.php.net/manual/en/ini.core.php#ini.cgi.fix-pathinfo
+ ;cgi.fix_pathinfo=1
+ 
+ ; FastCGI under IIS (on WINNT based OS) supports the ability to impersonate
+@@ -772,8 +852,8 @@
+ ; security context that the request runs under.  mod_fastcgi under Apache
+ ; does not currently support this feature (03/17/2002)
+ ; Set to 1 if running under IIS.  Default is zero.
+-; http://php.net/fastcgi.impersonate
+-;fastcgi.impersonate = 1
++; http://www.php.net/manual/en/ini.core.php#ini.fastcgi.impersonate
++;fastcgi.impersonate = 1;
+ 
+ ; Disable logging through FastCGI connection. PHP's default behavior is to enable
+ ; this feature.
+@@ -784,7 +864,7 @@
+ ; is supported by Apache. When this option is set to 1 PHP will send
+ ; RFC2616 compliant header.
+ ; Default is zero.
+-; http://php.net/cgi.rfc2616-headers
++; http://www.php.net/manual/en/ini.core.php#ini.cgi.rfc2616-headers
+ ;cgi.rfc2616_headers = 0
+ 
+ ;;;;;;;;;;;;;;;;
+@@ -792,16 +872,16 @@
+ ;;;;;;;;;;;;;;;;
+ 
+ ; Whether to allow HTTP file uploads.
+-; http://php.net/file-uploads
++; http://www.php.net/manual/en/ini.core.php#ini.file-uploads
+ file_uploads = On
+ 
+ ; Temporary directory for HTTP uploaded files (will use system default if not
+ ; specified).
+-; http://php.net/upload-tmp-dir
++; http://www.php.net/manual/en/ini.core.php#ini.upload-tmp-dir
+ ;upload_tmp_dir =
+ 
+ ; Maximum allowed size for uploaded files.
+-; http://php.net/upload-max-filesize
++; http://www.php.net/manual/en/ini.core.php#ini.upload-max-filesize
+ upload_max_filesize = 2M
+ 
+ ; Maximum number of files that can be uploaded via a single request
+@@ -812,24 +892,24 @@
+ ;;;;;;;;;;;;;;;;;;
+ 
+ ; Whether to allow the treatment of URLs (like http:// or ftp://) as files.
+-; http://php.net/allow-url-fopen
++; http://www.php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen
+ allow_url_fopen = On
+ 
+ ; Whether to allow include/require to open URLs (like http:// or ftp://) as files.
+-; http://php.net/allow-url-include
++; http://www.php.net/manual/en/filesystem.configuration.php#ini.allow-url-include
+ allow_url_include = Off
+ 
+ ; Define the anonymous ftp password (your email address). PHP's default setting
+ ; for this is empty.
+-; http://php.net/from
++; http://www.php.net/manual/en/filesystem.configuration.php#ini.from
+ ;from="john@doe.com"
+ 
+ ; Define the User-Agent string. PHP's default setting for this is empty.
+-; http://php.net/user-agent
++; http://www.php.net/manual/en/filesystem.configuration.php#ini.user-agent
+ ;user_agent="PHP"
+ 
+ ; Default timeout for socket based streams (seconds)
+-; http://php.net/default-socket-timeout
++; http://www.php.net/manual/en/filesystem.configuration.php#ini.default-socket-timeout
+ default_socket_timeout = 60
+ 
+ ; If your scripts have to deal with files from Macintosh systems,
+@@ -837,7 +917,7 @@
+ ; unix or win32 systems, setting this flag will cause PHP to
+ ; automatically detect the EOL character in those files so that
+ ; fgets() and file() will work regardless of the source of the file.
+-; http://php.net/auto-detect-line-endings
++; http://www.php.net/manual/en/filesystem.configuration.php#ini.auto-detect-line-endings
+ ;auto_detect_line_endings = Off
+ 
+ ;;;;;;;;;;;;;;;;;;;;;;
+@@ -849,11 +929,7 @@
+ ;
+ ;   extension=modulename.extension
+ ;
+-; For example, on Windows:
+-;
+-;   extension=msql.dll
+-;
+-; ... or under UNIX:
++; For example
+ ;
+ ;   extension=msql.so
+ ;
+@@ -869,36 +945,33 @@
+ ; found in the directory /etc/php.d; these are loaded by default.
+ ;;;;
+ 
++
+ ;;;;;;;;;;;;;;;;;;;
+ ; Module Settings ;
+ ;;;;;;;;;;;;;;;;;;;
+ 
+-[CLI Server]
+-; Whether the CLI web server uses ANSI color coding in its terminal output.
+-cli_server.color = On
+-
+ [Date]
+ ; Defines the default timezone used by the date functions
+-; http://php.net/date.timezone
+-;date.timezone =
++; http://www.php.net/manual/en/datetime.configuration.php#ini.date.timezone
++date.timezone = America/Denver
+ 
+-; http://php.net/date.default-latitude
++; http://www.php.net/manual/en/datetime.configuration.php#ini.date.default-latitude
+ ;date.default_latitude = 31.7667
+ 
+-; http://php.net/date.default-longitude
++; http://www.php.net/manual/en/datetime.configuration.php#ini.date.default-longitude
+ ;date.default_longitude = 35.2333
+ 
+-; http://php.net/date.sunrise-zenith
++; http://www.php.net/manual/en/datetime.configuration.php#ini.date.sunrise-zenith
+ ;date.sunrise_zenith = 90.583333
+ 
+-; http://php.net/date.sunset-zenith
++; http://www.php.net/manual/en/datetime.configuration.php#ini.date.sunset-zenith
+ ;date.sunset_zenith = 90.583333
+ 
+ [filter]
+-; http://php.net/filter.default
++; http://www.php.net/manual/en/filter.configuration.php#ini.filter.default
+ ;filter.default = unsafe_raw
+ 
+-; http://php.net/filter.default-flags
++; http://www.php.net/manual/en/filter.configuration.php#ini.filter.default-flags
+ ;filter.default_flags =
+ 
+ [iconv]
+@@ -907,14 +980,10 @@
+ ;iconv.output_encoding = ISO-8859-1
+ 
+ [intl]
+-;intl.default_locale =
+-; This directive allows you to produce PHP errors when some error
+-; happens within intl functions. The value is the level of the error produced.
+-; Default is 0, which does not produce any errors.
+-;intl.error_level = E_WARNING
++;intl.default_locale = 
+ 
+ [sqlite]
+-; http://php.net/sqlite.assoc-case
++; http://www.php.net/manual/en/sqlite.configuration.php#ini.sqlite.assoc-case
+ ;sqlite.assoc_case = 0
+ 
+ [sqlite3]
+@@ -922,45 +991,50 @@
+ 
+ [Pcre]
+ ;PCRE library backtracking limit.
+-; http://php.net/pcre.backtrack-limit
++; http://www.php.net/manual/en/pcre.configuration.php#ini.pcre.backtrack-limit
+ ;pcre.backtrack_limit=100000
+ 
+-;PCRE library recursion limit.
+-;Please note that if you set this value to a high number you may consume all
+-;the available process stack and eventually crash PHP (due to reaching the
++;PCRE library recursion limit. 
++;Please note that if you set this value to a high number you may consume all 
++;the available process stack and eventually crash PHP (due to reaching the 
+ ;stack size limit imposed by the Operating System).
+-; http://php.net/pcre.recursion-limit
++; http://www.php.net/manual/en/pcre.configuration.php#ini.pcre.recursion-limit
+ ;pcre.recursion_limit=100000
+ 
+ [Pdo]
+ ; Whether to pool ODBC connections. Can be one of "strict", "relaxed" or "off"
+-; http://php.net/pdo-odbc.connection-pooling
++; http://www.php.net/manual/en/ref.pdo-odbc.php#ini.pdo-odbc.connection-pooling
+ ;pdo_odbc.connection_pooling=strict
+ 
+-;pdo_odbc.db2_instance_name
+-
+-[Pdo_mysql]
+-; If mysqlnd is used: Number of cache slots for the internal result set cache
+-; http://php.net/pdo_mysql.cache_size
+-pdo_mysql.cache_size = 2000
+-
+-; Default socket name for local MySQL connects.  If empty, uses the built-in
+-; MySQL defaults.
+-; http://php.net/pdo_mysql.default-socket
+-pdo_mysql.default_socket=
+-
+ [Phar]
+-; http://php.net/phar.readonly
++; http://www.php.net/manual/en/phar.configuration.php#ini.phar.readonly
+ ;phar.readonly = On
+ 
+-; http://php.net/phar.require-hash
++; http://www.php.net/manual/en/phar.configuration.php#ini.phar.require-hash
+ ;phar.require_hash = On
+ 
+ ;phar.cache_list =
+ 
++[Syslog]
++; Whether or not to define the various syslog variables (e.g. $LOG_PID,
++; $LOG_CRON, etc.).  Turning it off is a good idea performance-wise.  In
++; runtime, you can define these variables by calling define_syslog_variables().
++; http://www.php.net/manual/en/network.configuration.php#ini.define-syslog-variables
++define_syslog_variables  = Off
++
+ [mail function]
++; For Win32 only.
++; http://www.php.net/manual/en/mail.configuration.php#ini.smtp
++SMTP = localhost
++; http://www.php.net/manual/en/mail.configuration.php#ini.smtp-port
++smtp_port = 25
++
++; For Win32 only.
++; http://www.php.net/manual/en/mail.configuration.php#ini.sendmail-from
++;sendmail_from = me@example.com
++
+ ; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
+-; http://php.net/sendmail-path
++; http://www.php.net/manual/en/mail.configuration.php#ini.sendmail-path
+ sendmail_path = /usr/sbin/sendmail -t -i
+ 
+ ; Force the addition of the specified parameters to be passed as extra parameters
+@@ -968,132 +1042,86 @@
+ ; the 5th parameter to mail(), even in safe mode.
+ ;mail.force_extra_parameters =
+ 
+-; Add X-PHP-Originating-Script: that will include uid of the script followed by the filename
++; Add X-PHP-Originaiting-Script: that will include uid of the script followed by the filename
+ mail.add_x_header = On
+ 
+-; The path to a log file that will log all mail() calls. Log entries include
+-; the full path of the script, line number, To address and headers.
++; Log all mail() calls including the full path of the script, line #, to address and headers
+ ;mail.log =
+-; Log mail to syslog (Event Log on NT, not valid in Windows 95).
+-;mail.log = syslog
+ 
+ [SQL]
+-; http://php.net/sql.safe-mode
++; http://www.php.net/manual/en/ini.core.php#ini.sql.safe-mode
+ sql.safe_mode = Off
+ 
+ [ODBC]
+-; http://php.net/odbc.default-db
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.default-db
+ ;odbc.default_db    =  Not yet implemented
+ 
+-; http://php.net/odbc.default-user
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.default-user
+ ;odbc.default_user  =  Not yet implemented
+ 
+-; http://php.net/odbc.default-pw
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.default-pw
+ ;odbc.default_pw    =  Not yet implemented
+ 
+-; Controls the ODBC cursor model.
+-; Default: SQL_CURSOR_STATIC (default).
+-;odbc.default_cursortype
+-
+ ; Allow or prevent persistent links.
+-; http://php.net/odbc.allow-persistent
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.allow-persistent
+ odbc.allow_persistent = On
+ 
+ ; Check that a connection is still valid before reuse.
+-; http://php.net/odbc.check-persistent
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.check-persistent
+ odbc.check_persistent = On
+ 
+ ; Maximum number of persistent links.  -1 means no limit.
+-; http://php.net/odbc.max-persistent
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.max-persistent
+ odbc.max_persistent = -1
+ 
+ ; Maximum number of links (persistent + non-persistent).  -1 means no limit.
+-; http://php.net/odbc.max-links
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.max-links
+ odbc.max_links = -1
+ 
+ ; Handling of LONG fields.  Returns number of bytes to variables.  0 means
+ ; passthru.
+-; http://php.net/odbc.defaultlrl
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.defaultlrl
+ odbc.defaultlrl = 4096
+ 
+ ; Handling of binary data.  0 means passthru, 1 return as is, 2 convert to char.
+ ; See the documentation on odbc_binmode and odbc_longreadlen for an explanation
+-; of odbc.defaultlrl and odbc.defaultbinmode
+-; http://php.net/odbc.defaultbinmode
++; of uodbc.defaultlrl and uodbc.defaultbinmode
++; http://www.php.net/manual/en/odbc.configuration.php#ini.uodbc.defaultbinmode
+ odbc.defaultbinmode = 1
+ 
+ ;birdstep.max_links = -1
+ 
+-[Interbase]
+-; Allow or prevent persistent links.
+-ibase.allow_persistent = 1
+-
+-; Maximum number of persistent links.  -1 means no limit.
+-ibase.max_persistent = -1
+-
+-; Maximum number of links (persistent + non-persistent).  -1 means no limit.
+-ibase.max_links = -1
+-
+-; Default database name for ibase_connect().
+-;ibase.default_db =
+-
+-; Default username for ibase_connect().
+-;ibase.default_user =
+-
+-; Default password for ibase_connect().
+-;ibase.default_password =
+-
+-; Default charset for ibase_connect().
+-;ibase.default_charset =
+-
+-; Default timestamp format.
+-ibase.timestampformat = "%Y-%m-%d %H:%M:%S"
+-
+-; Default date format.
+-ibase.dateformat = "%Y-%m-%d"
+-
+-; Default time format.
+-ibase.timeformat = "%H:%M:%S"
+-
+ [MySQL]
+-; Allow accessing, from PHP's perspective, local files with LOAD DATA statements
+-; http://php.net/mysql.allow_local_infile
+-mysql.allow_local_infile = On
+-
+ ; Allow or prevent persistent links.
+-; http://php.net/mysql.allow-persistent
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.allow-persistent
+ mysql.allow_persistent = On
+ 
+-; If mysqlnd is used: Number of cache slots for the internal result set cache
+-; http://php.net/mysql.cache_size
+-mysql.cache_size = 2000
+-
+ ; Maximum number of persistent links.  -1 means no limit.
+-; http://php.net/mysql.max-persistent
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.max-persistent
+ mysql.max_persistent = -1
+ 
+ ; Maximum number of links (persistent + non-persistent).  -1 means no limit.
+-; http://php.net/mysql.max-links
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.max-links
+ mysql.max_links = -1
+ 
+ ; Default port number for mysql_connect().  If unset, mysql_connect() will use
+ ; the $MYSQL_TCP_PORT or the mysql-tcp entry in /etc/services or the
+ ; compile-time value defined MYSQL_PORT (in that order).  Win32 will only look
+ ; at MYSQL_PORT.
+-; http://php.net/mysql.default-port
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.default-port
+ mysql.default_port =
+ 
+ ; Default socket name for local MySQL connects.  If empty, uses the built-in
+ ; MySQL defaults.
+-; http://php.net/mysql.default-socket
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.default-socket
+ mysql.default_socket =
+ 
+ ; Default host for mysql_connect() (doesn't apply in safe mode).
+-; http://php.net/mysql.default-host
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.default-host
+ mysql.default_host =
+ 
+ ; Default user for mysql_connect() (doesn't apply in safe mode).
+-; http://php.net/mysql.default-user
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.default-user
+ mysql.default_user =
+ 
+ ; Default password for mysql_connect() (doesn't apply in safe mode).
+@@ -1101,58 +1129,42 @@
+ ; *Any* user with PHP access can run 'echo get_cfg_var("mysql.default_password")
+ ; and reveal this password!  And of course, any users with read access to this
+ ; file will be able to reveal the password as well.
+-; http://php.net/mysql.default-password
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.default-password
+ mysql.default_password =
+ 
+ ; Maximum time (in seconds) for connect timeout. -1 means no limit
+-; http://php.net/mysql.connect-timeout
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.connect-timeout
+ mysql.connect_timeout = 60
+ 
+ ; Trace mode. When trace_mode is active (=On), warnings for table/index scans and
+ ; SQL-Errors will be displayed.
+-; http://php.net/mysql.trace-mode
++; http://www.php.net/manual/en/mysql.configuration.php#ini.mysql.trace-mode
+ mysql.trace_mode = Off
+ 
+ [MySQLi]
+ 
+-; Maximum number of persistent links.  -1 means no limit.
+-; http://php.net/mysqli.max-persistent
+-mysqli.max_persistent = -1
+-
+-; Allow accessing, from PHP's perspective, local files with LOAD DATA statements
+-; http://php.net/mysqli.allow_local_infile
+-;mysqli.allow_local_infile = On
+-
+-; Allow or prevent persistent links.
+-; http://php.net/mysqli.allow-persistent
+-mysqli.allow_persistent = On
+-
+ ; Maximum number of links.  -1 means no limit.
+-; http://php.net/mysqli.max-links
++; http://www.php.net/manual/en/mysqli.configuration.php#ini.mysqli.max-links
+ mysqli.max_links = -1
+ 
+-; If mysqlnd is used: Number of cache slots for the internal result set cache
+-; http://php.net/mysqli.cache_size
+-mysqli.cache_size = 2000
+-
+ ; Default port number for mysqli_connect().  If unset, mysqli_connect() will use
+ ; the $MYSQL_TCP_PORT or the mysql-tcp entry in /etc/services or the
+ ; compile-time value defined MYSQL_PORT (in that order).  Win32 will only look
+ ; at MYSQL_PORT.
+-; http://php.net/mysqli.default-port
++; http://www.php.net/manual/en/mysqli.configuration.php#ini.mysqli.default-port
+ mysqli.default_port = 3306
+ 
+ ; Default socket name for local MySQL connects.  If empty, uses the built-in
+ ; MySQL defaults.
+-; http://php.net/mysqli.default-socket
++; http://www.php.net/manual/en/mysqli.configuration.php#ini.mysqli.default-socket
+ mysqli.default_socket =
+ 
+ ; Default host for mysql_connect() (doesn't apply in safe mode).
+-; http://php.net/mysqli.default-host
++; http://www.php.net/manual/en/mysqli.configuration.php#ini.mysqli.default-host
+ mysqli.default_host =
+ 
+ ; Default user for mysql_connect() (doesn't apply in safe mode).
+-; http://php.net/mysqli.default-user
++; http://www.php.net/manual/en/mysqli.configuration.php#ini.mysqli.default-user
+ mysqli.default_user =
+ 
+ ; Default password for mysqli_connect() (doesn't apply in safe mode).
+@@ -1160,171 +1172,86 @@
+ ; *Any* user with PHP access can run 'echo get_cfg_var("mysqli.default_pw")
+ ; and reveal this password!  And of course, any users with read access to this
+ ; file will be able to reveal the password as well.
+-; http://php.net/mysqli.default-pw
++; http://www.php.net/manual/en/mysqli.configuration.php#ini.mysqli.default-pw
+ mysqli.default_pw =
+ 
+ ; Allow or prevent reconnect
+ mysqli.reconnect = Off
+ 
+-[mysqlnd]
+-; Enable / Disable collection of general statistics by mysqlnd which can be
+-; used to tune and monitor MySQL operations.
+-; http://php.net/mysqlnd.collect_statistics
+-mysqlnd.collect_statistics = On
+-
+-; Enable / Disable collection of memory usage statistics by mysqlnd which can be
+-; used to tune and monitor MySQL operations.
+-; http://php.net/mysqlnd.collect_memory_statistics
+-mysqlnd.collect_memory_statistics = Off
+-
+-; Size of a pre-allocated buffer used when sending commands to MySQL in bytes.
+-; http://php.net/mysqlnd.net_cmd_buffer_size
+-;mysqlnd.net_cmd_buffer_size = 2048
+-
+-; Size of a pre-allocated buffer used for reading data sent by the server in
+-; bytes.
+-; http://php.net/mysqlnd.net_read_buffer_size
+-;mysqlnd.net_read_buffer_size = 32768
+-
+-[OCI8]
+-
+-; Connection: Enables privileged connections using external
+-; credentials (OCI_SYSOPER, OCI_SYSDBA)
+-; http://php.net/oci8.privileged-connect
+-;oci8.privileged_connect = Off
+-
+-; Connection: The maximum number of persistent OCI8 connections per
+-; process. Using -1 means no limit.
+-; http://php.net/oci8.max-persistent
+-;oci8.max_persistent = -1
+-
+-; Connection: The maximum number of seconds a process is allowed to
+-; maintain an idle persistent connection. Using -1 means idle
+-; persistent connections will be maintained forever.
+-; http://php.net/oci8.persistent-timeout
+-;oci8.persistent_timeout = -1
+-
+-; Connection: The number of seconds that must pass before issuing a
+-; ping during oci_pconnect() to check the connection validity. When
+-; set to 0, each oci_pconnect() will cause a ping. Using -1 disables
+-; pings completely.
+-; http://php.net/oci8.ping-interval
+-;oci8.ping_interval = 60
+-
+-; Connection: Set this to a user chosen connection class to be used
+-; for all pooled server requests with Oracle 11g Database Resident
+-; Connection Pooling (DRCP).  To use DRCP, this value should be set to
+-; the same string for all web servers running the same application,
+-; the database pool must be configured, and the connection string must
+-; specify to use a pooled server.
+-;oci8.connection_class =
+-
+-; High Availability: Using On lets PHP receive Fast Application
+-; Notification (FAN) events generated when a database node fails. The
+-; database must also be configured to post FAN events.
+-;oci8.events = Off
+-
+-; Tuning: This option enables statement caching, and specifies how
+-; many statements to cache. Using 0 disables statement caching.
+-; http://php.net/oci8.statement-cache-size
+-;oci8.statement_cache_size = 20
+-
+-; Tuning: Enables statement prefetching and sets the default number of
+-; rows that will be fetched automatically after statement execution.
+-; http://php.net/oci8.default-prefetch
+-;oci8.default_prefetch = 100
+-
+-; Compatibility. Using On means oci_close() will not close
+-; oci_connect() and oci_new_connect() connections.
+-; http://php.net/oci8.old-oci-close-semantics
+-;oci8.old_oci_close_semantics = Off
+-
+-[PostgreSQL]
++[PostgresSQL]
+ ; Allow or prevent persistent links.
+-; http://php.net/pgsql.allow-persistent
++; http://www.php.net/manual/en/pgsql.configuration.php#ini.pgsql.allow-persistent
+ pgsql.allow_persistent = On
+ 
+ ; Detect broken persistent links always with pg_pconnect().
+ ; Auto reset feature requires a little overheads.
+-; http://php.net/pgsql.auto-reset-persistent
++; http://www.php.net/manual/en/pgsql.configuration.php#ini.pgsql.auto-reset-persistent
+ pgsql.auto_reset_persistent = Off
+ 
+ ; Maximum number of persistent links.  -1 means no limit.
+-; http://php.net/pgsql.max-persistent
++; http://www.php.net/manual/en/pgsql.configuration.php#ini.pgsql.max-persistent
+ pgsql.max_persistent = -1
+ 
+ ; Maximum number of links (persistent+non persistent).  -1 means no limit.
+-; http://php.net/pgsql.max-links
++; http://www.php.net/manual/en/pgsql.configuration.php#ini.pgsql.max-links
+ pgsql.max_links = -1
+ 
+ ; Ignore PostgreSQL backends Notice message or not.
+ ; Notice message logging require a little overheads.
+-; http://php.net/pgsql.ignore-notice
++; http://www.php.net/manual/en/pgsql.configuration.php#ini.pgsql.ignore-notice
+ pgsql.ignore_notice = 0
+ 
+-; Log PostgreSQL backends Notice message or not.
++; Log PostgreSQL backends Noitce message or not.
+ ; Unless pgsql.ignore_notice=0, module cannot log notice message.
+-; http://php.net/pgsql.log-notice
++; http://www.php.net/manual/en/pgsql.configuration.php#ini.pgsql.log-notice
+ pgsql.log_notice = 0
+ 
+ [Sybase-CT]
+ ; Allow or prevent persistent links.
+-; http://php.net/sybct.allow-persistent
++; http://www.php.net/manual/en/sybase.configuration.php#ini.sybct.allow-persistent
+ sybct.allow_persistent = On
+ 
+ ; Maximum number of persistent links.  -1 means no limit.
+-; http://php.net/sybct.max-persistent
++; http://www.php.net/manual/en/sybase.configuration.php#ini.sybct.max-persistent
+ sybct.max_persistent = -1
+ 
+ ; Maximum number of links (persistent + non-persistent).  -1 means no limit.
+-; http://php.net/sybct.max-links
++; http://www.php.net/manual/en/sybase.configuration.php#ini.sybct.max-links
+ sybct.max_links = -1
+ 
+ ; Minimum server message severity to display.
+-; http://php.net/sybct.min-server-severity
++; http://www.php.net/manual/en/sybase.configuration.php#ini.sybct.min-server-severity
+ sybct.min_server_severity = 10
+ 
+ ; Minimum client message severity to display.
+-; http://php.net/sybct.min-client-severity
++; http://www.php.net/manual/en/sybase.configuration.php#ini.sybct.min-client-severity
+ sybct.min_client_severity = 10
+ 
+ ; Set per-context timeout
+-; http://php.net/sybct.timeout
++; http://www.php.net/manual/en/sybase.configuration.php#ini.sybct.timeout
+ ;sybct.timeout=
+ 
+ ;sybct.packet_size
+ 
+-; The maximum time in seconds to wait for a connection attempt to succeed before returning failure.
+-; Default: one minute
+-;sybct.login_timeout=
+-
+-; The name of the host you claim to be connecting from, for display by sp_who.
+-; Default: none
+-;sybct.hostname=
+-
+-; Allows you to define how often deadlocks are to be retried. -1 means "forever".
+-; Default: 0
+-;sybct.deadlock_retry_count=
+-
+ [bcmath]
+ ; Number of decimal digits for all bcmath functions.
+-; http://php.net/bcmath.scale
++; http://www.php.net/manual/en/bc.configuration.php#ini.bcmath.scale
+ bcmath.scale = 0
+ 
+ [browscap]
+-; http://php.net/browscap
++; http://www.php.net/manual/en/misc.configuration.php#ini.browscap
+ ;browscap = extra/browscap.ini
+ 
+ [Session]
+ ; Handler used to store/retrieve data.
+-; http://php.net/session.save-handler
++; http://www.php.net/manual/en/session.configuration.php#ini.session.save-handler
+ session.save_handler = files
+ 
+ ; Argument passed to save_handler.  In the case of files, this is the path
+ ; where data files are stored. Note: Windows users have to change this
+ ; variable in order to use PHP's session functions.
+ ;
+-; The path can be defined as:
++; As of PHP 4.0.1, you can define the path as:
+ ;
+ ;     session.save_path = "N;/path"
+ ;
+@@ -1346,61 +1273,49 @@
+ ;
+ ; where MODE is the octal representation of the mode. Note that this
+ ; does not overwrite the process's umask.
+-; http://php.net/session.save-path
+-
+-; RPM note : session directory must be owned by process owner
+-; for mod_php, see /etc/httpd/conf.d/php.conf
+-; for php-fpm, see /etc/php-fpm.d/*conf
+-;session.save_path = "/tmp"
+-
+-; Whether to use strict session mode.
+-; Strict session mode does not accept uninitialized session ID and regenerate
+-; session ID if browser sends uninitialized session ID. Strict mode protects
+-; applications from session fixation via session adoption vulnerability. It is
+-; disabled by default for maximum compatibility, but enabling it is encouraged.
+-; https://wiki.php.net/rfc/strict_sessions
+-session.use_strict_mode = 0
++; http://www.php.net/manual/en/session.configuration.php#ini.session.save-path
++session.save_path = "/var/lib/php/session"
+ 
+ ; Whether to use cookies.
+-; http://php.net/session.use-cookies
++; http://www.php.net/manual/en/session.configuration.php#ini.session.use-cookies
+ session.use_cookies = 1
+ 
+-; http://php.net/session.cookie-secure
++; http://www.php.net/manual/en/session.configuration.php#ini.session.cookie-secure
+ ;session.cookie_secure =
+ 
+ ; This option forces PHP to fetch and use a cookie for storing and maintaining
+-; the session id. We encourage this operation as it's very helpful in combating
++; the session id. We encourage this operation as it's very helpful in combatting
+ ; session hijacking when not specifying and managing your own session id. It is
+ ; not the end all be all of session hijacking defense, but it's a good start.
+-; http://php.net/session.use-only-cookies
++; http://www.php.net/manual/en/session.configuration.php#ini.session.use-only-cookies
+ session.use_only_cookies = 1
+ 
+ ; Name of the session (used as cookie name).
+-; http://php.net/session.name
++; http://www.php.net/manual/en/session.configuration.php#ini.session.name
+ session.name = PHPSESSID
+ 
+ ; Initialize session on request startup.
+-; http://php.net/session.auto-start
++; http://www.php.net/manual/en/session.configuration.php#ini.session.auto-start
+ session.auto_start = 0
+ 
+ ; Lifetime in seconds of cookie or, if 0, until browser is restarted.
+-; http://php.net/session.cookie-lifetime
++; http://www.php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime
+ session.cookie_lifetime = 0
+ 
+ ; The path for which the cookie is valid.
+-; http://php.net/session.cookie-path
++; http://www.php.net/manual/en/session.configuration.php#ini.session.cookie-path
+ session.cookie_path = /
+ 
+ ; The domain for which the cookie is valid.
+-; http://php.net/session.cookie-domain
+-session.cookie_domain =
++; http://www.php.net/manual/en/session.configuration.php#ini.session.cookie-domain
++session.cookie_domain = 
+ 
+ ; Whether or not to add the httpOnly flag to the cookie, which makes it inaccessible to browser scripting languages such as JavaScript.
+-; http://php.net/session.cookie-httponly
+-session.cookie_httponly =
++; http://www.php.net/manual/en/session.configuration.php#ini.session.cookie-httponly
++session.cookie_httponly = 
+ 
+ ; Handler used to serialize data.  php is the standard serializer of PHP.
+-; http://php.net/session.serialize-handler
++; http://www.php.net/manual/en/session.configuration.php#ini.session.serialize-handler
+ session.serialize_handler = php
+ 
+ ; Defines the probability that the 'garbage collection' process is started
+@@ -1412,11 +1327,11 @@
+ ; Default Value: 1
+ ; Development Value: 1
+ ; Production Value: 1
+-; http://php.net/session.gc-probability
++; http://www.php.net/manual/en/session.configuration.php#ini.session.gc-probability
+ session.gc_probability = 1
+ 
+ ; Defines the probability that the 'garbage collection' process is started on every
+-; session initialization. The probability is calculated by using the following equation:
++; session initialization. The probability is calculated by using the following equation: 
+ ; gc_probability/gc_divisor. Where session.gc_probability is the numerator and
+ ; session.gc_divisor is the denominator in the equation. Setting this value to 1
+ ; when the session.gc_divisor value is 100 will give you approximately a 1% chance
+@@ -1426,12 +1341,12 @@
+ ; Default Value: 100
+ ; Development Value: 1000
+ ; Production Value: 1000
+-; http://php.net/session.gc-divisor
++; http://www.php.net/manual/en/session.configuration.php#ini.session.gc-divisor
+ session.gc_divisor = 1000
+ 
+ ; After this number of seconds, stored data will be seen as 'garbage' and
+ ; cleaned up by the garbage collection process.
+-; http://php.net/session.gc-maxlifetime
++; http://www.php.net/manual/en/session.configuration.php#ini.session.gc-maxlifetime
+ session.gc_maxlifetime = 1440
+ 
+ ; NOTE: If you are using the subdirectory option for storing session files
+@@ -1440,11 +1355,11 @@
+ ;       collection through a shell script, cron entry, or some other method.
+ ;       For example, the following script would is the equivalent of
+ ;       setting session.gc_maxlifetime to 1440 (1440 seconds = 24 minutes):
+-;          find /path/to/sessions -cmin +24 -type f | xargs rm
++;          cd /path/to/sessions; find -cmin +24 | xargs rm
+ 
+ ; PHP 4.2 and less have an undocumented feature/bug that allows you to
+-; to initialize a session variable in the global scope.
+-; PHP 4.3 and later will warn you, if this feature is used.
++; to initialize a session variable in the global scope, even when register_globals
++; is disabled.  PHP 4.3 and later will warn you, if this feature is used.
+ ; You can disable the feature and the warning separately. At this time,
+ ; the warning is only displayed, if bug_compat_42 is enabled. This feature
+ ; introduces some serious security problems if not handled correctly. It's
+@@ -1455,7 +1370,7 @@
+ ; Default Value: On
+ ; Development Value: On
+ ; Production Value: Off
+-; http://php.net/session.bug-compat-42
++; http://www.php.net/manual/en/session.configuration.php#ini.session.bug-compat-42
+ session.bug_compat_42 = Off
+ 
+ ; This setting controls whether or not you are warned by PHP when initializing a
+@@ -1464,35 +1379,34 @@
+ ; Default Value: On
+ ; Development Value: On
+ ; Production Value: Off
+-; http://php.net/session.bug-compat-warn
++; http://www.php.net/manual/en/session.configuration.php#ini.session.bug-compat-warn
+ session.bug_compat_warn = Off
+ 
+ ; Check HTTP Referer to invalidate externally stored URLs containing ids.
+ ; HTTP_REFERER has to contain this substring for the session to be
+ ; considered as valid.
+-; http://php.net/session.referer-check
+-session.referer_check =
++; http://www.php.net/manual/en/session.configuration.php#ini.session.referer-check
++session.referer_check = 
+ 
+ ; How many bytes to read from the file.
+-; http://php.net/session.entropy-length
+-;session.entropy_length = 32
++; http://www.php.net/manual/en/session.configuration.php#ini.session.entropy-length
++session.entropy_length = 0
+ 
+ ; Specified here to create the session id.
+-; http://php.net/session.entropy-file
+-; Defaults to /dev/urandom
+-; On systems that don't have /dev/urandom but do have /dev/arandom, this will default to /dev/arandom
+-; If neither are found at compile time, the default is no entropy file.
+-; On windows, setting the entropy_length setting will activate the
+-; Windows random source (using the CryptoAPI)
++; http://www.php.net/manual/en/session.configuration.php#ini.session.entropy-file
+ ;session.entropy_file = /dev/urandom
++session.entropy_file =
++
++; http://www.php.net/manual/en/session.configuration.php#ini.session.entropy-length
++;session.entropy_length = 16
+ 
+ ; Set to {nocache,private,public,} to determine HTTP caching aspects
+ ; or leave this empty to avoid sending anti-caching headers.
+-; http://php.net/session.cache-limiter
++; http://www.php.net/manual/en/session.configuration.php#ini.session.cache-limiter
+ session.cache_limiter = nocache
+ 
+ ; Document expires after n minutes.
+-; http://php.net/session.cache-expire
++; http://www.php.net/manual/en/session.configuration.php#ini.session.cache-expire
+ session.cache_expire = 180
+ 
+ ; trans sid support is disabled by default.
+@@ -1501,20 +1415,17 @@
+ ; - User may send URL contains active session ID
+ ;   to other person via. email/irc/etc.
+ ; - URL that contains active session ID may be stored
+-;   in publicly accessible computer.
++;   in publically accessible computer.
+ ; - User may access your site with the same session ID
+ ;   always using URL stored in browser's history or bookmarks.
+-; http://php.net/session.use-trans-sid
++; http://www.php.net/manual/en/session.configuration.php#ini.session.use-trans-sid
+ session.use_trans_sid = 0
+ 
+ ; Select a hash function for use in generating session ids.
+-; Possible Values
++; Possible Values 
+ ;   0  (MD5 128 bits)
+ ;   1  (SHA-1 160 bits)
+-; This option may also be set to the name of any hash function supported by
+-; the hash extension. A list of available hashes is returned by the hash_algos()
+-; function.
+-; http://php.net/session.hash-function
++; http://www.php.net/manual/en/session.configuration.php#ini.session.hash-function
+ session.hash_function = 0
+ 
+ ; Define how many bits are stored in each character when converting
+@@ -1526,7 +1437,7 @@
+ ; Default Value: 4
+ ; Development Value: 5
+ ; Production Value: 5
+-; http://php.net/session.hash-bits-per-character
++; http://www.php.net/manual/en/session.configuration.php#ini.session.hash-bits-per-character
+ session.hash_bits_per_character = 5
+ 
+ ; The URL rewriter will look for URLs in a defined set of HTML tags.
+@@ -1537,54 +1448,9 @@
+ ; Default Value: "a=href,area=href,frame=src,form=,fieldset="
+ ; Development Value: "a=href,area=href,frame=src,input=src,form=fakeentry"
+ ; Production Value: "a=href,area=href,frame=src,input=src,form=fakeentry"
+-; http://php.net/url-rewriter.tags
++; http://www.php.net/manual/en/session.configuration.php#ini.url-rewriter.tags
+ url_rewriter.tags = "a=href,area=href,frame=src,input=src,form=fakeentry"
+ 
+-; Enable upload progress tracking in $_SESSION
+-; Default Value: On
+-; Development Value: On
+-; Production Value: On
+-; http://php.net/session.upload-progress.enabled
+-;session.upload_progress.enabled = On
+-
+-; Cleanup the progress information as soon as all POST data has been read
+-; (i.e. upload completed).
+-; Default Value: On
+-; Development Value: On
+-; Production Value: On
+-; http://php.net/session.upload-progress.cleanup
+-;session.upload_progress.cleanup = On
+-
+-; A prefix used for the upload progress key in $_SESSION
+-; Default Value: "upload_progress_"
+-; Development Value: "upload_progress_"
+-; Production Value: "upload_progress_"
+-; http://php.net/session.upload-progress.prefix
+-;session.upload_progress.prefix = "upload_progress_"
+-
+-; The index name (concatenated with the prefix) in $_SESSION
+-; containing the upload progress information
+-; Default Value: "PHP_SESSION_UPLOAD_PROGRESS"
+-; Development Value: "PHP_SESSION_UPLOAD_PROGRESS"
+-; Production Value: "PHP_SESSION_UPLOAD_PROGRESS"
+-; http://php.net/session.upload-progress.name
+-;session.upload_progress.name = "PHP_SESSION_UPLOAD_PROGRESS"
+-
+-; How frequently the upload progress should be updated.
+-; Given either in percentages (per-file), or in bytes
+-; Default Value: "1%"
+-; Development Value: "1%"
+-; Production Value: "1%"
+-; http://php.net/session.upload-progress.freq
+-;session.upload_progress.freq =  "1%"
+-
+-; The minimum delay between updates, in seconds
+-; Default Value: 1
+-; Development Value: 1
+-; Production Value: 1
+-; http://php.net/session.upload-progress.min-freq
+-;session.upload_progress.min_freq = "1"
+-
+ [MSSQL]
+ ; Allow or prevent persistent links.
+ mssql.allow_persistent = On
+@@ -1602,7 +1468,7 @@
+ mssql.min_message_severity = 10
+ 
+ ; Compatibility mode with old versions of PHP 3.0.
+-mssql.compatibility_mode = Off
++mssql.compatability_mode = Off
+ 
+ ; Connect timeout
+ ;mssql.connect_timeout = 5
+@@ -1632,70 +1498,91 @@
+ ; FreeTDS defaults to 4096
+ ;mssql.max_procs = -1
+ 
+-; Specify client character set.
+-; If empty or not set the client charset from freetds.conf is used
++; Specify client character set. 
++; If empty or not set the client charset from freetds.comf is used
+ ; This is only used when compiled with FreeTDS
+ ;mssql.charset = "ISO-8859-1"
+ 
+ [Assertion]
+ ; Assert(expr); active by default.
+-; http://php.net/assert.active
++; http://www.php.net/manual/en/info.configuration.php#ini.assert.active
+ ;assert.active = On
+ 
+ ; Issue a PHP warning for each failed assertion.
+-; http://php.net/assert.warning
++; http://www.php.net/manual/en/info.configuration.php#ini.assert.warning
+ ;assert.warning = On
+ 
+ ; Don't bail out by default.
+-; http://php.net/assert.bail
++; http://www.php.net/manual/en/info.configuration.php#ini.assert.bail
+ ;assert.bail = Off
+ 
+ ; User-function to be called if an assertion fails.
+-; http://php.net/assert.callback
++; http://www.php.net/manual/en/info.configuration.php#ini.assert.callback
+ ;assert.callback = 0
+ 
+ ; Eval the expression with current error_reporting().  Set to true if you want
+ ; error_reporting(0) around the eval().
+-; http://php.net/assert.quiet-eval
++; http://www.php.net/manual/en/info.configuration.php#ini.assert.quiet-eval
+ ;assert.quiet_eval = 0
+ 
++[COM]
++; path to a file containing GUIDs, IIDs or filenames of files with TypeLibs
++; http://www.php.net/manual/en/com.configuration.php#ini.com.typelib-file
++;com.typelib_file =
++
++; allow Distributed-COM calls
++; http://www.php.net/manual/en/com.configuration.php#ini.com.allow-dcom
++;com.allow_dcom = true
++
++; autoregister constants of a components typlib on com_load()
++; http://www.php.net/manual/en/com.configuration.php#ini.com.autoregister-typelib
++;com.autoregister_typelib = true
++
++; register constants casesensitive
++; http://www.php.net/manual/en/com.configuration.php#ini.com.autoregister-casesensitive
++;com.autoregister_casesensitive = false
++
++; show warnings on duplicate constant registrations
++; http://www.php.net/manual/en/com.configuration.php#ini.com.autoregister-verbose
++;com.autoregister_verbose = true
++
+ [mbstring]
+ ; language for internal character representation.
+-; http://php.net/mbstring.language
++; http://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.language
+ ;mbstring.language = Japanese
+ 
+ ; internal/script encoding.
+ ; Some encoding cannot work as internal encoding.
+ ; (e.g. SJIS, BIG5, ISO-2022-*)
+-; http://php.net/mbstring.internal-encoding
+-;mbstring.internal_encoding = UTF-8
++; http://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.internal-encoding
++;mbstring.internal_encoding = EUC-JP
+ 
+ ; http input encoding.
+-; http://php.net/mbstring.http-input
+-;mbstring.http_input = UTF-8
++; http://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.http-input
++;mbstring.http_input = auto
+ 
+ ; http output encoding. mb_output_handler must be
+ ; registered as output buffer to function
+-; http://php.net/mbstring.http-output
+-;mbstring.http_output = pass
++; http://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.http-output
++;mbstring.http_output = SJIS
+ 
+ ; enable automatic encoding translation according to
+ ; mbstring.internal_encoding setting. Input chars are
+ ; converted to internal encoding by setting this to On.
+ ; Note: Do _not_ use automatic encoding translation for
+ ;       portable libs/applications.
+-; http://php.net/mbstring.encoding-translation
++; http://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.encoding-translation
+ ;mbstring.encoding_translation = Off
+ 
+ ; automatic encoding detection order.
+ ; auto means
+-; http://php.net/mbstring.detect-order
++; http://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.detect-order
+ ;mbstring.detect_order = auto
+ 
+ ; substitute_character used when character cannot be converted
+ ; one from another
+-; http://php.net/mbstring.substitute-character
+-;mbstring.substitute_character = none
++; http://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.substitute-character
++;mbstring.substitute_character = none;
+ 
+ ; overload(replace) single byte functions by mbstring functions.
+ ; mail(), ereg(), etc are overloaded by mb_send_mail(), mb_ereg(),
+@@ -1705,11 +1592,11 @@
+ ; 1: Overload mail() function
+ ; 2: Overload str*() functions
+ ; 4: Overload ereg*() functions
+-; http://php.net/mbstring.func-overload
++; http://www.php.net/manual/en/mbstring.configuration.php#ini.mbstring.func-overload
+ ;mbstring.func_overload = 0
+ 
+ ; enable strict encoding detection.
+-;mbstring.strict_detection = On
++;mbstring.strict_detection = Off
+ 
+ ; This directive specifies the regex pattern of content types for which mb_output_handler()
+ ; is activated.
+@@ -1720,7 +1607,7 @@
+ ; Tell the jpeg decode to ignore warnings and try to create
+ ; a gd image. The warning will then be displayed as notices
+ ; disabled by default
+-; http://php.net/gd.jpeg-ignore-warning
++; http://www.php.net/manual/en/image.configuration.php#ini.image.jpeg-ignore-warning
+ ;gd.jpeg_ignore_warning = 0
+ 
+ [exif]
+@@ -1729,82 +1616,53 @@
+ ; given by corresponding encode setting. When empty mbstring.internal_encoding
+ ; is used. For the decode settings you can distinguish between motorola and
+ ; intel byte order. A decode setting cannot be empty.
+-; http://php.net/exif.encode-unicode
++; http://www.php.net/manual/en/exif.configuration.php#ini.exif.encode-unicode
+ ;exif.encode_unicode = ISO-8859-15
+ 
+-; http://php.net/exif.decode-unicode-motorola
++; http://www.php.net/manual/en/exif.configuration.php#ini.exif.decode-unicode-motorola
+ ;exif.decode_unicode_motorola = UCS-2BE
+ 
+-; http://php.net/exif.decode-unicode-intel
++; http://www.php.net/manual/en/exif.configuration.php#ini.exif.decode-unicode-intel
+ ;exif.decode_unicode_intel    = UCS-2LE
+ 
+-; http://php.net/exif.encode-jis
++; http://www.php.net/manual/en/exif.configuration.php#ini.exif.encode-jis
+ ;exif.encode_jis =
+ 
+-; http://php.net/exif.decode-jis-motorola
++; http://www.php.net/manual/en/exif.configuration.php#ini.exif.decode-jis-motorola
+ ;exif.decode_jis_motorola = JIS
+ 
+-; http://php.net/exif.decode-jis-intel
++; http://www.php.net/manual/en/exif.configuration.php#ini.exif.decode-jis-intel
+ ;exif.decode_jis_intel    = JIS
+ 
+ [Tidy]
+ ; The path to a default tidy configuration file to use when using tidy
+-; http://php.net/tidy.default-config
++; http://www.php.net/manual/en/tidy.configuration.php#ini.tidy.default-config
+ ;tidy.default_config = /usr/local/lib/php/default.tcfg
+ 
+ ; Should tidy clean and repair output automatically?
+ ; WARNING: Do not use this option if you are generating non-html content
+ ; such as dynamic images
+-; http://php.net/tidy.clean-output
++; http://www.php.net/manual/en/tidy.configuration.php#ini.tidy.clean-output
+ tidy.clean_output = Off
+ 
+ [soap]
+ ; Enables or disables WSDL caching feature.
+-; http://php.net/soap.wsdl-cache-enabled
++; http://www.php.net/manual/en/soap.configuration.php#ini.soap.wsdl-cache-enabled
+ soap.wsdl_cache_enabled=1
+ 
+ ; Sets the directory name where SOAP extension will put cache files.
+-; http://php.net/soap.wsdl-cache-dir
+-
+-; RPM note : cache directory must be owned by process owner
+-; for mod_php, see /etc/httpd/conf.d/php.conf
+-; for php-fpm, see /etc/php-fpm.d/*conf
++; http://www.php.net/manual/en/soap.configuration.php#ini.soap.wsdl-cache-dir
+ soap.wsdl_cache_dir="/tmp"
+ 
+-; (time to live) Sets the number of second while cached file will be used
++; (time to live) Sets the number of second while cached file will be used 
+ ; instead of original one.
+-; http://php.net/soap.wsdl-cache-ttl
++; http://www.php.net/manual/en/soap.configuration.php#ini.soap.wsdl-cache-ttl
+ soap.wsdl_cache_ttl=86400
+ 
+-; Sets the size of the cache limit. (Max. number of WSDL files to cache)
+-soap.wsdl_cache_limit = 5
+-
+ [sysvshm]
+ ; A default size of the shared memory segment
+ ;sysvshm.init_mem = 10000
+ 
+-[ldap]
+-; Sets the maximum number of open links or -1 for unlimited.
+-ldap.max_links = -1
+-
+-[mcrypt]
+-; For more information about mcrypt settings see http://php.net/mcrypt-module-open
+-
+-; Directory where to load mcrypt algorithms
+-; Default: Compiled in into libmcrypt (usually /usr/local/lib/libmcrypt)
+-;mcrypt.algorithms_dir=
+-
+-; Directory where to load mcrypt modes
+-; Default: Compiled in into libmcrypt (usually /usr/local/lib/libmcrypt)
+-;mcrypt.modes_dir=
+-
+-[dba]
+-;dba.default_handler=
+-
+-[curl]
+-; A default value for the CURLOPT_CAINFO option. This is required to be an
+-; absolute path.
+-;curl.cainfo =
+ 
+ ; Local Variables:
+ ; tab-width: 4
+Info: /Stage[main]/Php::Fpm/Php::Ini[/etc/php.ini]/File[/etc/php.ini]: Filebucketed /etc/php.ini to puppet with sum 0de9a54bca4ec4f03dce7d66fd7f8f7a
+Notice: /Stage[main]/Php::Fpm/Php::Ini[/etc/php.ini]/File[/etc/php.ini]/content: content changed '{md5}0de9a54bca4ec4f03dce7d66fd7f8f7a' to '{md5}553586fd2739fbf4441b9e396f57cee2'
+Notice: /Stage[main]/Php::Fpm/Php::Ini[/etc/php.ini]/File[/etc/php.ini]/owner: owner changed 'root' to 'nginx'
+Notice: /Stage[main]/Php::Fpm/Php::Ini[/etc/php.ini]/File[/etc/php.ini]/group: group changed 'root' to 'nginx'
+Info: /Stage[main]/Php::Fpm/Php::Ini[/etc/php.ini]/File[/etc/php.ini]: Scheduling refresh of Service[php-fpm]
+Info: /Stage[main]/Php::Fpm/Php::Ini[/etc/php.ini]/File[/etc/php.ini]: Scheduling refresh of Service[php-fpm]
+Info: /Stage[main]/Php::Fpm/Php::Ini[/etc/php.ini]/File[/etc/php.ini]: Scheduling refresh of Service[php-fpm]
+Notice: /Stage[main]/Php::Fpm/File[/var/lib/php/session]/ensure: created
+Notice: /Stage[main]/Nginx/File[/var/log/nginx]/ensure: created
+Notice: /Stage[main]/Php::Fpm/Php::Fpm::Conf[www]/File[/etc/php-fpm.d/www.conf]/content: 
+--- /etc/php-fpm.d/www.conf	2014-02-18 08:13:49.000000000 -0700
++++ /tmp/puppet-file20140516-999-1p67bis	2014-05-16 08:43:11.893000000 -0600
+@@ -1,19 +1,10 @@
+-; Start a new pool named 'www'.
+ [www]
+ 
+ ; The address on which to accept FastCGI requests.
+-; Valid syntaxes are:
+-;   'ip.add.re.ss:port'    - to listen on a TCP socket to a specific address on
+-;                            a specific port;
+-;   'port'                 - to listen on a TCP socket to all addresses on a
+-;                            specific port;
+-;   '/path/to/unix/socket' - to listen on a unix socket.
+-; Note: This value is mandatory.
+-listen = 127.0.0.1:9000
++listen = 127.0.0.1:8501
+ 
+ ; Set listen(2) backlog. A value of '-1' means unlimited.
+-; Default Value: -1
+-;listen.backlog = -1
++listen.backlog = -1
+  
+ ; List of ipv4 addresses of FastCGI clients which are allowed to connect.
+ ; Equivalent to the FCGI_WEB_SERVER_ADDRS environment variable in the original
+@@ -36,9 +27,9 @@
+ ; Note: The user is mandatory. If the group is not set, the default user's group
+ ;       will be used.
+ ; RPM: apache Choosed to be able to access some dir as httpd
+-user = apache
++user = nginx
+ ; RPM: Keep a group allowed to write in log dir.
+-group = apache
++group = nginx
+ 
+ ; Choose how the process manager will control the number of child processes.
+ ; Possible Values:
+@@ -88,7 +79,7 @@
+ ; This can be useful to work around memory leaks in 3rd party libraries. For
+ ; endless request processing specify '0'. Equivalent to PHP_FCGI_MAX_REQUESTS.
+ ; Default Value: 0
+-;pm.max_requests = 500
++pm.max_requests = 0
+ 
+ ; The URI to view the FPM status page. If this value is not set, no URI will be
+ ; recognized as a status page. By default, the status page shows the following
+@@ -135,20 +126,20 @@
+ ; This directive may be used to customize the response of a ping request. The
+ ; response is formatted as text/plain with a 200 response code.
+ ; Default Value: pong
+-;ping.response = pong
++ping.response = pong
+  
+ ; The timeout for serving a single request after which the worker process will
+ ; be killed. This option should be used when the 'max_execution_time' ini option
+ ; does not stop script execution for some reason. A value of '0' means 'off'.
+ ; Available units: s(econds)(default), m(inutes), h(ours), or d(ays)
+ ; Default Value: 0
+-;request_terminate_timeout = 0
++request_terminate_timeout = 0
+  
+ ; The timeout for serving a single request after which a PHP backtrace will be
+ ; dumped to the 'slowlog' file. A value of '0s' means 'off'.
+ ; Available units: s(econds)(default), m(inutes), h(ours), or d(ays)
+ ; Default Value: 0
+-;request_slowlog_timeout = 0
++request_slowlog_timeout = 0
+  
+ ; The log file for slow requests
+ ; Default Value: not set
+@@ -179,16 +170,8 @@
+ ; Redirect worker stdout and stderr into main error log. If not set, stdout and
+ ; stderr will be redirected to /dev/null according to FastCGI specs.
+ ; Default Value: no
+-;catch_workers_output = yes
++catch_workers_output = no
+  
+-; Limits the extensions of the main script FPM will allow to parse. This can
+-; prevent configuration mistakes on the web server side. You should only limit
+-; FPM to .php extensions to prevent malicious users to use other extensions to
+-; exectute php code.
+-; Note: set an empty value to allow all extensions.
+-; Default Value: .php
+-;security.limit_extensions = .php .php3 .php4 .php5
+-
+ ; Pass environment variables like LD_LIBRARY_PATH. All $VARIABLEs are taken from
+ ; the current environment.
+ ; Default Value: clean env
+@@ -216,12 +199,8 @@
+ ;                specified at startup with the -d argument
+ ;php_admin_value[sendmail_path] = /usr/sbin/sendmail -t -i -f www@my.domain.com
+ ;php_flag[display_errors] = off
++;php_admin_value[error_log] = /var/log/php-fpm/www-error.log
++;php_admin_flag[log_errors] = on
++;php_admin_value[memory_limit] = 32M
+ php_admin_value[error_log] = /var/log/php-fpm/www-error.log
+ php_admin_flag[log_errors] = on
+-;php_admin_value[memory_limit] = 128M
+-
+-; Set session path to a directory owned by process user
+-php_value[session.save_handler] = files
+-php_value[session.save_path]    = /var/lib/php/session
+-php_value[soap.wsdl_cache_dir]  = /var/lib/php/wsdlcache
+-
+Info: /Stage[main]/Php::Fpm/Php::Fpm::Conf[www]/File[/etc/php-fpm.d/www.conf]: Filebucketed /etc/php-fpm.d/www.conf to puppet with sum 274fa60c71f18212ed0693bb35c665e7
+Notice: /Stage[main]/Php::Fpm/Php::Fpm::Conf[www]/File[/etc/php-fpm.d/www.conf]/content: content changed '{md5}274fa60c71f18212ed0693bb35c665e7' to '{md5}cd54f4d3b8fdc56050ad3bd62325639b'
+Info: /Stage[main]/Php::Fpm/Php::Fpm::Conf[www]/File[/etc/php-fpm.d/www.conf]: Scheduling refresh of Service[php-fpm]
+Notice: /Stage[main]/Php::Fpm::Daemon/Service[php-fpm]/ensure: ensure changed 'stopped' to 'running'
+Info: /Stage[main]/Php::Fpm::Daemon/Service[php-fpm]: Unscheduling refresh on Service[php-fpm]
+Notice: /Stage[main]/Nginx::Package::Redhat/Package[nginx]/ensure: created
+Notice: /Stage[main]/Nginx::Config/File[/var/nginx]/ensure: created
+Notice: /Stage[main]/Nginx::Config/File[/var/nginx/client_body_temp]/ensure: created
+Notice: /Stage[main]/Nginx::Config/File[/var/nginx/proxy_temp]/ensure: created
+Notice: /Stage[main]/Nginx::Config/File[/etc/nginx/nginx.conf]/content: 
+--- /etc/nginx/nginx.conf	2014-02-16 11:16:44.000000000 -0700
++++ /tmp/puppet-file20140516-999-1ouinbz	2014-05-16 08:43:44.470000000 -0600
+@@ -1,128 +1,40 @@
+-# For more information on configuration, see:
+-#   * Official English Documentation: http://nginx.org/en/docs/
+-#   * Official Russian Documentation: http://nginx.org/ru/docs/
+-
+-user  nginx;
+-worker_processes  1;
++user nginx;
++worker_processes 1;
+ 
+ error_log  /var/log/nginx/error.log;
+-#error_log  /var/log/nginx/error.log  notice;
+-#error_log  /var/log/nginx/error.log  info;
+-
+-pid        /run/nginx.pid;
+-
++pid        /var/run/nginx.pid;
+ 
+ events {
+-    worker_connections  1024;
++  worker_connections 1024;
+ }
+ 
+-
+ http {
+-    include       /etc/nginx/mime.types;
+-    default_type  application/octet-stream;
++  include       /etc/nginx/mime.types;
++  default_type  application/octet-stream;
++
++  access_log  /var/log/nginx/access.log;
++
++  sendfile    on;
++
++  server_tokens on;
++  
++
++  types_hash_max_size 1024;
++  types_hash_bucket_size 512;
++
++  server_names_hash_bucket_size 64;
++  server_names_hash_max_size 512;
++
++  keepalive_timeout  65;
++  tcp_nodelay        on;
++
++
++  gzip         on;
++  gzip_disable "MSIE [1-6]\.(?!.*SV1)";
++
++
+ 
+-    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+-                      '$status $body_bytes_sent "$http_referer" '
+-                      '"$http_user_agent" "$http_x_forwarded_for"';
+-
+-    access_log  /var/log/nginx/access.log  main;
+-
+-    sendfile        on;
+-    #tcp_nopush     on;
+-
+-    #keepalive_timeout  0;
+-    keepalive_timeout  65;
+-
+-    #gzip  on;
+-
+-    # Load modular configuration files from the /etc/nginx/conf.d directory.
+-    # See http://nginx.org/en/docs/ngx_core_module.html#include
+-    # for more information.
+-    include /etc/nginx/conf.d/*.conf;
+-
+-    index   index.html index.htm;
+-
+-    server {
+-        listen       80;
+-        server_name  localhost;
+-        root         /usr/share/nginx/html;
+-
+-        #charset koi8-r;
+-
+-        #access_log  /var/log/nginx/host.access.log  main;
+-
+-        location / {
+-        }
+-
+-        # redirect server error pages to the static page /40x.html
+-        #
+-        error_page  404              /404.html;
+-        location = /40x.html {
+-        }
+-
+-        # redirect server error pages to the static page /50x.html
+-        #
+-        error_page   500 502 503 504  /50x.html;
+-        location = /50x.html {
+-        }
+-
+-        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+-        #
+-        #location ~ \.php$ {
+-        #    proxy_pass   http://127.0.0.1;
+-        #}
+-
+-        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+-        #
+-        #location ~ \.php$ {
+-        #    root           html;
+-        #    fastcgi_pass   127.0.0.1:9000;
+-        #    fastcgi_index  index.php;
+-        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+-        #    include        fastcgi_params;
+-        #}
+-
+-        # deny access to .htaccess files, if Apache's document root
+-        # concurs with nginx's one
+-        #
+-        #location ~ /\.ht {
+-        #    deny  all;
+-        #}
+-    }
+-
+-
+-    # another virtual host using mix of IP-, name-, and port-based configuration
+-    #
+-    #server {
+-    #    listen       8000;
+-    #    listen       somename:8080;
+-    #    server_name  somename  alias  another.alias;
+-    #    root         html;
+-
+-    #    location / {
+-    #    }
+-    #}
+-
+-
+-    # HTTPS server
+-    #
+-    #server {
+-    #    listen       443;
+-    #    server_name  localhost;
+-    #    root         html;
+-
+-    #    ssl                  on;
+-    #    ssl_certificate      cert.pem;
+-    #    ssl_certificate_key  cert.key;
+-
+-    #    ssl_session_timeout  5m;
+-
+-    #    ssl_protocols  SSLv2 SSLv3 TLSv1;
+-    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+-    #    ssl_prefer_server_ciphers   on;
+-
+-    #    location / {
+-    #    }
+-    #}
++  include /etc/nginx/conf.d/*.conf;
++  include /etc/nginx/sites-enabled/*;
+ 
+ }
+Info: /Stage[main]/Nginx::Config/File[/etc/nginx/nginx.conf]: Filebucketed /etc/nginx/nginx.conf to puppet with sum 2518de1fecb022fdcb24129bc814b496
+Notice: /Stage[main]/Nginx::Config/File[/etc/nginx/nginx.conf]/content: content changed '{md5}2518de1fecb022fdcb24129bc814b496' to '{md5}d37c271f17e4c4fc886e72e220c8b064'
+Notice: /Stage[main]/Nginx::Config/File[/etc/nginx/conf.mail.d]/ensure: created
+Notice: /Stage[main]/Nginx::Config/File[/etc/nginx/sites-enabled]/ensure: created
+Notice: /Stage[main]/Nginx::Config/File[/etc/nginx/sites-available]/ensure: created
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Location[php]/File[/etc/nginx/fastcgi_params]/content: 
+--- /etc/nginx/fastcgi_params	2014-02-16 11:23:03.000000000 -0700
++++ /tmp/puppet-file20140516-999-1afj2gv	2014-05-16 08:43:44.584000000 -0600
+@@ -1,24 +1,27 @@
++# This file managed by puppet on host 
+ 
+-fastcgi_param  QUERY_STRING       $query_string;
+-fastcgi_param  REQUEST_METHOD     $request_method;
+-fastcgi_param  CONTENT_TYPE       $content_type;
+-fastcgi_param  CONTENT_LENGTH     $content_length;
+-
+-fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
+-fastcgi_param  REQUEST_URI        $request_uri;
+-fastcgi_param  DOCUMENT_URI       $document_uri;
+-fastcgi_param  DOCUMENT_ROOT      $document_root;
+-fastcgi_param  SERVER_PROTOCOL    $server_protocol;
+-fastcgi_param  HTTPS              $https if_not_empty;
+-
+-fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
+-fastcgi_param  SERVER_SOFTWARE    nginx/$nginx_version;
+-
+-fastcgi_param  REMOTE_ADDR        $remote_addr;
+-fastcgi_param  REMOTE_PORT        $remote_port;
+-fastcgi_param  SERVER_ADDR        $server_addr;
+-fastcgi_param  SERVER_PORT        $server_port;
+-fastcgi_param  SERVER_NAME        $server_name;
++fastcgi_param	QUERY_STRING		  $query_string;
++fastcgi_param	REQUEST_METHOD	  $request_method;
++fastcgi_param	CONTENT_TYPE		  $content_type;
++fastcgi_param	CONTENT_LENGTH	  $content_length;
++
++fastcgi_param	SCRIPT_FILENAME	  $request_filename;
++fastcgi_param	SCRIPT_NAME		    $fastcgi_script_name;
++fastcgi_param	REQUEST_URI		    $request_uri;
++fastcgi_param	DOCUMENT_URI		  $document_uri;
++fastcgi_param	DOCUMENT_ROOT		  $document_root;
++fastcgi_param	SERVER_PROTOCOL	  $server_protocol;
++
++fastcgi_param	GATEWAY_INTERFACE	CGI/1.1;
++fastcgi_param	SERVER_SOFTWARE		nginx/$nginx_version;
++
++fastcgi_param	REMOTE_ADDR		    $remote_addr;
++fastcgi_param	REMOTE_PORT		    $remote_port;
++fastcgi_param	SERVER_ADDR		    $server_addr;
++fastcgi_param	SERVER_PORT		    $server_port;
++fastcgi_param	SERVER_NAME		    $server_name;
++
++fastcgi_param	HTTPS			        $https;
+ 
+ # PHP only, required if PHP was built with --enable-force-cgi-redirect
+-fastcgi_param  REDIRECT_STATUS    200;
++fastcgi_param	REDIRECT_STATUS		200;
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Location[php]/File[/etc/nginx/fastcgi_params]: Filebucketed /etc/nginx/fastcgi_params to puppet with sum f597fb54a6fa1c9a9678dd3ae377d385
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Location[php]/File[/etc/nginx/fastcgi_params]/content: content changed '{md5}f597fb54a6fa1c9a9678dd3ae377d385' to '{md5}cbb609e2c714d0510e958e155996f897'
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Location[php]/File[/etc/nginx/fastcgi_params]/mode: mode changed '0644' to '0770'
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Location[php]/File[/etc/nginx/fastcgi_params]: Scheduling refresh of Class[Nginx::Service]
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Location[php]/File[/etc/nginx/fastcgi_params]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Nginx::Config/File[/etc/nginx/conf.d/proxy.conf]/ensure: defined content as '{md5}627cb745f04ae86960007f95d77ed5d4'
+Info: Class[Nginx::Config]: Scheduling refresh of Class[Nginx::Service]
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Location[static files]/Concat::Fragment[localhost-500-~ _.(css|gif|jpg|js|png|html)$]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/500_localhost-500-~ _.(css|gif|jpg|js|png|html)$]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Location[static files]/Concat::Fragment[localhost-500-~ _.(css|gif|jpg|js|png|html)$]/File[/var/lib/puppet/concat/_etc_nginx_sites-available_localhost.conf/fragments/500_localhost-500-~ _.(css|gif|jpg|js|png|html)$]: Scheduling refresh of Exec[concat_/etc/nginx/sites-available/localhost.conf]
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/Exec[concat_/etc/nginx/sites-available/localhost.conf]/returns: executed successfully
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/Exec[concat_/etc/nginx/sites-available/localhost.conf]: Triggered 'refresh' from 7 events
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/etc/nginx/sites-available/localhost.conf]/ensure: defined content as '{md5}a109bfe2f44e8c58f8cc776c1b1db821'
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/Concat[/etc/nginx/sites-available/localhost.conf]/File[/etc/nginx/sites-available/localhost.conf]: Scheduling refresh of Class[Nginx::Service]
+Info: Concat[/etc/nginx/sites-available/localhost.conf]: Scheduling refresh of Class[Nginx::Service]
+Info: Class[Nginx::Service]: Scheduling refresh of Service[nginx]
+Notice: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/File[localhost.conf symlink]/ensure: created
+Info: /Stage[main]/Php::Fpm/Nginx::Resource::Vhost[localhost]/File[localhost.conf symlink]: Scheduling refresh of Service[nginx]
+Notice: /Stage[main]/Nginx::Service/Service[nginx]/ensure: ensure changed 'stopped' to 'running'
+Info: /Stage[main]/Nginx::Service/Service[nginx]: Unscheduling refresh on Service[nginx]
+Notice: /Stage[main]/Php::Fpm/File[/srv/www]/ensure: created
+Notice: /Stage[main]/Php::Fpm/File[/srv/www/phpinfo.php]/ensure: defined content as '{md5}48101bbdd897877cc62b8704a293a436'
+Info: Creating state file /var/lib/puppet/state/state.yaml
+Notice: Finished catalog run in 51.91 seconds
