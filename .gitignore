@@ -2,3 +2,5 @@
 .librarian/
 .tmp/
 Puppetfile.lock
+list/
+Gemfile.lock
