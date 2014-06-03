@@ -48,12 +48,9 @@ class php::fpm(
       require         => Package[$::php::params::fpm_package_name],
     }
   }
-  php::ini { '/etc/php.ini' :
-    display_errors  => 'On',
-    short_open_tag  => 'Off',
-    date_timezone   => 'America/Denver',
+  if ! defined(Class['php::cli']) {
+    class { 'php::cli' : }
   }
-  class { 'php::cli' : }
   class { 'php::fpm::daemon' : }
 
   php::fpm::conf { 'www' :
