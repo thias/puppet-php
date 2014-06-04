@@ -15,7 +15,7 @@ class php::fpm(
 
   $directories = hiera('directories',{'www' => '/srv/www'})
   $groups      = hiera('groups',{'www' => {'RedHat'=>'nginx','Debian'=>'www-data'}})
-  $ports       = hiera('ports',{'phpfpm' => '8010'})
+  $ports       = hiera('ports',{'php-fpm' => '9000'})
   $users       = hiera('users', { 'git' => 'git', 'gitlab' => 'git','www' => {'RedHat'=>'nginx','Debian'=>'www-data'} })
 
   $basedir = $wwwdir ? {
@@ -31,7 +31,7 @@ class php::fpm(
     default => $appgroup,
   }
   $pxyport = $port ? {
-    undef   => $ports['phpfpm'],
+    undef   => $ports['php-fpm'],
     default => $port,
   }
 
