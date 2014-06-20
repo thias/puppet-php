@@ -31,6 +31,10 @@ class php::params {
       $httpd_package_name = 'httpd'
       $httpd_service_name = 'httpd'
       $httpd_conf_dir = '/etc/httpd/conf.d'
+      $extension_dir = "$::php_extension_dir" ? {
+        ''      => '/usr/lib64/php/modules',
+        default => "$::php_extension_dir",
+      }
     }
   }
 }
