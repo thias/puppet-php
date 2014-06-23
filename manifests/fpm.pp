@@ -15,7 +15,7 @@ class php::fpm(
 
   $directories = hiera('directories',{'www' => '/srv/www'})
   $groups      = hiera('groups',{'www' => {'RedHat'=>'nginx','Debian'=>'www-data'}})
-  $ports       = hiera('ports',{'phpfpm' => '8010'})
+  $ports       = hiera('ports',{'php-fpm' => '9000'})
   $users       = hiera('users', { 'git' => 'git', 'gitlab' => 'git','www' => {'RedHat'=>'nginx','Debian'=>'www-data'} })
 
   $basedir = $wwwdir ? {
@@ -31,7 +31,7 @@ class php::fpm(
     default => $appgroup,
   }
   $pxyport = $port ? {
-    undef   => $ports['phpfpm'],
+    undef   => $ports['php-fpm'],
     default => $port,
   }
 
@@ -48,12 +48,9 @@ class php::fpm(
       require         => Package[$::php::params::fpm_package_name],
     }
   }
-  php::ini { '/etc/php.ini' :
-    display_errors  => 'On',
-    short_open_tag  => 'Off',
-    date_timezone   => 'America/Denver',
+  if ! defined(Class['php::cli']) {
+    class { 'php::cli' : }
   }
-  class { 'php::cli' : }
   class { 'php::fpm::daemon' : }
 
   php::fpm::conf { 'www' :
@@ -119,13 +116,13 @@ class php::fpm(
         value => 'on',
       })
     }
-    nginx::resource::location { 'static files':
-      ensure          => 'present',
-      vhost           => $vhost,
-      location        => '~ \.(css|gif|jpg|js|png|html)$',
-      www_root        => $basedir,
-      index_files     => ['index.php','index.html',],
-      proxy           => undef,
-    }
+    # nginx::resource::location { 'static files':
+    #   ensure          => 'present',
+    #   vhost           => $vhost,
+    #   location        => '~ \.(css|gif|jpg|js|png|html)$',
+    #   www_root        => $basedir,
+    #   index_files     => ['index.php','index.html',],
+    #   proxy           => undef,
+    # }
   }
 }
