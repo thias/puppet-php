@@ -116,13 +116,13 @@ class php::fpm(
         value => 'on',
       })
     }
-    nginx::resource::location { 'static files':
-      ensure          => 'present',
-      vhost           => $vhost,
-      location        => '~ \.(css|gif|jpg|js|png|html)$',
-      www_root        => $basedir,
-      index_files     => ['index.php','index.html',],
-      proxy           => undef,
-    }
+    # nginx::resource::location { 'static files':
+    #   ensure          => 'present',
+    #   vhost           => $vhost,
+    #   location        => '~ \.(css|gif|jpg|js|png|html)$',
+    #   www_root        => $basedir,
+    #   index_files     => ['index.php','index.html',],
+    #   proxy           => undef,
+    # }
   }
 }
