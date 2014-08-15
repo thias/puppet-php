@@ -45,6 +45,15 @@ class php::fpm::daemon (
       require => Package[$fpm_package_name],
     }
 
+    # make sure the directory for the pid file is present
+    file { '/var/run/php-fpm':
+      ensure  => directory,
+      owner   => $log_owner,
+      group   => $log_group_final,
+      mode    => 755,
+      require => Package[$fpm_package_name],
+    }
+
     file { "${fpm_conf_dir}/php-fpm.conf":
       notify  => Service[$fpm_service_name],
       content => template('php/fpm/php-fpm.conf.erb'),
