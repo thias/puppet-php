@@ -17,6 +17,7 @@
 define php::module::ini (
   $ensure   = undef,
   $pkgname  = false,
+  $prefix   = undef,
   $settings = {},
   $zend     = false,
 ) {
@@ -37,16 +38,20 @@ define php::module::ini (
       false   => "${::php::params::php_package_name}-${title}",
       default => "${::php::params::php_package_name}-${pkgname}",
     }
-
   }
 
   # INI configuration file
+  if $prefix {
+    $inifile = "${::php::params::php_conf_dir}/${prefix}-${modname}.ini"
+  } else {
+    $inifile = "${::php::params::php_conf_dir}/${modname}.ini"
+  }
   if $ensure == 'absent' {
-    file { "${::php::params::php_conf_dir}/${modname}.ini":
+    file { $inifile:
       ensure => absent,
     }
   } else {
-    file { "${::php::params::php_conf_dir}/${modname}.ini":
+    file { $inifile:
       ensure  => $ensure,
       require => Package[$ospkgname],
       content => template('php/module.ini.erb'),

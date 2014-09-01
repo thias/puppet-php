@@ -1,4 +1,5 @@
 * Allow override of package names (#29, #30, #31, @jeffsheltren).
+* Support prefix in module ini files, for recent Fedora/EL packages.
 
 2014-04-14 - 0.3.12
 * Fix process_priority fpm parameter (#26, @Nyholm).
