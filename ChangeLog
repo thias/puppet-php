@@ -1,3 +1,4 @@
+2014-09-09 - 1.0.0
 * Allow override of package names (#29, #30, #31, @jeffsheltren).
 * Support prefix in module ini files, for recent Fedora/EL packages.
 * Support $zend = true for module::ini, for PHP 5.6.
