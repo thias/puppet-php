@@ -2,9 +2,9 @@ class php::params {
   case $::osfamily {
     'Debian': {
       $php_package_name = 'php5'
-      $php_apc_package_name = 'php-apc'
-      $common_package_name = 'php5-common'
-      $cli_package_name = 'php5-cli'
+      $php_apc_package_name = 'php5-php-apc'
+      $common_package_name = 'php55-php-common'
+      $cli_package_name = 'php55-cli'
       $php_conf_dir = '/etc/php5/conf.d'
       $fpm_package_name = 'php5-fpm'
       $fpm_service_name = 'php5-fpm'
@@ -18,7 +18,7 @@ class php::params {
     }
 
     default: {
-      $php_package_name = 'php'
+      $php_package_name = 'php55'
       $php_apc_package_name = 'php-pecl-apc'
       $common_package_name = 'php-common'
       $cli_package_name = 'php-cli'
