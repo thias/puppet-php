@@ -5,7 +5,10 @@ class php::params {
       $php_apc_package_name = 'php-apc'
       $common_package_name = 'php5-common'
       $cli_package_name = 'php5-cli'
-      $php_conf_dir = '/etc/php5/conf.d'
+      $php_conf_dir = $lsbdistcodename ? {
+                        'trusty'  => '/etc/php5/apache2/conf.d',
+                        default   => '/etc/php5/conf.d',
+                      }
       $fpm_package_name = 'php5-fpm'
       $fpm_service_name = 'php5-fpm'
       $fpm_pool_dir = '/etc/php5/fpm/pool.d'
