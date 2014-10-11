@@ -28,5 +28,16 @@ define php::module (
   package { $package:
     ensure => $ensure,
   }
+
+  # Enable module in Ubuntu 14.04 LTS
+  if $lsbdistcodename == 'trusty' {
+    exec { "enable $title":
+      unless  => "php5query -s apache2 -m $title",
+      command => "php5enmod $title",
+      path    => ['/bin', '/usr/bin', '/usr/sbin'],
+      require => Package[$package],
+    }
+  }
+
 }
 
