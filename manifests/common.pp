@@ -8,5 +8,7 @@
 class php::common (
   $common_package_name = $::php::params::common_package_name,
 ) inherits ::php::params {
-  package { $common_package_name: ensure => 'installed' }
+  if !defined(Package[$common_package_name]) {
+    package { $common_package_name: ensure => 'installed' }
+  }
 }

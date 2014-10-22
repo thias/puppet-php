@@ -25,7 +25,9 @@ class php::fpm::daemon (
     default => $log_group,
   }
 
-  package { $fpm_package_name: ensure => $ensure }
+  if !defined(Package[$fpm_package_name]) {
+    package { $fpm_package_name: ensure => $ensure }
+  }
 
   if ( $ensure != 'absent' ) {
     service { $fpm_service_name:
