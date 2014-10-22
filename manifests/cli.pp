@@ -8,7 +8,7 @@
 #
 class php::cli (
   $ensure           = 'installed',
-  $inifile          = '/etc/php.ini',
+  $inifile          = $php::params::cli_inifile,
   $cli_package_name = $::php::params::cli_package_name,
 ) inherits ::php::params {
   package { $cli_package_name:
