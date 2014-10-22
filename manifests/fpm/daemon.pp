@@ -8,6 +8,7 @@
 class php::fpm::daemon (
   $ensure                      = 'present',
   $fpm_package_name            = $::php::params::fpm_package_name,
+  $fpm_service_name            = $::php::params::fpm_service_name,
   $log_level                   = 'notice',
   $emergency_restart_threshold = '0',
   $emergency_restart_interval  = '0',
