@@ -80,13 +80,22 @@ define php::fpm::conf (
 
   } else {
 
+    if !defined(File[$php::params::fpm_pool_dir]) {
+      file { $php::params::fpm_pool_dir:
+        ensure  => directory,
+        owner   => 'root',
+        group   => 'root',
+        require => Package[$fpm_package_name_final],
+      }
+    }
+
     file { "${php::params::fpm_pool_dir}/${pool}.conf":
       notify  => Service[$php::params::fpm_service_name],
       content => template('php/fpm/pool.conf.erb'),
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
-      require => Package[$fpm_package_name_final],
+      require => File[$php::params::fpm_pool_dir],
     }
 
   }
