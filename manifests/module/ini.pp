@@ -41,6 +41,12 @@ define php::module::ini (
   }
 
   # INI configuration file
+  if ! defined(File[$php::params::php_conf_dir]) {
+    file { $php::params::php_conf_dir:
+      ensure => 'directory',
+    }
+  }
+
   if $prefix {
     $inifile = "${::php::params::php_conf_dir}/${prefix}-${modname}.ini"
   } else {
@@ -53,7 +59,10 @@ define php::module::ini (
   } else {
     file { $inifile:
       ensure  => $ensure,
-      require => Package[$ospkgname],
+      require => [
+        Package[$ospkgname],
+        File[$php::params::php_conf_dir],
+      ],
       content => template('php/module.ini.erb'),
     }
   }
