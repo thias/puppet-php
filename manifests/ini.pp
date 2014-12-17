@@ -106,13 +106,9 @@ define php::ini (
   $soap_wsdl_cache_dir        = '/tmp',
   $soap_wsdl_cache_ttl        = '86400',
 ) {
-
-  include '::php::common'
-
   file { $title:
     ensure  => $ensure,
     content => template($template),
   }
-
 }
 

@@ -30,13 +30,13 @@ define php::module::ini (
   # Handle naming issue of php-apc package on Debian
   if ($modname == 'apc' and $pkgname == false) {
     # Package name
-    $ospkgname = $::php::params::php_apc_package_name
+    $ospkgname = "${::php::php_name}${::php::params::php_apc_package_suffix}"
   } else {
     # Package name
     $ospkgname = $pkgname ? {
       /^php/  => "${pkgname}",
-      false   => "${::php::params::php_package_name}-${title}",
-      default => "${::php::params::php_package_name}-${pkgname}",
+      false   => "${::php::php_name}-${title}",
+      default => "${::php::php_name}-${pkgname}",
     }
   }
 
