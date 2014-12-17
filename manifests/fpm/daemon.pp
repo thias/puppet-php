@@ -7,7 +7,6 @@
 #
 class php::fpm::daemon (
   $ensure                      = 'present',
-  $fpm_package_name            = $::php::params::fpm_package_name,
   $log_level                   = 'notice',
   $emergency_restart_threshold = '0',
   $emergency_restart_interval  = '0',
@@ -18,6 +17,7 @@ class php::fpm::daemon (
   $log_group                   = false,
   $log_dir_mode                = '0770',
 ) inherits ::php::params {
+  $fpm_package_name = "${::php::php_name}-fpm"
 
   # Hack-ish to default to user for group too
   $log_group_final = $log_group ? {

@@ -1,3 +1,4 @@
+include php
 php::ini { '/etc/php-httpd.ini': }
 service { 'httpd': }
 package { 'httpd': ensure => installed }

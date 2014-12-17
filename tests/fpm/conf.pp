@@ -1,3 +1,4 @@
+include php
 include php::fpm::daemon
 php::fpm::conf { 'www': ensure => absent }
 php::fpm::conf { 'customer1':

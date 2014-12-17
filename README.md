@@ -10,6 +10,7 @@ change everything in ways which are typical for RHEL, but it also works on
 Debian based distributions (such as Ubuntu), and support for others should
 be easy to add.
 
+* `php` : The entry point of the module
 * `php::cli` : Simple class to install PHP's Command Line Interface
 * `php::fpm::daemon` : Simple class to install PHP's FastCGI Process Manager
 * `php::fpm::conf` : PHP FPM pool configuration definition
@@ -19,6 +20,10 @@ be easy to add.
 * `php::module::ini` : Definition to manage the ini files of separate modules
 
 ## Examples
+
+Declaring the `php` class
+
+    include php
 
 Create `php.ini` files for different uses, but based on the same template :
 

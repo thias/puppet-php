@@ -16,12 +16,12 @@ define php::module (
 
   # Manage the incorrect named php-apc package under Debians
   if ($title == 'apc') {
-    $package = $::php::params::php_apc_package_name
+    $package = "${::php::php_name}${::php::params::php_apc_package_suffix}"
   } else {
     # Hack to get pkg prefixes to work, i.e. php56-mcrypt title
     $package = $title ? {
       /^php/  => $title,
-      default => "${::php::params::php_package_name}-${title}"
+      default => "${::php::php_name}-${title}"
     }
   }
 

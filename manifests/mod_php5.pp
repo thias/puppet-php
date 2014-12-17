@@ -12,7 +12,7 @@ class php::mod_php5 (
   $inifile = '/etc/php.ini',
 ) inherits ::php::params {
 
-  package { $php_package_name:
+  package { $::php::php_name:
     ensure  => $ensure,
     require => File[$inifile],
     notify  => Service[$httpd_service_name],
