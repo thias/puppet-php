@@ -14,10 +14,14 @@ define php::module (
 
   include '::php::params'
 
-  # Manage the incorrect named php-apc package under Debians
+  # Manage naming issue of pecl installed packages on RHEL
   if ($title == 'apc') {
     $package = $::php::params::php_apc_package_name
-  } else {
+  } 
+  if ($title == 'memcache') {
+    $package = $::php::params::php_memcache_package_name
+  } 
+  else {
     # Hack to get pkg prefixes to work, i.e. php56-mcrypt title
     $package = $title ? {
       /^php/  => $title,
