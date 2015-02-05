@@ -18,7 +18,7 @@ define php::module (
   if ($title == 'apc') {
     $package = $::php::params::php_apc_package_name
   } 
-  if ($title == 'memcache') {
+  elsif ($title == 'memcache') {
     $package = $::php::params::php_memcache_package_name
   } 
   else {
