@@ -794,7 +794,11 @@ default_charset = <%= @default_charset %>
 ; Always populate the $HTTP_RAW_POST_DATA variable. PHP's default behavior is
 ; to disable this feature.
 ; http://www.php.net/manual/en/ini.core.php#ini.always-populate-raw-post-data
+<% if @always_populate_raw_post_data -%>
+always_populate_raw_post_data = <%= @always_populate_raw_post_data %>
+<% else -%>
 ;always_populate_raw_post_data = On
+<% end -%>
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Paths and Directories ;
