@@ -3,6 +3,7 @@
 * Fix security_limit_extensions being disabled even when set.
 * Add session php_values to fpm pool template.
 * Remove clear_env, no longer included in the original fpm pool file.
+* Allow overriding fpm error_log (useful for syslog).
 
 #### 2014-09-09 - 1.0.0
 * Allow override of package names (#29, #30, #31, @jeffsheltren).

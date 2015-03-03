@@ -8,6 +8,7 @@
 class php::fpm::daemon (
   $ensure                      = 'present',
   $fpm_package_name            = $::php::params::fpm_package_name,
+  $error_log                   = $::php::params::fpm_error_log,
   $syslog_facility             = 'daemon',
   $syslog_ident                = 'php-fpm',
   $log_level                   = 'notice',
