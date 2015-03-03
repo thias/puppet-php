@@ -46,7 +46,6 @@ define php::fpm::conf (
   $chroot                    = undef,
   $chdir                     = undef,
   $catch_workers_output      = 'no',
-  $clear_env                 = undef,
   $security_limit_extensions = undef,
   $env                       = [],
   $env_value                 = {},
