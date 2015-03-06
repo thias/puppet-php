@@ -30,7 +30,7 @@ define php::module (
   }
 
   # Reload FPM if present
-  if defined('::php::fpm::daemon') {
+  if defined(Class['::php::fpm::daemon']) {
     Package[$package] ~> Service[$php::params::fpm_service_name]
   }
 
