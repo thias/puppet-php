@@ -58,5 +58,10 @@ define php::module::ini (
     }
   }
 
+  # notify fpm daemon to reload if loaded and php module ini file changed
+  if defined ('::php::fpm::daemon') {
+    File ["${::php::params::php_conf_dir}/${modname}.ini"] ~> Service[$php::params::fpm_service_name]
+  }
+
 }
 
