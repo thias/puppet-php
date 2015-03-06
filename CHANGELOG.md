@@ -11,6 +11,7 @@
 * Allow fpm_service name override in fpm::conf (#49).
 * Fix php.ini CLI default location for Debian (#50, @joshuaspence).
 * Add always_populate_raw_post_data parameter (#58, @nomoresecrets).
+* Default to full fpm restart on Debian OS family (#55).
 
 #### 2014-09-09 - 1.0.0
 * Allow override of package names (#29, #30, #31, @jeffsheltren).

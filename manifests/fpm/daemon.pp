@@ -9,6 +9,7 @@ class php::fpm::daemon (
   $ensure                      = 'present',
   $package_name                = $::php::params::fpm_package_name,
   $service_name                = $::php::params::fpm_service_name,
+  $service_restart             = $::php::params::fpm_service_restart,
   $fpm_pool_dir                = $::php::params::fpm_pool_dir,
   $fpm_conf_dir                = $::php::params::fpm_conf_dir,
   $error_log                   = $::php::params::fpm_error_log,
@@ -41,7 +42,7 @@ class php::fpm::daemon (
     service { $service_name:
       ensure    => 'running',
       enable    => true,
-      restart   => "service ${service_name} reload",
+      restart   => "service ${service_name} ${service_restart}",
       hasstatus => true,
       require   => Package[$package_name],
     }
