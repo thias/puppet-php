@@ -7,8 +7,8 @@
 #
 class php::fpm::daemon (
   $ensure                      = 'present',
-  $package_name                = $::php::params::package_name,
-  $service_name                = $::php::params::service_name,
+  $package_name                = $::php::params::fpm_package_name,
+  $service_name                = $::php::params::fpm_service_name,
   $fpm_pool_dir                = $::php::params::fpm_pool_dir,
   $fpm_conf_dir                = $::php::params::fpm_conf_dir,
   $error_log                   = $::php::params::fpm_error_log,
@@ -37,6 +37,7 @@ class php::fpm::daemon (
   package { $package_name: ensure => $ensure }
 
   if ( $ensure != 'absent' ) {
+
     service { $service_name:
       ensure    => 'running',
       enable    => true,
@@ -55,12 +56,12 @@ class php::fpm::daemon (
     }
 
     file { "${fpm_conf_dir}/php-fpm.conf":
-      notify  => Service[$service_name],
-      content => template('php/fpm/php-fpm.conf.erb'),
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
+      content => template('php/fpm/php-fpm.conf.erb'),
       require => Package[$package_name],
+      notify  => Service[$service_name],
     }
 
   }
