@@ -860,7 +860,11 @@ enable_dl = <%= @enable_dl %>
 ; of zero causes PHP to behave as before.  Default is 1.  You should fix your scripts
 ; to use SCRIPT_FILENAME rather than PATH_TRANSLATED.
 ; http://www.php.net/manual/en/ini.core.php#ini.cgi.fix-pathinfo
+<% if @cgi_fix_pathinfo -%>
+cgi.fix_pathinfo = <%= @cgi_fix_pathinfo %>
+<% else -%>
 ;cgi.fix_pathinfo=1
+<% end -%>
 
 ; FastCGI under IIS (on WINNT based OS) supports the ability to impersonate
 ; security tokens of the calling client.  This allows IIS to define the
