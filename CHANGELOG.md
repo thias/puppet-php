@@ -4,6 +4,8 @@
 * Add session php_values to fpm pool template.
 * Remove clear_env, no longer included in the original fpm pool file.
 * Allow overriding fpm error_log (useful for syslog).
+* Allow override of php_package_name in mod_php5 class (#35, @jeffsheltren).
+* Notify fpm service on conf and module changes (#41, @khaefeli).
 
 #### 2014-09-09 - 1.0.0
 * Allow override of package names (#29, #30, #31, @jeffsheltren).

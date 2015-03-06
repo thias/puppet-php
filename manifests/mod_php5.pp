@@ -8,9 +8,12 @@
 #  class { 'php::mod_php5': inifile => '/etc/php-httpd.ini' }
 #
 class php::mod_php5 (
-  $ensure           = 'installed',
-  $inifile          = '/etc/php.ini',
-  $php_package_name = $::php::params::php_package_name,
+  $ensure             = 'installed',
+  $inifile            = '/etc/php.ini',
+  $php_package_name   = $::php::params::php_package_name,
+  $httpd_package_name = $::php::params::httpd_package_name,
+  $httpd_service_name = $::php::params::httpd_service_name,
+  $httpd_conf_dir     = $::php::params::httpd_conf_dir,
 ) inherits ::php::params {
 
   package { $php_package_name:

@@ -28,10 +28,10 @@ define php::module (
   package { $package:
     ensure => $ensure,
   }
-  
-  #notify fpm daemon to reload if loaded and $title file changed
-  if defined ('::php::fpm::daemon') {
-    Package [$package] ~> Service[$php::params::fpm_service_name]
+
+  # Reload FPM if present
+  if defined('::php::fpm::daemon') {
+    Package[$package] ~> Service[$php::params::fpm_service_name]
   }
 
 }

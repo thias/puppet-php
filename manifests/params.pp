@@ -1,3 +1,5 @@
+# Parameters class.
+#
 class php::params {
   case $::osfamily {
     'Debian': {

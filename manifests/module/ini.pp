@@ -34,7 +34,7 @@ define php::module::ini (
   } else {
     # Package name
     $ospkgname = $pkgname ? {
-      /^php/  => "${pkgname}",
+      /^php/  => $pkgname,
       false   => "${::php::params::php_package_name}-${title}",
       default => "${::php::params::php_package_name}-${pkgname}",
     }
@@ -58,9 +58,9 @@ define php::module::ini (
     }
   }
 
-  # notify fpm daemon to reload if loaded and php module ini file changed
-  if defined ('::php::fpm::daemon') {
-    File ["${::php::params::php_conf_dir}/${modname}.ini"] ~> Service[$php::params::fpm_service_name]
+  # Reload FPM if present
+  if defined('::php::fpm::daemon') {
+    File["${::php::params::php_conf_dir}/${modname}.ini"] ~> Service[$php::params::fpm_service_name]
   }
 
 }

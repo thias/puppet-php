@@ -114,9 +114,10 @@ define php::ini (
     content => template($template),
   }
 
-  #notify fpm daemon to reload if loaded and $title file changed
-  if defined ('::php::fpm::daemon') {
-    File [$title] ~> Service[$php::params::fpm_service_name]
+  # Reload FPM if present
+  if defined('::php::fpm::daemon') {
+    File[$title] ~> Service[$php::params::fpm_service_name]
   }
+
 }
 
