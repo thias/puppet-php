@@ -65,6 +65,7 @@ define php::ini (
   $auto_append_file           = '',
   $default_mimetype           = 'text/html',
   $default_charset            = undef,
+  $always_populate_raw_post_data = undef,
   $include_path               = undef,
   $doc_root                   = '',
   $user_dir                   = '',
@@ -106,7 +107,6 @@ define php::ini (
   $soap_wsdl_cache_enabled    = '1',
   $soap_wsdl_cache_dir        = '/tmp',
   $soap_wsdl_cache_ttl        = '86400',
-  $always_populate_raw_post_data = undef,
 ) {
 
   include '::php::common'
