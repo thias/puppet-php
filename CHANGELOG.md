@@ -7,6 +7,8 @@
 * Allow override of php_package_name in mod_php5 class (#35, @jeffsheltren).
 * Notify fpm service on conf and module changes (#41, @khaefeli).
 * Add cgi_fix_pathinfo parameter (#43, @mark0n).
+* Rename fpm_package parameter to just package in fpm::conf for consistency.
+* Allow fpm_service name override in fpm::conf (#49).
 
 #### 2014-09-09 - 1.0.0
 * Allow override of package names (#29, #30, #31, @jeffsheltren).

@@ -17,7 +17,8 @@
 #
 define php::fpm::conf (
   $ensure                    = 'present',
-  $fpm_package_name          = undef,
+  $package_name              = undef,
+  $service_name              = undef,
   $user                      = 'apache',
   $group                     = undef,
   $listen                    = '127.0.0.1:9000',
@@ -64,30 +65,24 @@ define php::fpm::conf (
   # Hack-ish to default to user for group too
   $group_final = $group ? { undef => $user, default => $group }
 
-  $fpm_package_name_final = $fpm_package_name ? {
+  # This is much easier from classes which inherit params...
+  $fpm_package_name = $package_name ? {
     undef   => $::php::params::fpm_package_name,
-    default => $fpm_package_name,
+    default => $package_name,
+  }
+  $fpm_service_name = $service_name ? {
+    undef   => $::php::params::fpm_service_name,
+    default => $service_name,
   }
 
-  if ( $ensure == 'absent' ) {
-
-    file { "${php::params::fpm_pool_dir}/${pool}.conf":
-      ensure  => absent,
-      notify  => Service[$php::params::fpm_service_name],
-      require => Package[$fpm_package_name_final],
-    }
-
-  } else {
-
-    file { "${php::params::fpm_pool_dir}/${pool}.conf":
-      notify  => Service[$php::params::fpm_service_name],
-      content => template('php/fpm/pool.conf.erb'),
-      owner   => 'root',
-      group   => 'root',
-      mode    => '0644',
-      require => Package[$fpm_package_name_final],
-    }
-
+  file { "${php::params::fpm_pool_dir}/${pool}.conf":
+    ensure  => $ensure,
+    content => template('php/fpm/pool.conf.erb'),
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    require => Package[$fpm_package_name],
+    notify  => Service[$fpm_service_name],
   }
 
 }
