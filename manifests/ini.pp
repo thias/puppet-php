@@ -106,6 +106,7 @@ define php::ini (
   $soap_wsdl_cache_enabled    = '1',
   $soap_wsdl_cache_dir        = '/tmp',
   $soap_wsdl_cache_ttl        = '86400',
+  $always_populate_raw_post_data = undef,
 ) {
 
   include '::php::common'
