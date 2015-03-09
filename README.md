@@ -41,7 +41,7 @@ package manager (e.g. Yum for RHEL):
 include '::php::cli'
 ```
 
-Install version 5.3.3 of the PHP command line interface ::
+Install version 5.3.3 of the PHP command line interface :
 
 ```puppet
 class { 'php::cli': ensure => '5.3.3' }

@@ -36,6 +36,6 @@
     "version_requirement": ">=2.7.20 <4.0.0"
     }
   ],
-  "description": "Install and configure PHP for any of CLI, Apache httpd module and FastCGI."
+  "description": "Install and configure PHP for any of CLI, Apache httpd module and FastCGI.",
   "dependencies": []
 }
