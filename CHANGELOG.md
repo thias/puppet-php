@@ -1,3 +1,5 @@
+* Fix php-fpm notification for php::module::ini when prefix was set.
+
 #### 2015-03-09 - 1.1.0
 * Rebase php-fpm.conf and pool.conf with files from 5.5.22.
 * Add syslog and rlimit related parameters to fpm.
