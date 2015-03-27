@@ -25,8 +25,14 @@ define php::module (
     }
   }
 
-  package { $package:
-    ensure => $ensure,
+  if $title == 'opcache' { 
+    package { 'php5-opcache':
+      name => 'php5',
+    }
+  } else {
+    package { $package:
+      ensure => $ensure,
+    }
   }
 
   # Enable module in Ubuntu 14.04 LTS
