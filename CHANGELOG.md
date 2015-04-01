@@ -1,3 +1,4 @@
+#### 2015-04-01 - 1.1.1
 * Fix php-fpm notification for php::module::ini when prefix was set.
 
 #### 2015-03-09 - 1.1.0
