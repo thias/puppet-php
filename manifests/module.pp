@@ -25,8 +25,10 @@ define php::module (
     }
   }
 
-  package { $package:
-    ensure => $ensure,
+  if(!defined(Package[$package])) {
+    package { $package:
+      ensure => $ensure,
+    }
   }
 
   # Reload FPM if present
