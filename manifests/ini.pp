@@ -76,7 +76,7 @@ define php::ini (
   $include_path               = undef,
   $doc_root                   = '',
   $user_dir                   = '',
-  $enable_dl                  = 'Off',
+  $enable_dl                  = 'On',
   $cgi_fix_pathinfo           = undef,
   $file_uploads               = 'On',
   $upload_tmp_dir             = undef,
