@@ -48,7 +48,7 @@ define php::ini (
   $max_input_vars             = '1000',
   $memory_limit               = '128M',
   $error_reporting            = 'E_ALL & ~E_DEPRECATED',
-  $display_errors             = 'Off',
+  $display_errors             = 'On',
   $display_startup_errors     = 'Off',
   $log_errors                 = 'On',
   $log_errors_max_len         = '1024',
