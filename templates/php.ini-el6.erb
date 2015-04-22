@@ -95,7 +95,7 @@
 ; we recommend these changes in PHP's behavior.
 
 ; allow_call_time_pass_reference
-;   Default Value: On
+;   Default Value: 1 
 ;   Development Value: Off
 ;   Production Value: Off
 
@@ -135,7 +135,7 @@
 ;   Production Value: 60 (60 seconds)
 
 ; output_buffering
-;   Default Value: Off
+;   Default Value: 0   
 ;   Development Value: 4096
 ;   Production Value: 4096
 
@@ -394,12 +394,37 @@ disable_classes = <%= @disable_classes %>
 ; Colors for Syntax Highlighting mode.  Anything that's acceptable in
 ; <span style="color: ???????"> would work.
 ; http://www.php.net/manual/en/misc.configuration.php#ini.syntax-highlighting
-;highlight.string  = #DD0000
+<% if @highlight_string -%>  
+highlight.string = <%= @highlight_string -%>
+<% else -%>
+;highlight.string  = #DD0000  
+<% end -%>
+<% if @highlight_comment -%>  
+highlight.comment = <%= @highlight_comment -%>
+<% else -%>
 ;highlight.comment = #FF9900
-;highlight.keyword = #007700
-;highlight.bg      = #FFFFFF
-;highlight.default = #0000BB
+<% end -%>
+<% if @highlight_keyword -%>  
+highlight.keyword = <%= @highlight_keyword -%>
+<% else -%>
+;highlight.keyword = #007700  
+<% end -%>
+<% if @highlight_bg -%>  
+highlight.bg = <%= @highlight_bg -%>
+<% else -%>
+;highlight.bg      = #FFFFFF  
+<% end -%>
+<% if @highlight_default -%>  
+highlight.default = <%= @highlight_default -%>
+<% else -%>
+;highlight.default = #0000BB  
+<% end -%>
+<% if @highlight_html -%>  
+highlight.html = <%= @highlight_html -%>
+<% else -%>
 ;highlight.html    = #000000
+<% end -%>
+
 
 ; If enabled, the request will be allowed to complete even if the user aborts
 ; the request. Consider enabling it if executing long requests, which may end up
