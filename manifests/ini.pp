@@ -50,7 +50,7 @@ define php::ini (
   $error_reporting            = 'E_ALL & ~E_DEPRECATED',
   $display_errors             = 'On',
   $display_startup_errors     = 'Off',
-  $log_errors                 = 'On',
+  $log_errors                 = 'Off',
   $log_errors_max_len         = '1024',
   $ignore_repeated_errors     = 'Off',
   $ignore_repeated_source     = 'Off',
