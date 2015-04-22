@@ -79,6 +79,7 @@ define php::ini (
   $enable_dl                  = 'On',
   $cgi_fix_pathinfo           = undef,
   $extension_dir              = './',
+  $extension                  = undef,
   $file_uploads               = 'On',
   $upload_tmp_dir             = undef,
   $upload_max_filesize        = '2M',

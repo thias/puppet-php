@@ -992,6 +992,12 @@ default_socket_timeout = <%= @default_socket_timeout %>
 ;
 ; If you only provide the name of the extension, PHP will look for it in its
 ; default extension directory.
+<% if @extension -%>
+<% @extension.each do | this_extension | -%>
+extension = <%= this_extension %>
+<% end -%>
+<% end -%>
+
 
 ;;;;
 ; Note: packaged extension modules are now loaded via the .ini files
