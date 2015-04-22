@@ -80,6 +80,7 @@ define php::ini (
   $cgi_fix_pathinfo           = undef,
   $extension_dir              = './',
   $extension                  = undef,
+  $smtp                       = 'localhost',
   $file_uploads               = 'On',
   $upload_tmp_dir             = undef,
   $upload_max_filesize        = '2M',
