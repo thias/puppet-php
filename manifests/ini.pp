@@ -58,7 +58,7 @@ define php::ini (
   $track_errors               = 'Off',
   $html_errors                = 'Off',
   $error_log                  = undef,
-  $variables_order            = 'GPCS',
+  $variables_order            = 'EGPCS',
   $request_order              = 'GP',
   $register_globals           = 'Off',
   $register_long_arrays       = 'Off',
