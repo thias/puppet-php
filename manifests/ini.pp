@@ -18,7 +18,7 @@ define php::ini (
   $user_ini_filename          = '.user.ini',
   $user_ini_cache_ttl         = '300',
   $engine                     = 'On',
-  $short_open_tag             = 'Off',
+  $short_open_tag             = 'On',
   $asp_tags                   = 'Off',
   $precision                  = '14',
   $output_buffering           = '4096',
