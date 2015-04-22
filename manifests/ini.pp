@@ -62,7 +62,7 @@ define php::ini (
   $request_order              = 'GP',
   $register_globals           = 'Off',
   $register_long_arrays       = 'Off',
-  $register_argc_argv         = 'Off',
+  $register_argc_argv         = 'On' ,
   $auto_globals_jit           = 'On',
   $post_max_size              = '8M',
   $magic_quotes_gpc           = 'Off',
