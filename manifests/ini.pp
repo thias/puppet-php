@@ -65,7 +65,7 @@ define php::ini (
   $register_argc_argv         = 'On' ,
   $auto_globals_jit           = 'On',
   $post_max_size              = '8M',
-  $magic_quotes_gpc           = 'Off',
+  $magic_quotes_gpc           = 'On',
   $magic_quotes_runtime       = 'Off',
   $magic_quotes_sybase        = 'Off',
   $auto_prepend_file          = '',
