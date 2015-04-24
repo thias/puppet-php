@@ -81,6 +81,8 @@ define php::ini (
   $extension_dir              = './',
   $extension                  = undef,
   $smtp                       = 'localhost',
+  $smtp_port                  = 25,
+  $sendmail_from              = undef,
   $file_uploads               = 'On',
   $upload_tmp_dir             = undef,
   $upload_max_filesize        = '2M',
