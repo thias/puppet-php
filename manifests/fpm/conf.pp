@@ -56,6 +56,8 @@ define php::fpm::conf (
   $php_admin_flag            = {},
   $php_directives            = [],
   $error_log                 = true,
+  $root_user                 = undef,
+  $root_group                = undef
 ) {
 
   include '::php::params'
@@ -64,6 +66,8 @@ define php::fpm::conf (
 
   # Hack-ish to default to user for group too
   $group_final = $group ? { undef => $user, default => $group }
+  $root_user_group = $root_user ? { undef => 'root', default => $root_user }
+  $root_group_final = $root_group ? { undef => 'root', default => $root_group }
 
   # This is much easier from classes which inherit params...
   $fpm_package_name = $package_name ? {
@@ -78,8 +82,8 @@ define php::fpm::conf (
   file { "${php::params::fpm_pool_dir}/${pool}.conf":
     ensure  => $ensure,
     content => template('php/fpm/pool.conf.erb'),
-    owner   => 'root',
-    group   => 'root',
+    owner   => $root_user_final,
+    group   => $root_group_final,
     mode    => '0644',
     require => Package[$fpm_package_name],
     notify  => Service[$fpm_service_name],
