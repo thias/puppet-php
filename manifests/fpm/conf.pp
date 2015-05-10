@@ -78,8 +78,8 @@ define php::fpm::conf (
   file { "${php::params::fpm_pool_dir}/${pool}.conf":
     ensure  => $ensure,
     content => template('php/fpm/pool.conf.erb'),
-    owner   => 'root',
-    group   => 'root',
+    owner   => $php::params::root_user,
+    group   => $php::params::root_group,
     mode    => '0644',
     require => Package[$fpm_package_name],
     notify  => Service[$fpm_service_name],

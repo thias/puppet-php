@@ -1,6 +1,9 @@
 # Parameters class.
 #
 class php::params {
+  $root_user = 'root'
+  $root_group = 'root'
+  
   case $::osfamily {
     'Debian': {
       $php_package_name = 'php5'

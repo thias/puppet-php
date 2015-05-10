@@ -31,7 +31,7 @@ class php::fpm::daemon (
 
   # Hack-ish to default to user for group too
   $log_group_final = $log_group ? {
-    false   => $log_owner,
+    false   => $php::params::root_group,
     default => $log_group,
   }
 
@@ -57,8 +57,8 @@ class php::fpm::daemon (
     }
 
     file { "${fpm_conf_dir}/php-fpm.conf":
-      owner   => 'root',
-      group   => 'root',
+      owner   => $php::params::root_user,
+      group   => $php::params::root_group,
       mode    => '0644',
       content => template('php/fpm/php-fpm.conf.erb'),
       require => Package[$package_name],
