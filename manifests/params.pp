@@ -18,7 +18,16 @@ class php::params {
       $fpm_pid = '/var/run/php5-fpm.pid'
       $httpd_package_name = 'apache2'
       $httpd_service_name = 'apache2'
-      $httpd_conf_dir = '/etc/apache2/conf.d'
+      
+      case $::lsbmajdistrelease {
+        /8/ : {
+          $httpd_conf_dir = '/etc/apache2/conf-enabled'
+        }
+        default: {
+          $httpd_conf_dir = '/etc/apache2/conf.d'
+        }
+      }
+      
     }
     default: {
       $php_package_name = 'php'
