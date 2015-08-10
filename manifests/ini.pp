@@ -87,6 +87,7 @@ define php::ini (
   $session_save_handler       = 'files',
   $session_save_path          = '/var/lib/php/session',
   $session_use_cookies        = '1',
+  $session_cookie_secure      = '',
   $session_use_only_cookies   = '1',
   $session_name               = 'PHPSESSID',
   $session_auto_start         = '0',
