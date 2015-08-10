@@ -1,3 +1,5 @@
+* Set owner for php-fpm log dir to undef to avoid ping-pong with rpm update.
+
 #### 2015-04-01 - 1.1.1
 * Fix php-fpm notification for php::module::ini when prefix was set.
 
