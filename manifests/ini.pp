@@ -117,7 +117,7 @@ define php::ini (
   }
 
   # Reload FPM if present
-  if defined(Class['::php::fpm::daemon']) {
+  if defined(Class['::php::fpm::daemon']) and $::php::fpm::daemon::ensure == 'present' {
     File[$title] ~> Service[$php::params::fpm_service_name]
   }
 
