@@ -2,6 +2,7 @@
 * Update php_conf_dir to be compatible with Debian (#69, @heskymatic).
 * Do not notify FPM if fpm daemon ensure is absent (#72, @kronos-pbrideau).
 * Fix project URL (#75, @Vincent--).
+* Add session_cookie_secure parameter (#71, @kronos-pbrideau).
 
 #### 2015-04-01 - 1.1.1
 * Fix php-fpm notification for php::module::ini when prefix was set.

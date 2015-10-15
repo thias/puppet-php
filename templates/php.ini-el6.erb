@@ -1320,7 +1320,11 @@ session.save_path = "<%= @session_save_path %>"
 session.use_cookies = <%= @session_use_cookies %>
 
 ; http://www.php.net/manual/en/session.configuration.php#ini.session.cookie-secure
+<% if @session_cookie_secure -%>
+session.cookie_secure = <%= @session_cookie_secure %>
+<% else -%>
 ;session.cookie_secure =
+<% end -%>
 
 ; This option forces PHP to fetch and use a cookie for storing and maintaining
 ; the session id. We encourage this operation as it's very helpful in combatting
