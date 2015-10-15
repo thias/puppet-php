@@ -1023,14 +1023,14 @@ date.timezone = <%= @date_timezone %>
 [Pcre]
 ;PCRE library backtracking limit.
 ; http://www.php.net/manual/en/pcre.configuration.php#ini.pcre.backtrack-limit
-;pcre.backtrack_limit=100000
+pcre.backtrack_limit = <%= @pcre_backtrack_limit %>
 
 ;PCRE library recursion limit. 
 ;Please note that if you set this value to a high number you may consume all 
 ;the available process stack and eventually crash PHP (due to reaching the 
 ;stack size limit imposed by the Operating System).
 ; http://www.php.net/manual/en/pcre.configuration.php#ini.pcre.recursion-limit
-;pcre.recursion_limit=100000
+pcre.recursion_limit = <%= @pcre_recursion_limit %>
 
 [Pdo]
 ; Whether to pool ODBC connections. Can be one of "strict", "relaxed" or "off"
