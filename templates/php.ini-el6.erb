@@ -416,13 +416,13 @@ ignore_user_abort = <%= @ignore_user_abort %>
 ; be increased on systems where PHP opens many files to reflect the quantity of
 ; the file operations performed.
 ; http://www.php.net/manual/en/ini.core.php#ini.realpath-cache-size
-;realpath_cache_size = 16k
+realpath_cache_size = <%= @realpath_cache_size %>
 
 ; Duration of time, in seconds for which to cache realpath information for a given
 ; file or directory. For systems with rarely changing files, consider increasing this
 ; value.
 ; http://www.php.net/manual/en/ini.core.php#ini.realpath-cache-ttl
-;realpath_cache_ttl = 120
+realpath_cache_ttl = <%= @realpath_cache_ttl %>
 
 ; Enables or disables the circular reference collector.
 ; http://php.net/zend.enable-gc
