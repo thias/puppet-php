@@ -4,6 +4,7 @@
 * Fix project URL (#75, @Vincent--).
 * Add session_cookie_secure parameter (#71, @kronos-pbrideau).
 * Add pcre_* parameters (#70, @crashcover).
+* Add realpath_cache_* parameters (#63, @wwhurley).
 
 #### 2015-04-01 - 1.1.1
 * Fix php-fpm notification for php::module::ini when prefix was set.

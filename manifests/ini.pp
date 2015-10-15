@@ -35,6 +35,8 @@ define php::ini (
   $disable_functions          = '',
   $disable_classes            = '',
   $ignore_user_abort          = undef,
+  $realpath_cache_size        = undef,
+  $realpath_cache_ttl         = undef,
   $expose_php                 = 'On',
   $max_execution_time         = '30',
   $max_input_time             = '60',
