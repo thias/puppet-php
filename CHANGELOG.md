@@ -1,3 +1,4 @@
+#### 2016-02-02 - 1.2.0
 * Set owner for php-fpm log dir to undef to avoid ping-pong with rpm update.
 * Update php_conf_dir to be compatible with Debian (#69, @heskymatic).
 * Do not notify FPM if fpm daemon ensure is absent (#72, @kronos-pbrideau).
