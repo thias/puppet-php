@@ -22,7 +22,7 @@
 ; The syntax of the file is extremely simple.  Whitespace and Lines
 ; beginning with a semicolon are silently ignored (as you probably guessed).
 ; Section headers (e.g. [Foo]) are also silently ignored, even though
-; they might mean something in the future. 
+; they might mean something in the future.
 
 ; Directives following the section heading [PATH=/www/mysite] only
 ; apply to PHP files in the /www/mysite directory.  Directives
@@ -457,7 +457,7 @@ max_execution_time = <%= @max_execution_time %>
 
 ; Maximum amount of time each script may spend parsing request data. It's a good
 ; idea to limit this time on productions servers in order to eliminate unexpectedly
-; long running scripts. 
+; long running scripts.
 ; Default Value: -1 (Unlimited)
 ; Development Value: 60 (60 seconds)
 ; Production Value: 60 (60 seconds)
@@ -539,8 +539,8 @@ error_reporting = <%= @error_reporting %>
 ; It's recommended that errors be logged on production servers rather than
 ; having the errors sent to STDOUT.
 ; Possible Values:
-;   Off = Do not display any errors 
-;   stderr = Display errors to STDERR (affects only CGI/CLI binaries!)   
+;   Off = Do not display any errors
+;   stderr = Display errors to STDERR (affects only CGI/CLI binaries!)
 ;   On or stdout = Display errors to STDOUT
 ; Default Value: On
 ; Development Value: On
@@ -695,7 +695,7 @@ variables_order = "<%= @variables_order %>"
 ; be registered into the super global array REQUEST. If so, it also determines
 ; the order in which that data is registered. The values for this directive are
 ; specified in the same manner as the variables_order directive, EXCEPT one.
-; Leaving this value empty will cause PHP to use the value set in the 
+; Leaving this value empty will cause PHP to use the value set in the
 ; variables_order directive. It does not mean it will leave the super globals
 ; array REQUEST empty.
 ; Default Value: None
@@ -840,6 +840,12 @@ user_dir = <%= @user_dir %>
 ; Directory in which the loadable extensions (modules) reside.
 ; http://www.php.net/manual/en/ini.core.php#ini.extension-dir
 ; extension_dir = "./"
+
+<% if @sys_temp_dir -%>
+; The directory returned by sys_get_temp_dir() - this setting is only
+; respected in PHP 5.5 and higher.
+sys_temp_dir = "<%= @sys_temp_dir %>"
+<% end -%>
 
 ; Whether or not to enable the dl() function.  The dl() function does NOT work
 ; properly in multithreaded servers, such as IIS or Zeus, and is automatically
@@ -1019,7 +1025,7 @@ date.timezone = <%= @date_timezone %>
 ;iconv.output_encoding = ISO-8859-1
 
 [intl]
-;intl.default_locale = 
+;intl.default_locale =
 
 [sqlite]
 ; http://www.php.net/manual/en/sqlite.configuration.php#ini.sqlite.assoc-case
@@ -1037,9 +1043,9 @@ pcre.backtrack_limit = <%= @pcre_backtrack_limit %>
 ;pcre.backtrack_limit=100000
 <% end -%>
 
-;PCRE library recursion limit. 
-;Please note that if you set this value to a high number you may consume all 
-;the available process stack and eventually crash PHP (due to reaching the 
+;PCRE library recursion limit.
+;Please note that if you set this value to a high number you may consume all
+;the available process stack and eventually crash PHP (due to reaching the
 ;stack size limit imposed by the Operating System).
 ; http://www.php.net/manual/en/pcre.configuration.php#ini.pcre.recursion-limit
 <% if @pcre_recursion_limit -%>
@@ -1390,7 +1396,7 @@ session.serialize_handler = <%= @session_serialize_handler %>
 session.gc_probability = <%= @session_gc_probability %>
 
 ; Defines the probability that the 'garbage collection' process is started on every
-; session initialization. The probability is calculated by using the following equation: 
+; session initialization. The probability is calculated by using the following equation:
 ; gc_probability/gc_divisor. Where session.gc_probability is the numerator and
 ; session.gc_divisor is the denominator in the equation. Setting this value to 1
 ; when the session.gc_divisor value is 100 will give you approximately a 1% chance
@@ -1481,7 +1487,7 @@ session.cache_expire = 180
 session.use_trans_sid = 0
 
 ; Select a hash function for use in generating session ids.
-; Possible Values 
+; Possible Values
 ;   0  (MD5 128 bits)
 ;   1  (SHA-1 160 bits)
 ; http://www.php.net/manual/en/session.configuration.php#ini.session.hash-function
@@ -1557,7 +1563,7 @@ mssql.secure_connection = Off
 ; FreeTDS defaults to 4096
 ;mssql.max_procs = -1
 
-; Specify client character set. 
+; Specify client character set.
 ; If empty or not set the client charset from freetds.comf is used
 ; This is only used when compiled with FreeTDS
 ;mssql.charset = "ISO-8859-1"
@@ -1713,7 +1719,7 @@ soap.wsdl_cache_enabled=<%= @soap_wsdl_cache_enabled %>
 ; http://www.php.net/manual/en/soap.configuration.php#ini.soap.wsdl-cache-dir
 soap.wsdl_cache_dir="<%= @soap_wsdl_cache_dir %>"
 
-; (time to live) Sets the number of second while cached file will be used 
+; (time to live) Sets the number of second while cached file will be used
 ; instead of original one.
 ; http://www.php.net/manual/en/soap.configuration.php#ini.soap.wsdl-cache-ttl
 soap.wsdl_cache_ttl=<%= @soap_wsdl_cache_ttl %>
