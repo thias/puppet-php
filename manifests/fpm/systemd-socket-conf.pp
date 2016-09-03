@@ -112,7 +112,6 @@ define php::fpm::systemd-socket-conf (
   }
 
   service { $systemd_service_name:
-    ensure => running,
     enable => true,
   }
 
