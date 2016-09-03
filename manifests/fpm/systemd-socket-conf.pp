@@ -24,6 +24,7 @@ define php::fpm::systemd-socket-conf (
   $user                      = 'apache',
   $group                     = undef,
   $listen                    = undef,
+  $listen_address            = '127.0.0.1',
   $listen_port               = '9000',
   # Puppet does not allow dots in variable names
   $listen_backlog            = '-1',
@@ -65,41 +66,6 @@ define php::fpm::systemd-socket-conf (
 
   $pool = $title
 
-  # Create systemd socket
-  file { "/usr/lib/systemd/system/php-fpm-${pool}.socket":
-    ensure  => $ensure,
-    content => template('php/fpm/pool.socket.erb'),
-    owner   => 'root',
-    group   => 'root',
-    mode    => '0644',
-    require => Package[$fpm_package_name],
-  }
-
-  service { "php-fpm-${pool}.socket":
-    ensure => running,
-    start  => 'systemctl start php-fpm-${pool}.socket',
-    stop   => 'systemctl stop php-fpm-${pool}.socket',
-    status => 'systemctl status php-fpm-${pool}.socket',
-  }
-
-  # Create per-pool service
-  $service_name = 'php-fpm-${pool}.service'
-  file { "/usr/lib/systemd/system/php-fpm-${pool}.service":
-    ensure  => $ensure,
-    content => template('php/fpm/pool.service.erb'),
-    owner   => 'root',
-    group   => 'root',
-    mode    => '0644',
-    require => Package[$fpm_package_name],
-  }
-
-  service { "${service_name}":
-    ensure => running,
-    start  => 'systemctl start php-fpm-${pool}.service',
-    stop   => 'systemctl stop php-fpm-${pool}.service',
-    status => 'systemctl status php-fpm-${pool}.service',
-  }
-
   # Hack-ish to default to user for group too
   $group_final = $group ? { undef => $user, default => $group }
 
@@ -108,9 +74,46 @@ define php::fpm::systemd-socket-conf (
     undef   => $::php::params::fpm_package_name,
     default => $package_name,
   }
-  $fpm_service_name = $service_name ? {
-    undef   => $::php::params::fpm_service_name,
-    default => $service_name,
+
+  # Create systemd socket
+  file { "/usr/lib/systemd/system/php-fpm-${pool}.socket":
+    ensure  => $ensure,
+    content => template('php/fpm/pool.socket.erb'),
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    #require => Package[$fpm_package_name],
+  }
+
+  $socket_service_name = "php-fpm-${pool}.socket"
+
+  service { $socket_service_name:
+    ensure => running,
+    enable => true,
+  }
+
+  # Create per-pool service
+
+  # Create "/var/run/php-fpm/php-systemd/" writable by $user because the daemon does not start as root
+  file { "/var/run/php-fpm/php-systemd/":
+    ensure => 'directory',
+    owner  => $user,
+    group  => $group,
+  }
+
+  $systemd_service_name = "php-fpm-${pool}.service"
+  file { "/usr/lib/systemd/system/php-fpm-${pool}.service":
+    ensure  => $ensure,
+    content => template('php/fpm/pool.service.erb'),
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    #require => Package[$fpm_package_name],
+  }
+
+  service { $systemd_service_name:
+    ensure => running,
+    enable => true,
   }
 
   file { "${php::params::fpm_pool_dir}/${pool}.conf":
@@ -119,8 +122,8 @@ define php::fpm::systemd-socket-conf (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    require => Package[$fpm_package_name],
-    notify  => Service[$fpm_service_name],
+    #require => Package[$fpm_package_name],
+    notify  => Service[$systemd_service_name],
   }
 
 }
