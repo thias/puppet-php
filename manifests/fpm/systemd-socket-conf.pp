@@ -91,6 +91,7 @@ define php::fpm::systemd-socket-conf (
     ensure  => running,
     enable  => true,
     require => File["/usr/lib/systemd/system/php-fpm-${pool}.socket"],
+    require => File["/usr/lib/systemd/system/php-fpm-${pool}.service"],
   }
 
   # Create per-pool service
@@ -116,6 +117,7 @@ define php::fpm::systemd-socket-conf (
     enable    => true,
     subscribe => Service[$socket_service_name],
     require   => File["/usr/lib/systemd/system/php-fpm-${pool}.service"],
+    require   => File["/usr/lib/systemd/system/php-fpm-${pool}.socket"],
   }
 
   file { "${php::params::fpm_pool_dir}/${pool}.conf":
