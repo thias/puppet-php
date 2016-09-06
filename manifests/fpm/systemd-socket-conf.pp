@@ -62,6 +62,7 @@ define php::fpm::systemd-socket-conf (
   $error_log                 = true,
   $systemd_service_path      = $::php::params::systemd_service_path,
   $fpm_binary                = $::php::params::fpm_binary,
+  $fpm_pool_dir              = $::php::params::fpm_pool_dir,
 ) {
 
   include '::php::params'
@@ -118,7 +119,7 @@ define php::fpm::systemd-socket-conf (
     require   => File["${systemd_service_path}/php-fpm-${pool}.service"],
   }
 
-  file { "${php::params::fpm_pool_dir}/${pool}.conf":
+  file { "${fpm_pool_dir}/${pool}.conf":
     ensure  => $ensure,
     content => template('php/fpm/pool-systemd.conf.erb'),
     owner   => 'root',
