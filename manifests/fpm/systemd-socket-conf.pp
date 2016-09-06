@@ -82,7 +82,7 @@ define php::fpm::systemd-socket-conf (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    #require => Package[$fpm_package_name],
+    require => Package[$fpm_package_name],
   }
 
   $socket_service_name = "php-fpm-${pool}.socket"
@@ -95,14 +95,6 @@ define php::fpm::systemd-socket-conf (
   }
 
   # Create per-pool service
-
-  # Create "/var/run/php-fpm/php-systemd/" writable by $user because the daemon does not start as root
-  file { "/var/run/php-fpm/php-systemd/":
-    ensure => 'directory',
-    owner  => $user,
-    group  => $group,
-  }
-
   $systemd_service_name = "php-fpm-${pool}.service"
   file { "/usr/lib/systemd/system/php-fpm-${pool}.service":
     ensure  => $ensure,
@@ -110,7 +102,6 @@ define php::fpm::systemd-socket-conf (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    #require => Package[$fpm_package_name],
   }
 
   service { $systemd_service_name:
@@ -125,7 +116,6 @@ define php::fpm::systemd-socket-conf (
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    #require => Package[$fpm_package_name],
     notify  => Service[$systemd_service_name],
   }
 
