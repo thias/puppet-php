@@ -10,14 +10,14 @@ class php::fpm::systemd-daemon (
   $package_name                = $::php::params::fpm_package_name,
   $fpm_pool_dir                = $::php::params::fpm_pool_dir,
   $fpm_conf_dir                = $::php::params::fpm_conf_dir,
-  $log_owner                   = 'apache',
-  $log_group                   = 'apache',
+  $owner                   = 'apache',
+  $group                   = 'apache',
 ) inherits ::php::params {
 
   # Hack-ish to default to user for group too
-  $log_group_final = $log_group ? {
-    false   => $log_owner,
-    default => $log_group,
+  $group_final = $group ? {
+    false   => $owner,
+    default => $group,
   }
 
   package { $package_name: ensure => $ensure }
@@ -27,8 +27,8 @@ class php::fpm::systemd-daemon (
     # Create "/var/run/php-fpm/php-systemd/" as group-writable because the daemon does not start as root
     file { "/var/run/php-fpm/php-systemd/":
       ensure => 'directory',
-      owner  => $log_owner,
-      group  => $log_group_final,
+      owner  => $owner,
+      group  => $group_final,
 			mode	 => '0775',
     }
 
