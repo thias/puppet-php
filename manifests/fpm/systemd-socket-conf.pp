@@ -90,6 +90,9 @@ define php::fpm::systemd-socket-conf (
   service { $socket_service_name:
     ensure    => running,
     enable    => true,
+    start     => "systemctl start ${socket_service_name}",
+    stop      => "systemctl stop ${socket_service_name}",
+    status    => "systemctl status ${socket_service_name}",
     subscribe => File["${systemd_service_path}/php-fpm-${pool}.socket"],
     require   => File["${systemd_service_path}/php-fpm-${pool}.service"],
   }
@@ -106,6 +109,9 @@ define php::fpm::systemd-socket-conf (
 
   service { $systemd_service_name:
     enable    => true,
+    start     => "systemctl start ${systemd_service_name}",
+    stop      => "systemctl stop ${systemd_service_name}",
+    status    => "systemctl status $systemd_service_name}",
     subscribe => Service[$socket_service_name],
     require   => File["${systemd_service_path}/php-fpm-${pool}.service"],
   }
