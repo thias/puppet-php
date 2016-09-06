@@ -23,6 +23,12 @@ class php::fpm::systemd-daemon (
   package { $package_name: ensure => $ensure }
 
   if ( $ensure != 'absent' ) {
+    file { "/var/run/php-fpm":
+      ensure => 'directory',
+      owner  => 'root',
+      group  => 'root',
+      mode   => '0775',
+    }
 
     # Create "/var/run/php-fpm/php-systemd/" as group-writable because the daemon does not start as root
     file { "/var/run/php-fpm/php-systemd/":
