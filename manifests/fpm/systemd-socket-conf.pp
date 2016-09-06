@@ -60,6 +60,8 @@ define php::fpm::systemd-socket-conf (
   $php_admin_flag            = {},
   $php_directives            = [],
   $error_log                 = true,
+  $systemd_service_path      = $::php::params::systemd_service_path,
+  $fpm_binary                = $::php::params::fpm_binary,
 ) {
 
   include '::php::params'
