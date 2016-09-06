@@ -29,7 +29,7 @@ class php::fpm::systemd-daemon (
       ensure => 'directory',
       owner  => $owner,
       group  => $group_final,
-			mode	 => '0775',
+      mode	 => '0775',
     }
 
   }
