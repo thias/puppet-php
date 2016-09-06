@@ -1,5 +1,5 @@
 [Service]
-ExecStart=<%= @fpm_binary %> --fpm-config=<%=fpm_pool_dir %>/<%= @pool %>.conf
+ExecStart=<%= @fpm_binary %> --fpm-config=<%= @fpm_pool_dir %>/<%= @pool %>.conf
 User=<%= @user %>
 Group=<%= @group %>
 Environment="FPM_SOCKETS=/var/run/php-fpm/<%= @pool %>.socket=3"
