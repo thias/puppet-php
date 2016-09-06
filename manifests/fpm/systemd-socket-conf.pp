@@ -75,18 +75,8 @@ define php::fpm::systemd-socket-conf (
     default => $package_name,
   }
 
-  # The path to systemd/system varies
-  case $::osfamily {
-    'Debian': {
-      $service_path = '/lib/systemd/system'
-    }
-    default: {
-      $service_path = '/usr/lib/systemd/system'
-    }
-  }
-
   # Create systemd socket
-  file { "${service_path}/php-fpm-${pool}.socket":
+  file { "${systemd_service_path}/php-fpm-${pool}.socket":
     ensure  => $ensure,
     content => template('php/fpm/pool.socket.erb'),
     owner   => 'root',
@@ -100,13 +90,13 @@ define php::fpm::systemd-socket-conf (
   service { $socket_service_name:
     ensure    => running,
     enable    => true,
-    subscribe => File["${service_path}/php-fpm-${pool}.socket"],
-    require   => File["${service_path}/php-fpm-${pool}.service"],
+    subscribe => File["${systemd_service_path}/php-fpm-${pool}.socket"],
+    require   => File["${systemd_service_path}/php-fpm-${pool}.service"],
   }
 
   # Create per-pool service
   $systemd_service_name = "php-fpm-${pool}.service"
-  file { "${service_path}/php-fpm-${pool}.service":
+  file { "${systemd_service_path}/php-fpm-${pool}.service":
     ensure  => $ensure,
     content => template('php/fpm/pool.service.erb'),
     owner   => 'root',
@@ -117,7 +107,7 @@ define php::fpm::systemd-socket-conf (
   service { $systemd_service_name:
     enable    => true,
     subscribe => Service[$socket_service_name],
-    require   => File["${service_path}/php-fpm-${pool}.service"],
+    require   => File["${systemd_service_path}/php-fpm-${pool}.service"],
   }
 
   file { "${php::params::fpm_pool_dir}/${pool}.conf":
