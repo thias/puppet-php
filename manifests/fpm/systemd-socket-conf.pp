@@ -83,6 +83,7 @@ define php::fpm::systemd-socket-conf (
     default: {
       $service_path = '/usr/lib/systemd/system'
     }
+  }
 
   # Create systemd socket
   file { "${service_path}/php-fpm-${pool}.socket":
