@@ -20,7 +20,7 @@ class php::params {
       $httpd_service_name = 'apache2'
       $httpd_conf_dir = '/etc/apache2/conf.d'
       $systemd_service_path = '/lib/systemd/system'
-      $binary = '/usr/sbin/php5-fpm'
+      $fpm_binary = '/usr/sbin/php5-fpm'
     }
     default: {
       $php_package_name = 'php'
@@ -40,7 +40,7 @@ class php::params {
       $httpd_service_name = 'httpd'
       $httpd_conf_dir = '/etc/httpd/conf.d'
       $systemd_service_path = '/usr/lib/systemd/system'
-      $binary = '/sbin/php-fpm'
+      $fpm_binary = '/sbin/php-fpm'
     }
   }
 }
