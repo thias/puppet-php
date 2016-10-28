@@ -106,6 +106,7 @@ define php::ini (
   $session_bug_compat_42      = 'Off',
   $session_bug_compat_warn    = 'Off',
   $session_referer_check      = '',
+  $session_entropy_length     = '0',
   $session_hash_function      = '0',
   $session_hash_bits_per_character = '5',
   $url_rewriter_tags          = 'a=href,area=href,frame=src,input=src,form=fakeentry',

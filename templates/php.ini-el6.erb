@@ -1449,7 +1449,7 @@ session.referer_check = <%= @session_referer_check %>
 
 ; How many bytes to read from the file.
 ; http://www.php.net/manual/en/session.configuration.php#ini.session.entropy-length
-session.entropy_length = 0
+session.entropy_length = <%= @session_entropy_length %>
 
 ; Specified here to create the session id.
 ; http://www.php.net/manual/en/session.configuration.php#ini.session.entropy-file
