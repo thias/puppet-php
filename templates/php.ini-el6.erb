@@ -95,7 +95,7 @@
 ; we recommend these changes in PHP's behavior.
 
 ; allow_call_time_pass_reference
-;   Default Value: On
+;   Default Value: 1 
 ;   Development Value: Off
 ;   Production Value: Off
 
@@ -135,7 +135,7 @@
 ;   Production Value: 60 (60 seconds)
 
 ; output_buffering
-;   Default Value: Off
+;   Default Value: 0   
 ;   Development Value: 4096
 ;   Production Value: 4096
 
@@ -238,7 +238,7 @@ precision = <%= @precision %>
 
 ; Enforce year 2000 compliance (will cause problems with non-compliant browsers)
 ; http://www.php.net/manual/en/ini.core.php#ini.y2k-compliance
-y2k_compliance = On
+y2k_compliance = <%= @y2k_compliance %>
 
 ; Output buffering is a mechanism for controlling how much output data
 ; (excluding headers and cookies) PHP should keep internally before pushing that
@@ -394,12 +394,37 @@ disable_classes = <%= @disable_classes %>
 ; Colors for Syntax Highlighting mode.  Anything that's acceptable in
 ; <span style="color: ???????"> would work.
 ; http://www.php.net/manual/en/misc.configuration.php#ini.syntax-highlighting
-;highlight.string  = #DD0000
+<% if @highlight_string -%>  
+highlight.string = <%= @highlight_string -%>
+<% else -%>
+;highlight.string  = #DD0000  
+<% end -%>
+<% if @highlight_comment -%>  
+highlight.comment = <%= @highlight_comment -%>
+<% else -%>
 ;highlight.comment = #FF9900
-;highlight.keyword = #007700
-;highlight.bg      = #FFFFFF
-;highlight.default = #0000BB
+<% end -%>
+<% if @highlight_keyword -%>  
+highlight.keyword = <%= @highlight_keyword -%>
+<% else -%>
+;highlight.keyword = #007700  
+<% end -%>
+<% if @highlight_bg -%>  
+highlight.bg = <%= @highlight_bg -%>
+<% else -%>
+;highlight.bg      = #FFFFFF  
+<% end -%>
+<% if @highlight_default -%>  
+highlight.default = <%= @highlight_default -%>
+<% else -%>
+;highlight.default = #0000BB  
+<% end -%>
+<% if @highlight_html -%>  
+highlight.html = <%= @highlight_html -%>
+<% else -%>
 ;highlight.html    = #000000
+<% end -%>
+
 
 ; If enabled, the request will be allowed to complete even if the user aborts
 ; the request. Consider enabling it if executing long requests, which may end up
@@ -805,7 +830,7 @@ default_charset = <%= @default_charset %>
 <% if @always_populate_raw_post_data -%>
 always_populate_raw_post_data = <%= @always_populate_raw_post_data %>
 <% else -%>
-;always_populate_raw_post_data = On
+;always_populate_raw_post_data = Off
 <% end -%>
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -840,6 +865,7 @@ user_dir = <%= @user_dir %>
 ; Directory in which the loadable extensions (modules) reside.
 ; http://www.php.net/manual/en/ini.core.php#ini.extension-dir
 ; extension_dir = "./"
+extension_dir = <%= @extension_dir %>
 
 ; Whether or not to enable the dl() function.  The dl() function does NOT work
 ; properly in multithreaded servers, such as IIS or Zeus, and is automatically
@@ -974,6 +1000,12 @@ default_socket_timeout = <%= @default_socket_timeout %>
 ;
 ; If you only provide the name of the extension, PHP will look for it in its
 ; default extension directory.
+<% if @extension -%>
+<% @extension.each do | this_extension | -%>
+extension = <%= this_extension %>
+<% end -%>
+<% end -%>
+
 
 ;;;;
 ; Note: packaged extension modules are now loaded via the .ini files
@@ -1076,7 +1108,7 @@ define_syslog_variables  = Off
 [mail function]
 ; For Win32 only.
 ; http://www.php.net/manual/en/mail.configuration.php#ini.smtp
-SMTP = localhost
+SMTP = <%= @smtp %>
 ; http://www.php.net/manual/en/mail.configuration.php#ini.smtp-port
 smtp_port = 25
 

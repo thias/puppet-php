@@ -15,11 +15,14 @@
 #  php::module::ini { 'xmlwriter': ensure => absent }
 #
 define php::module::ini (
-  $ensure   = undef,
-  $pkgname  = false,
-  $prefix   = undef,
-  $settings = {},
-  $zend     = false,
+  $ensure       = undef,
+  $pkgname      = false,
+  $pkg_install  = true,                        # Install the module's package automatically?
+  $prefix       = undef,
+  $settings     = {},
+  $zend         = false,
+  $section      = undef,                       # The [section] header to create in the INI file.
+  $php_conf_dir = $php::params::php_conf_dir,  # Allow custom INI configuration directory.
 ) {
 
   include '::php::params'
@@ -42,9 +45,9 @@ define php::module::ini (
 
   # INI configuration file
   if $prefix {
-    $inifile = "${::php::params::php_conf_dir}/${prefix}-${modname}.ini"
+    $inifile = "${php_conf_dir}/${prefix}-${modname}.ini"
   } else {
-    $inifile = "${::php::params::php_conf_dir}/${modname}.ini"
+    $inifile = "${php_conf_dir}/${modname}.ini"
   }
   if $ensure == 'absent' {
     file { $inifile:
@@ -53,9 +56,17 @@ define php::module::ini (
   } else {
     file { $inifile:
       ensure  => $ensure,
-      require => Package[$ospkgname],
       content => template('php/module.ini.erb'),
     }
+
+    # This allows the module to manage the INI file but not necessarially install
+    # the package automatically.  This is useful if the module is custom compiled
+    # and you don't want to manage the package via Puppet.
+    if $pkg_install == true {
+      File[$inifile] { require => Package[$ospkgname],}
+    }
+
+
   }
 
   # Reload FPM if present
