@@ -16,9 +16,6 @@ class php::params {
       $fpm_conf_dir = '/etc/php5/fpm'
       $fpm_error_log = '/var/log/php5-fpm.log'
       $fpm_pid = '/var/run/php5-fpm.pid'
-      $httpd_package_name = 'apache2'
-      $httpd_service_name = 'apache2'
-      $httpd_conf_dir = '/etc/apache2/conf.d'
     }
     default: {
       $php_package_name = 'php'
@@ -34,9 +31,6 @@ class php::params {
       $fpm_conf_dir = '/etc'
       $fpm_error_log = '/var/log/php-fpm/error.log'
       $fpm_pid = '/var/run/php-fpm/php-fpm.pid'
-      $httpd_package_name = 'httpd'
-      $httpd_service_name = 'httpd'
-      $httpd_conf_dir = '/etc/httpd/conf.d'
     }
   }
 }
