@@ -4,7 +4,7 @@ class php::params {
   case $::osfamily {
     'Debian': {
       case $::lsbdistcodename {
-        precise, jessie, trusty: {
+        wheezy, precise, jessie, trusty: {
           $php_package_name = 'php5'
           $php_apc_package_name = 'php-apc'
           $common_package_name = 'php5-common'
