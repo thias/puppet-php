@@ -1,3 +1,6 @@
+#### 2017-07-27 - 1.2.1
+* Add session_entropy_length parameter.
+
 #### 2016-02-02 - 1.2.0
 * Set owner for php-fpm log dir to undef to avoid ping-pong with rpm update.
 * Update php_conf_dir to be compatible with Debian (#69, @heskymatic).

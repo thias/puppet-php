@@ -1,6 +1,6 @@
 {
   "name": "thias-php",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Matthias Saou",
   "license": "Apache-2.0",
   "summary": "PHP module",
@@ -33,7 +33,7 @@
     },
     {
     "name": "puppet",
-    "version_requirement": ">=2.7.20 <4.0.0"
+    "version_requirement": ">=2.7.20 <5.0.0"
     }
   ],
   "description": "Install and configure PHP for any of CLI, Apache httpd module and FastCGI.",
