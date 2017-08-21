@@ -113,6 +113,7 @@ define php::ini (
   $soap_wsdl_cache_enabled    = '1',
   $soap_wsdl_cache_dir        = '/tmp',
   $soap_wsdl_cache_ttl        = '86400',
+  $sys_temp_dir               = undef,
 ) {
 
   include '::php::common'
@@ -128,4 +129,3 @@ define php::ini (
   }
 
 }
-
