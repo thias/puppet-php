@@ -19,7 +19,7 @@ class php::params {
           $fpm_pid = '/var/run/php5-fpm.pid'
           $fpm_service_restart = 'restart'
         }
-        xenial: {
+        xenial, stretch: {
           $php_package_name = 'php'
           $php_apc_package_name = 'php-apcu'
           $common_package_name = 'php-common'
