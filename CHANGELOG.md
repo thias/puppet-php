@@ -1,3 +1,6 @@
+#### 2018-07-23 - 1.2.2
+* Add more session related parameters (#83, @forgodssake).
+
 #### 2017-07-27 - 1.2.1
 * Add session_entropy_length parameter.
 
