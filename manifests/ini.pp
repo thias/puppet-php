@@ -82,6 +82,7 @@ define php::ini (
   $default_socket_timeout          = '60',
   $date_timezone                   = undef,
   $pcre_backtrack_limit            = undef,
+  $pcre_jit                        = undef,
   $pcre_recursion_limit            = undef,
   $phar_readonly                   = undef,
   $sendmail_path                   = '/usr/sbin/sendmail -t -i',
