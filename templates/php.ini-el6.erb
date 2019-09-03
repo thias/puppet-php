@@ -1047,6 +1047,12 @@ pcre.recursion_limit = <%= @pcre_recursion_limit %>
 <% else -%>
 ;pcre.recursion_limit=100000
 <% end -%>
+<% if @pcre_jit -%>
+
+; Enables or disables JIT compilation of patterns. This requires the PCRE
+; library to be compiled with JIT support.
+pcre.jit=<%= @pcre_jit %>
+<% end -%>
 
 [Pdo]
 ; Whether to pool ODBC connections. Can be one of "strict", "relaxed" or "off"

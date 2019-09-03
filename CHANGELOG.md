@@ -1,3 +1,5 @@
+* Add pcre_jit parameter, often needing to be disabled with PHP 7.3.
+
 #### 2018-07-23 - 1.2.2
 * Add more session related parameters (#83, @forgodssake).
 

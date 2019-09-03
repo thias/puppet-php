@@ -83,6 +83,7 @@ define php::ini (
   $date_timezone                   = undef,
   $pcre_backtrack_limit            = undef,
   $pcre_recursion_limit            = undef,
+  $pcre_jit                        = undef,
   $phar_readonly                   = undef,
   $sendmail_path                   = '/usr/sbin/sendmail -t -i',
   $mail_add_x_header               = 'On',
