@@ -5,7 +5,7 @@
 #
 # Sample Usage:
 #  Php::Ini {
-#      expose_php => 'Off',
+#      expose_php => 'On',
 #  }
 #  php::ini { '/etc/php.ini':
 #      display_errors => 'On',
@@ -37,7 +37,7 @@ define php::ini (
   $ignore_user_abort               = undef,
   $realpath_cache_size             = undef,
   $realpath_cache_ttl              = undef,
-  $expose_php                      = 'On',
+  $expose_php                      = 'Off',
   $max_execution_time              = '30',
   $max_input_time                  = '60',
   $max_input_vars                  = '1000',
@@ -67,7 +67,7 @@ define php::ini (
   $auto_append_file                = '',
   $default_mimetype                = 'text/html',
   $default_charset                 = undef,
-  $always_populate_raw_post_data   = undef,
+  $always_populate_raw_post_data   = '-1',
   $include_path                    = undef,
   $doc_root                        = '',
   $user_dir                        = '',

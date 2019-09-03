@@ -1,4 +1,6 @@
 * Add pcre_jit parameter, often needing to be disabled with PHP 7.3.
+* Change expose_php default to Off, as it makes more sense.
+* Default super obsole always_populate_raw_post_data to disabled.
 
 #### 2018-07-23 - 1.2.2
 * Add more session related parameters (#83, @forgodssake).
