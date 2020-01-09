@@ -49,6 +49,21 @@ class php::params {
           $fpm_pid = '/run/php/php7.2-fpm.pid'
           $fpm_service_restart = 'restart'
         }
+        buster: {
+          $php_package_name = 'php'
+          $php_apc_package_name = 'php-apcu'
+          $common_package_name = 'php-common'
+          $cli_package_name = 'php-cli'
+          $cli_inifile = '/etc/php/7.3/cli/php.ini'
+          $php_conf_dir = '/etc/php/7.3/mods-available'
+          $fpm_package_name = 'php-fpm'
+          $fpm_service_name = 'php7.3-fpm'
+          $fpm_pool_dir = '/etc/php/7.3/fpm/pool.d'
+          $fpm_conf_dir = '/etc/php/7.3/fpm'
+          $fpm_error_log = '/var/log/php7.3-fpm.log'
+          $fpm_pid = '/run/php/php7.3-fpm.pid'
+          $fpm_service_restart = 'restart'
+        }
         default: {
           fail("Unsupported lsbdistcodename: ${::lsbdistcodename}")
         }
