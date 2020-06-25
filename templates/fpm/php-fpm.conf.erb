@@ -30,13 +30,17 @@ error_log = <%= @error_log %>
 ; will be handled differently.
 ; See syslog(3) for possible values (ex daemon equiv LOG_DAEMON)
 ; Default Value: daemon
+<% if @syslog_facility != 'absent' -%>
 syslog.facility = <%= @syslog_facility %>
+<% end -%>
 
 ; syslog_ident is prepended to every message. If you have multiple FPM
 ; instances running on the same server, you can change the default value
 ; which must suit common needs.
 ; Default Value: php-fpm
+<% if @syslog_ident != 'absent' -%>
 syslog.ident = <%= @syslog_ident %>
+<% end -%>
 
 ; Log level
 ; Possible Values: alert, error, warning, notice, debug

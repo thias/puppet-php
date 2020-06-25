@@ -1,3 +1,5 @@
+* Add the ability to completely absent relevant php-fpm config values.
+
 #### 2019-09-17 - 1.2.3
 * Add pcre_jit parameter, often needing to be disabled with PHP 7.3.
 * Change expose_php default to Off, as it makes more sense.
