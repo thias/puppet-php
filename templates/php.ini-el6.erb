@@ -1029,6 +1029,13 @@ date.timezone = <%= @date_timezone %>
 ;sqlite3.extension_dir =
 
 [Pcre]
+;PCRE Whether PCRE's just-in-time compilation is going to be used. 
+;Available since PHP 7.0.0, default value "1"
+; https://www.php.net/manual/en/pcre.configuration.php#ini.pcre.jit
+<% if @pcre_jit -%>
+pcre.jit = <%= @pcre_jit %>
+<% end -%>
+
 ;PCRE library backtracking limit.
 ; http://www.php.net/manual/en/pcre.configuration.php#ini.pcre.backtrack-limit
 <% if @pcre_backtrack_limit -%>
