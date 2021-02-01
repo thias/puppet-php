@@ -1,0 +1,9 @@
+[Socket]
+<% if @listen_address %>
+ListenStream=<%= @listen_address %>:<%= @listen_port %>
+<% else %>
+ListenStream=<%= @listen_port %>
+<% end %>
+
+[Install]
+WantedBy=sockets.target
