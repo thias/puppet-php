@@ -1,3 +1,5 @@
+* Remove legacy facts usage.
+
 #### 2020-06-25 - 1.2.4
 * Add the ability to completely absent relevant php-fpm config values.
 

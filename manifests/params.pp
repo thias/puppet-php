@@ -1,7 +1,7 @@
 # Parameters class.
 #
 class php::params {
-  case $::osfamily {
+  case $facts['os']['family'] {
     'Debian': {
       $php_package_name = 'php5'
       $php_apc_package_name = 'php-apc'
