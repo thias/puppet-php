@@ -1,6 +1,6 @@
 {
   "name": "thias-php",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "author": "Matthias Saou",
   "license": "Apache-2.0",
   "summary": "PHP module",
@@ -11,11 +11,11 @@
   "operatingsystem_support": [
     {
     "operatingsystem": "RedHat",
-    "operatingsystemrelease": [ "5", "6", "7" ]
+    "operatingsystemrelease": [ "5", "6", "7", "8", "9" ]
     },
     {
     "operatingsystem": "CentOS",
-    "operatingsystemrelease": [ "5", "6", "7" ]
+    "operatingsystemrelease": [ "5", "6", "7", "8", "9" ]
     },
     {
     "operatingsystem":"Debian",
@@ -29,7 +29,7 @@
   "requirements": [
     {
     "name": "puppet",
-    "version_requirement": ">=2.7.20 <8.0.0"
+    "version_requirement": ">=2.7.20 <9.0.0"
     }
   ],
   "description": "Install and configure PHP for any of CLI, Apache httpd module and FastCGI.",
