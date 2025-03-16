@@ -20,6 +20,7 @@ define php::module::ini (
   $prefix   = undef,
   $settings = {},
   $zend     = false,
+  $priority = '20',
 ) {
 
   include '::php::params'
