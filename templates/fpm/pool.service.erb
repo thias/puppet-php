@@ -1,0 +1,7 @@
+[Service]
+User=<%= @user %>
+Group=<%= @group %>
+Environment="FPM_SOCKETS=/var/run/php-fpm/<%= @pool %>.socket=3"
+RuntimeDirectory=php-fpm
+RuntimeDirectoryMode=0755
+ExecStart=<%= @fpm_binary %> --fpm-config=<%= @fpm_pool_dir %>/<%= @pool %>.conf
