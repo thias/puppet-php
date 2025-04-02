@@ -1,3 +1,5 @@
+* Allow setting PHP 8.4 deprecated settings to false to omit from php.ini.
+
 #### 2025-02-04 - 1.2.5
 * Remove legacy facts usage.
 
